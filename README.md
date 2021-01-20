@@ -58,10 +58,8 @@ $ git push origin main
 
 10. If you want to publish your changes to the public website: push your changes to the `gh-pages` branch, from which the website is served:
 
-```
-$  git push origin `git subtree split --prefix _book gh-pages`:gh-pages --force
-```
+`$  git subtree push --prefix _book origin gh-pages`
 
 NB: for an explanation of this command, see https://dev.to/letsbsocial1/deploying-to-gh-pages-with-git-subtree
 
-11. After a little wait, your changes will be reflected on the live web page: https://openiti.github.io/2021IslamicateWorldCourse/
+11. Your changes will be reflected on the live web page (this may take a couple of minutes): https://openiti.github.io/2021IslamicateWorldCourse/
