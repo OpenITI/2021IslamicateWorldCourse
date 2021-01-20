@@ -59,7 +59,7 @@ $ git push origin main
 10. If you want to publish your changes to the public website: push your changes to the `gh-pages` branch, from which the website is served:
 
 ```
-$  git push origin `git subtree split --prefix _book gh-pages`:gh-pages -- force
+$  git push origin `git subtree split --prefix _book gh-pages`:gh-pages --force
 ```
 
 NB: for an explanation of this command, see https://dev.to/letsbsocial1/deploying-to-gh-pages-with-git-subtree
