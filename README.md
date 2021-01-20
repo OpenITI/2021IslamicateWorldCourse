@@ -63,3 +63,62 @@ $ git push origin main
 NB: for an explanation of this command, see https://dev.to/letsbsocial1/deploying-to-gh-pages-with-git-subtree
 
 11. Your changes will be reflected on the live web page (this may take a couple of minutes): https://openiti.github.io/2021IslamicateWorldCourse/
+
+
+# Tips and tricks
+
+## Prerequisites for building the PDF version:
+
+* download and install the MikTeX program from here: [https://miktex.org/download](https://miktex.org/download)
+
+NB: make sure to choose the option that MikTeX is allowed to update/get new packages without asking, otherwise the PDF creation will fail
+
+* in RStudio: run `install.packages("tinytex")`
+
+## Pushing _books folder to gh-pages
+
+The R script outputs the html, pdf and epub files into the _books folder.
+Unfortunately, GitHub cannot serve html files that are not in the root folder of a repo. 
+The solution is to create a gh-pages branch in the repo, to which only the _books folder is pushed. 
+
+https://dev.to/letsbsocial1/deploying-to-gh-pages-with-git-subtree
+
+Once the subtree and the gh-pages branch are set up, publishing changes in the files to be served is as easy as writing the following command in the `main` branch of the repo:
+
+`$ git subtree push --prefix _book origin gh-pages`
+
+
+
+### Initializing the gh-pages branch and the subtree:
+
+**NB: this has to be done only once! Use the **
+
+1. create a local branch `gh-pages` and check it out: 
+
+`$ git checkout -b gh-pages`
+
+2. Make sure it is empty: 
+
+`$ git rm -rf .`
+
+(don't forget the `.` at the end!)
+
+3. commit and add the removal of all hidden files:
+
+`$ git commit -am "First commit to gh-pages branch"`
+
+4. Push changes to remote `gh-pages` branch: 
+
+`$ git push origin gh-pages`
+
+5. Go back to the main branch: 
+
+`$ git checkout main`
+
+6. Create the subtree: 
+
+```
+git push origin `git subtree split --prefix _book gh-pages`:gh-pages --force
+```
+
+(note the backticks before "git subtree" and "_book gh-pages"!)
