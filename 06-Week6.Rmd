@@ -1,0 +1,20 @@
+# week 6: Interacting with the OpenITI Corpus Using Github and EditPad
+
+***3/4/2021 Thursday***
+
+Prepare for Class:
+
+* Introduction to the command line! Go here: [http://programminghistorian.org/lessons/intro-to-bash](http://programminghistorian.org/lessons/intro-to-bash)
+* A more detailed introduction (and useful list of commands) is available here: [https://learnpythonthehardway.org/book/appendixa.html](https://learnpythonthehardway.org/book/appendixa.html)
+* Introduction to using Github: [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/) 
+* Introduction to Github from command line: [https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+* Raising an Issue in Github
+* Watch video, “Interacting with the OpenITI Corpus through Github.”
+* Watch video, “Introduction to Working with Texts in OpenITI EditPad Pro.”
+* Watch video, “Introduction to OpenITI mARkdown.”
+* Do Github pull/edit/push activity (link)
+
+In class:
+
+* Weekly reading report
+* OpenITI mARkdown bootcamp

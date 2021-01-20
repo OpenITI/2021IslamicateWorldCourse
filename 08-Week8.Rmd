@@ -1,0 +1,17 @@
+# week 8: Introducing R (in GUI) through Stylo(metry)
+
+***3/25/2021 Thursday***
+
+Prepare for Class:
+
+* Holmes, David I. “The Evolution of Stylometry in Humanities Scholarship.” *Literary & Linguistic Computing* 13, no. 3 (1998): 111-117. [ELMS]
+* Koppel, M., Schler, J. and Argamon, S. “Computational Methods in Authorship Attribution.” *Journal of the American Society for Information Science and Technology* 60, no. 1 (2009): 9-26. [ELMS]
+* Maciej Eder, Jan Rybicki, and Mike Kestemont, *‘Stylo’: A Package for Stylometric Analyses.* Computational Stylistics Group, 2014.
+* Optional (extra credit for UMD students): Sadeghi, Behnam. “The Chronology of the Qur’ān: A Stylometric Research Program.” *Arabica* 58.3–4 (2011): 210-99. [ELMS]
+
+In class:
+
+* Weekly reading report
+* Collaboratory assignment with ‘Stylo’ R Package (bring your computers!).
+
+

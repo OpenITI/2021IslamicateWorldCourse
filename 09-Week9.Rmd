@@ -1,0 +1,17 @@
+# week 9: R Bootcamp I
+
+***4/1/2021 Thursday***
+
+Prepare for Class:
+
+* Chapter 1-2 in Arnold and Tilton and Chapter 1 in Jockers (there will be some overlap).
+
+Submit Before Class:
+
+* Practice exercises for chapter 2 in Arnold & Tilton, pages 183-186 (Please submit your code (i.e., the R script file) and also any resulting visualizations (e.g., graphs, tables) or answers (in the form of a screenshot)).
+
+In class:
+
+* Weekly Reading Report: Analyzing Text Reuse Data in R (Sarah Bowen Savant)
+* “Sheykh Google” activity (bring your computers!).
+

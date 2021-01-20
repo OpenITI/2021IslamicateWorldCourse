@@ -1,0 +1,16 @@
+# Week 5: Corpus Construction and Past Approaches to Computational Textual Analysis IV
+
+***2/25/2021 Thursday***
+
+Prepare for Class:
+
+* Piper, Andrew. *Enumerations: Data and Literary Study*. Chicago: University of Chicago Press, 2018. (selections).
+* Watch eScriptorium training video #5, “Training Your own Models in eScriptorim.”
+* Re-OCR your new transcription and segmentation models.
+
+In class:
+
+* Weekly reading report
+* Collaboratory assignment on digital text production (bring your computers!).
+
+

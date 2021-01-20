@@ -1,0 +1,18 @@
+# week 10: R Bootcamp II
+
+***4/8/2021 Thursday***
+
+Prepare for Class:
+
+* Chapter 3 in Arnold and Tilton.
+
+Submit Before Class:
+
+* Practice exercises for chapter 3 in Arnold & Tilton, pages 186-188.
+
+In class:
+
+* Weekly Reading Report: Topic Modeling in R
+* First brainstorming session on final project topics.
+
+

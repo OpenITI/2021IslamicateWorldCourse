@@ -1,0 +1,17 @@
+# week 7: Using Regex on Texts
+
+***3/11/2021 Thursday*** 
+
+Prepare for Class:
+
+* Regex tutorials #1-16: [Regexone.com](Regexone.com)
+
+In class:
+
+* Weekly reading report
+* Regex workshop.
+* Introduction to R and R installation: [https://cran.r-project.org/](https://cran.r-project.org/) and [https://www.rstudio.com/](https://www.rstudio.com/) (bring your computers!)
+
+
+***3/14/2021 - 3/21/2021: UMD Spring Break (No class)***
+
