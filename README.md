@@ -91,7 +91,7 @@ Once the subtree and the gh-pages branch are set up, publishing changes in the f
 
 ### Initializing the gh-pages branch and the subtree:
 
-**NB: this has to be done only once! Use the **
+**NB: this has to be done only once! Use the previously mentioned command for updating the gh-pages branch!**
 
 1. create a local branch `gh-pages` and check it out: 
 
