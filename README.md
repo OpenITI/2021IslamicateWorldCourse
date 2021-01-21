@@ -28,6 +28,8 @@ Each of these files can be edited using RStudio
 
 ![Select Rproj](img/Rproj.png)
 
+If the project file is not there, choose `File > New Project`, and select the repository you cloned.
+
 4. In the bottom right corner, you will now see the contents of the project folder. Click one of the .Rmd files to edit it. 
 
 5. Edit the file (use Pandoc markdown tags; full overview here: https://pandoc.org/MANUAL.html#pandocs-markdown)
@@ -56,11 +58,11 @@ $ git commit -m "Add new course details"
 $ git push origin main
 ```
 
-10. If you want to publish your changes to the public website: push your changes to the `gh-pages` branch, from which the website is served:
+10. If you want to publish your changes to the public website: push your changes to the `gh-pages` branch, from which the website is served. This can be done using a shell script in Git Bash: 
 
-`$  git subtree push --prefix _book origin gh-pages`
+`$  ./update_website.sh`
 
-NB: for an explanation of this command, see https://dev.to/letsbsocial1/deploying-to-gh-pages-with-git-subtree
+NB: The shell script will run this command: `git subtree push --prefix _book origin gh-pages`. For an explanation of this command, see https://dev.to/letsbsocial1/deploying-to-gh-pages-with-git-subtree
 
 11. Your changes will be reflected on the live web page (this may take a couple of minutes): https://openiti.github.io/2021IslamicateWorldCourse/
 
