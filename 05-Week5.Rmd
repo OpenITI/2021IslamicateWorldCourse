@@ -4,13 +4,13 @@
 
 Prepare for Class:
 
-* Piper, Andrew. *Enumerations: Data and Literary Study*. Chicago: University of Chicago Press, 2018. (selections).
+* Piper, Andrew. *Enumerations: Data and Literary Study*. Chicago: University of Chicago Press, 2018. (selections). [Course Google Drive]
 * Watch eScriptorium training video #5, “Training Your own Models in eScriptorim.”
 * Re-OCR your new transcription and segmentation models.
 
 In class:
 
-* Weekly reading report
+* Weekly reading report.
 * Collaboratory assignment on digital text production (bring your computers!).
 
 

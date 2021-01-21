@@ -17,6 +17,11 @@ description: "This is the syllabus for this course. The output format for this e
 
 The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis is a [Global Classrooms](https://globalmaryland.umd.edu/content/global-classrooms) course that will be taught collaboratively by professors at the Roshan Institute for Persian Studies at the University of Maryland (College Park) and Aga Khan University (London). In this exciting, new project-based course, students from both institutions will come together to learn the basics of computational textual analysis while participating as student researchers in the nascent project of exploring the vast and largely unexplored tomes of textual data about the Islamicate world. It will also introduce students to theoretical and methodological debates in the field of global digital humanities. Like the digital humanities field that inspires its approach, it will be a highly interdisciplinary course that studies texts from multiple genres (lyric poetry to historical chronicles, legal treatises to the Quran) and languages (Arabic, Persian) with the aid of computational textual analysis tools. There are no language prerequisites, but it is preferable if students at least have elementary knowledge of either Arabic, Persian, Turkish, or Urdu.
 
+## Virtual Classroom
+
+This course will be conducted over Zoom. The Zoom link will be provided to you in the course email group.
+
+
 ## Instructors
 
 ### Dr. Jonathan Parkes Allen
@@ -31,9 +36,9 @@ Office Hours: by appointment
 E-mail: [mtmiller@umd.edu](mailto:mtmiller@umd.edu)
 Roshan Institute for Persian Studies
 University of Maryland, College Park
-Bio: Matthew Thomas Miller, Ph.D., is Assistant Professor of Persian Literature and Digital Humanities at Roshan Institute for Persian Studies at the University of Maryland, College Park and an affiliate of the [Maryland Institute for Technology in the Humanities](https://mith.umd.edu/people/). He also serves as the Associate Director of the [Roshan Initiative in Persian Digital Humanities (PersDig@UMD)](http://persdig.umd.edu/) and as the co-PI for the multi-institutional [Open Islamicate Texts Initiative (OpenITI)](http://iti-corpus.github.io/) (including serving as PI of the Mellon Foundation-funded [Open Islamicate Texts Initiative Arabic-script OCR Catalyst Project](https://medium.com/@openiti/openiti-aocp-9802865a6586)) and the [Persian Manuscript Initiative (PMI)](http://www.persianmanuscript.org/). His research focuses on medieval Sufi literature, the history of sexuality and the body, and digital humanities. He currently is working on a book project, entitled Embodying the Beloved: Embodiment and Mystical Modes of Meaning Creation in Medieval Persian Sufi Literature, and a number of articles on computational or “distant reading” approaches to Persian literature and carnivalesque Sufi poetry. See [his website](http://www.matthewthomasmiller.com/) for more details.
+Bio: Matthew Thomas Miller, PhD. is Assistant Professor of Persian Literature and Digital Humanities at [Roshan Institute for Persian Studies at the University of Maryland, College Park](http://sllc.umd.edu/persian) and and an affiliate of the [Maryland Institute for Technology in the Humanities](https://mith.umd.edu/people/). He also serves as the Director of the [Roshan Initiative in Persian Digital Humanities (PersDig@UMD)](http://persdig.umd.edu/) and as the co-PI for the multi-institutional [Open Islamicate Texts Initiative (OpenITI)](https://www.openiti.org/) and the [Persian Manuscript Initiative (PMI)](http://www.persianmanuscript.org/). He has received funding for these projects from [The Andrew W. Mellon Foundation](https://mellon.org/) and [The National Endowment for the Humanities](https://www.neh.gov/). His research focuses on medieval Sufi literature, the history of sexuality and the body, and digital humanities. He currently is working on a book project, entitled *Beautiful Bodies: Embodiment and Mystical Modes of Meaning Creation in Medieval Persian Sufi Literature,* and a number of articles on computational or “distant reading” approaches to Persian literature and carnivalesque Sufi poetry. See [his website](https://matthewthomasmiller.github.io/) for more details.
 
-### Professor Sarah Bowen Savant
+### Dr. Sarah Bowen Savant
 Office Hours: by appointment
 E-mail: [sarah.savant@aku.edu](mailto:sarah.savant@aku.edu) 
 AKU ISMC, 10 Handyside Street, Kings Cross, London N1C 4DN
@@ -74,7 +79,7 @@ By the end of this course students will have:
 
 The grade breakdown for this class is as follows (and see more details on each element in subsections below):
 
-- 20% Comment Papers 
+- 20% Participation 
 - 10% Co-discussion Leading
 - 20% Class Assignments
 - 40% Final (Group) Project
@@ -94,7 +99,7 @@ Final letter grades are assigned based on the percentage of total assessment poi
 
 ### Participation (20%)
 
-Students will be expected to come to class ready to discuss each text or technical training exercises in depth. Class participation is very important. However, please note, it is the quality of participation that I am interested in—not quantity. Again, I cannot stress enough how important your regular attendance and active participation in class discussion is for your grade (for attendance policy, see #1 in the “Course Procedures and Policies” section below). I will update your “Class Participation and Film Analyses” grade every 2-3 weeks on ELMS so that you will know where you stand throughout the semester. If you have questions about your grade in this area, please visit me in office hours or schedule a time to come meet with me to discuss.
+Students will be expected to come to class ready to discuss each text or technical training exercises in depth. Class participation is very important. However, please note, it is the quality of participation that We are interested in—not quantity. Again, we cannot stress enough how important your regular attendance and active participation in class discussion is for your grade (for attendance policy, see #1 in the “Course Procedures and Policies” section below). If you have questions about your grade in this area, please visit me in office hours or schedule a time to come meet with me to discuss.
 
 ### Co-discussion Leading (10%)
 
@@ -108,20 +113,20 @@ Beginning in the ninth week of the semester, you will be assigned specific assig
 
 This course is a project-based learning course. The final project, therefore, will occupy a substantial amount of our class time throughout the semester and will be a major component of your final grade. But, fear not! The instructors will work closely with each of you and your groups to construct a collaborative research project. You will spend much of the second half of the course working on this project during class time with your fellow group members in the “research collaboratory” groups that we will form in week 11. 
 
-At the conclusion of each research collaboratory session, each student will take on an assignment, which must be completed before the next class period. These will be reported to the instructors after class so they can keep track of each individual’s contributions to the project and grade them on these weekly assignments. These tasks will vary greatly on the basis of each group’s project: some students may be working on cleaning and/or reformatting texts, others on developing a R script, and still others may be tasked with doing traditional humanities research in order to properly contextualize the results of the group’s new computational textual analysis. We do not expect that you will have all of the answers when you begin work on your final project. You will need to play and experiment with the texts and different modes of textual analysis and visualization available to you in R, and you certainly will hit dead ends and completely fail (productively) at times too. In this process, however, you will learn a great deal, as the research on experiential and problem/project-based learning has shown. We will guide you throughout your work on the final project, making sure that it eventually comes together to form a micro-publication by the end of the course. You will present on and submit your final projects on the assigned exam day for this course, Monday, December 19, 1:30-3:30.
+At the conclusion of each research collaboratory session, each student will take on an assignment, which must be completed before the next class period. These will be reported to the instructors after class so they can keep track of each individual’s contributions to the project and grade them on these weekly assignments. These tasks will vary greatly on the basis of each group’s project: some students may be working on cleaning and/or reformatting texts, others on developing a R script, and still others may be tasked with doing traditional humanities research in order to properly contextualize the results of the group’s new computational textual analysis. We do not expect that you will have all of the answers when you begin work on your final project. You will need to play and experiment with the texts and different modes of textual analysis and visualization available to you in R, and you certainly will hit dead ends and completely fail (productively) at times too. In this process, however, you will learn a great deal, as the research on experiential and problem/project-based learning has shown. We will guide you throughout your work on the final project, making sure that it eventually comes together to form a micro-publication by the end of the course. You will present on and submit your final projects on the assigned exam day for this course, May 18th by 6:00pm.
 
 ### Class presentation (10%)
 
-Your class presentation is an opportunity for you to present your group’s final project to the class. It should be between 20-30 minutes in length. You should provide an overview of your initial hypothesis, methods of analysis, problems you encountered in your research, and your research findings (including, how they corroborate or problematize the existing scholarly narratives). You will be graded on the quality of both your research and presentation of it.
+Your class presentation is an opportunity for you to present your group’s final project to the class. It should be between 20-30 minutes in length. You should provide an overview of your initial hypothesis, methods of analysis, problems you encountered in your research, and your research findings (including, how they corroborate or problematize the existing scholarly narratives). You will be graded on the quality of both your research and presentation of it. You will present on your final project sometime around May 18th (we will mutually determine a time for class presentations based on everyone's availability and timezone restrictions).
 
 ## Faculty-student communication
 
-Faculty and advisors use email and ELMS to convey important information, and students are responsible for keeping their email address up to date, and must ensure that forwarding to another address functions properly. Failure to check email, errors in forwarding, and returned email are the responsibility of the student, and do not constitute an excuse for missing announcements or deadlines. In the modern digital world, it is a necessity that you check your email and other forms of digital communication (e.g., ELMS) at least a few times per day and respond promptly to messages. I would suggest checking messages in the morning and evening at the minimum.
+Faculty and advisors use email to convey important information. Students are responsible for keeping their email address up to date. Failure to check email or errors in forwarding are the responsibility of the student, and do not constitute an excuse for missing announcements or deadlines. For better or for worse, in the modern digital world, it is a necessity that you check your email at least a few times per day (during regular work hours) and respond promptly to messages. I would suggest checking messages in the morning and late afternoon at the minimum.
 
 
 ## Emergency protocol
 
-If the university is closed for an extended period of time, this course will be conducted via video conferencing (e.g., Zoom).
+This course will be conducted via Zoom.
 
 ## Course schedule
 
@@ -133,8 +138,8 @@ If the university is closed for an extended period of time, this course will be 
 
 Prepare for Class:
 
-* Underwood, Ted. “Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.” *Representations* 127, no. 1 (Summer 2014): 64–72. [ELMS]
-* Ramsay, Stephen. *Reading Machines: Toward an Algorithmic Criticism*. Champaign, IL: University of Illinois Press, 2011. 1-17. [ELMS]
+* Underwood, Ted. “Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.” *Representations* 127, no. 1 (Summer 2014): 64–72. [Course Google Drive]
+* Ramsay, Stephen. *Reading Machines: Toward an Algorithmic Criticism*. Champaign, IL: University of Illinois Press, 2011. 1-17. [Course Google Drive]
 * Underwood, Ted. “A Genealogy of Distant Reading.” *DHQ* 11 (2017): [http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html](http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html) 
 
 ### Week 2: Corpus Construction and Past Approaches to Computational Textual Analysis I 
@@ -143,13 +148,12 @@ Prepare for Class:
 
 Prepare for Class:
 
-* Savant, Sarah Bowen. “The History of Arabic books in the digital age.” *British Academy Review* Summer 2016: 42-45. [ELMS].
-* Martin Weisser. “Understanding Corpus Design.” In *Practical Corpus Linguistics: An Introduction to Corpus‐Based Language Analysis*, edited by Martin Weisser, 29-42. London: Wiley (2015). doi: [https://doi.org/10.1002/9781119180180.ch3](https://doi.org/10.1002/9781119180180.ch3) 
-* Watch eScriptorium training video #1, “Introduction to eScriptorium.”
+* Savant, Sarah Bowen. “The History of Arabic books in the digital age.” *British Academy Review* Summer 2016: 42-45. [Course Google Drive]
+* Martin Weisser. “Understanding Corpus Design.” In *Practical Corpus Linguistics: An Introduction to Corpus‐Based Language Analysis*, edited by Martin Weisser, 29-42. London: Wiley (2015). [Course Google Drive]
 
 In class:
 
-* Weekly reading report
+* Weekly reading report.
 * Collaboratory assignment on digital text production (bring your computers!).
 
 ### Week 3: Corpus Construction and Past Approaches to Computational Textual Analysis II
@@ -158,14 +162,14 @@ In class:
 
 Prepare for Class:
 
-* Romanov, Maxim. “Toward Abstract Models for Islamic History.” In *The Digital Humanities + Islamic Middle Eastern Studies*, edited by Elias Muhanna, 117–149. Berlin: De Gruyter, 2016. [ELMS]
-* Bulliet, Richard. *Conversion to Islam in the Medieval Period*. Cambridge: Harvard University Press, 1979, 1-32.
+* Romanov, Maxim. “Toward Abstract Models for Islamic History.” In *The Digital Humanities + Islamic Middle Eastern Studies*, edited by Elias Muhanna, 117–149. Berlin: De Gruyter, 2016. [Course Google Drive]
+* Bulliet, Richard. *Conversion to Islam in the Medieval Period*. Cambridge: Harvard University Press, 1979, 1-32. [Course Google Drive]
 * Watch eScriptorium training video #2, “Best Practices for Training Data Production.”
 * Upload and OCR a test text.
 
 In class:
 
-* Weekly reading report
+* Weekly reading report.
 * Collaboratory assignment on digital text production (bring your computers!).
 
 
@@ -175,14 +179,14 @@ In class:
 
 Prepare for Class:
 
-* Underwood, Ted. *Distant Horizons: Digital Evidence and Literary Change*. Chicago: University of Chicago Press, 2019. (selections).
+* Underwood, Ted. *Distant Horizons: Digital Evidence and Literary Change*. Chicago: University of Chicago Press, 2019. (selections). [Course Google Drive]
 * Watch eScriptorium training video #3, “Advanced Functionalities in eScriptorium.”
 * Watch eScriptorium training video #4, “Data Export.”
 * Produce five pages of training data on your text and submit (after watching video #4).
 
 In class:
 
-* Weekly reading report
+* Weekly reading report.
 * Collaboratory assignment on digital text production (bring your computers!).
 
 
@@ -192,13 +196,13 @@ In class:
 
 Prepare for Class:
 
-* Piper, Andrew. *Enumerations: Data and Literary Study*. Chicago: University of Chicago Press, 2018. (selections).
+* Piper, Andrew. *Enumerations: Data and Literary Study*. Chicago: University of Chicago Press, 2018. (selections). [Course Google Drive]
 * Watch eScriptorium training video #5, “Training Your own Models in eScriptorim.”
 * Re-OCR your new transcription and segmentation models.
 
 In class:
 
-* Weekly reading report
+* Weekly reading report.
 * Collaboratory assignment on digital text production (bring your computers!).
 
 
@@ -220,8 +224,8 @@ Prepare for Class:
 
 In class:
 
-* Weekly reading report
-* OpenITI mARkdown bootcamp
+* Weekly reading report.
+* OpenITI mARkdown bootcamp!
 
 
 ### week 7: Using Regex on Texts
@@ -234,7 +238,7 @@ Prepare for Class:
 
 In class:
 
-* Weekly reading report
+* Weekly reading report.
 * Regex workshop.
 * Introduction to R and R installation: [https://cran.r-project.org/](https://cran.r-project.org/) and [https://www.rstudio.com/](https://www.rstudio.com/) (bring your computers!)
 
@@ -248,14 +252,15 @@ In class:
 
 Prepare for Class:
 
-* Holmes, David I. “The Evolution of Stylometry in Humanities Scholarship.” *Literary & Linguistic Computing* 13, no. 3 (1998): 111-117. [ELMS]
-* Koppel, M., Schler, J. and Argamon, S. “Computational Methods in Authorship Attribution.” *Journal of the American Society for Information Science and Technology* 60, no. 1 (2009): 9-26. [ELMS]
-* Maciej Eder, Jan Rybicki, and Mike Kestemont, *‘Stylo’: A Package for Stylometric Analyses.* Computational Stylistics Group, 2014.
+* Holmes, David I. “The Evolution of Stylometry in Humanities Scholarship.” *Literary & Linguistic Computing* 13, no. 3 (1998): 111-117. [Course Google Drive]
+* Koppel, M., Schler, J. and Argamon, S. “Computational Methods in Authorship Attribution.” *Journal of the American Society for Information Science and Technology* 60, no. 1 (2009): 9-26. [Course Google Drive]
+* Eder, Maciej, Jan Rybicki, and Mike Kestemont. “Stylometry with R—A Package for Computational Text Analysis.” The R Journal Vol. 8/1 (2016). [Course Google Drive]    
+* Eder, Maciej, and Jan Rybicki. "STYLO R Script Mini HOW TO." [Course Google Drive]
 * Optional (extra credit for UMD students): Sadeghi, Behnam. “The Chronology of the Qur’ān: A Stylometric Research Program.” *Arabica* 58.3–4 (2011): 210-99. [ELMS]
 
 In class:
 
-* Weekly reading report
+* Weekly reading report.
 * Collaboratory assignment with ‘Stylo’ R Package (bring your computers!).
 
 
@@ -273,7 +278,7 @@ Submit Before Class:
 
 In class:
 
-* Weekly Reading Report: Analyzing Text Reuse Data in R (Sarah Bowen Savant)
+* Weekly Reading Report: Analyzing Text Reuse Data in R (Sarah Bowen Savant).
 * “Sheykh Google” activity (bring your computers!).
 
 
@@ -291,7 +296,7 @@ Submit Before Class:
 
 In class:
 
-* Weekly Reading Report: Topic Modeling in R
+* Weekly Reading Report: Topic Modeling in R (Matthew Thomas Miller).
 * First brainstorming session on final project topics.
 
 
@@ -309,7 +314,7 @@ Submit Before Class:
 
 In class:
 
-* Weekly Reading Report: Geolocation Analysis in R (Peter Verkinderen)
+* Weekly Reading Report: Geolocation Analysis in R (Peter Verkinderen).
 * Second brainstorming session on final project topics (by end of this class, we will set the text analysis groups and their respective assigned chapters for week 10 based your initial ideas for the final project).
 * Research collaboratory groups finalized and first set of individualized assignments distributed in preparation for your research group’s first research collaboratory.
 
@@ -380,7 +385,7 @@ Below are some important policies related to this course:
 
 ### Attendance and Absences\*: 
 
-Students are expected to attend classes regularly. Consistent attendance offers students the most effective opportunity to gain command of course concepts and materials. Students who miss class without an excused absence will receive a 0% for that day’s participation grade. If they subsequently hand in the film analysis for that week they may receive up to 50% for that day, but even that depends on the quality of their film analysis. Students who have an excused absence must still hand in their film analyses in order to receive credit for that class’ participation grade. Events that justify an excused absence include: religious observances; mandatory military obligation; illness of the student or illness of an immediate family member; participation in university activities at the request of university authorities; and compelling circumstances beyond the student’s control (e.g., death in the family, required court appearance). Absences stemming from work duties other than military obligation (e.g., unexpected changes in shift assignments) and traffic/transit problems do not typically qualify for excused absence. Students claiming an excused absence must notify the course instructor in a timely manner and provide appropriate documentation. The notification should be provided either prior to the absence or as soon afterwards as possible. In the case of religious observances, athletic events, and planned absences known at the beginning of the semester, the student must inform the instructor during the schedule adjustment period. All other absences must be reported as soon as is practical. The student must provide appropriate documentation of the absence. The documentation must be provided in writing to the instructor. The full university attendance/absence policy can be found here.
+Students are expected to attend classes regularly. Consistent attendance offers students the most effective opportunity to gain command of course concepts and materials. Students who miss class without an excused absence will receive a 0% for that day’s participation grade. Events that justify an excused absence include: religious observances; mandatory military obligation; illness of the student or illness of an immediate family member; participation in university activities at the request of university authorities; and compelling circumstances beyond the student’s control (e.g., death in the family, required court appearance). Absences stemming from work duties other than military obligation (e.g., unexpected changes in shift assignments) and traffic/transit problems do not typically qualify for excused absence. Students claiming an excused absence must notify the course instructor in a timely manner and provide appropriate documentation. The notification should be provided either prior to the absence or as soon afterwards as possible. In the case of religious observances, athletic events, and planned absences known at the beginning of the semester, the student must inform the instructor during the schedule adjustment period. All other absences must be reported as soon as is practical. The student must provide appropriate documentation of the absence. The documentation must be provided in writing to the instructor. The full university attendance/absence policy can be found here.
 
 \* As long as COVID-19 persists, we will be willing to make exceptions to these general rules on a case-by-case basis. Please discuss with me concerns you have about attendance and we can develop alternative plans, if necessary.
 
@@ -410,7 +415,7 @@ Faculty and advisors use email and ELMS to convey important information, and stu
 
 ### Emergency Protocol: 
 
-If the university is closed for an extended period of time, this course will be conducted via video conferencing.
+This course is conducted via Zoom.
 
 ### Forms of Address (Names and Pronouns) and Self-Identification: 
 
@@ -418,15 +423,15 @@ Our institution’s official policy states that “The University of Maryland re
 
 ### Statement in Support of Students with Children: 
 
-I welcome and support students who are parents. I appreciate that parenthood presents unique challenges and demands on a student’s time and availability. If childcare constraints present an issue with class attendance, I invite student parents to work with me to discuss alternate arrangements. I also welcome and support pregnant students and will provide possible accommodations and discuss arrangements so that students can complete course requirements.
+We welcome and support students who are parents. We appreciate that parenthood presents unique challenges and demands on a student’s time and availability. If childcare constraints present an issue with class attendance, we invite student parents to work with us to discuss alternate arrangements. We also welcome and support pregnant students and will provide possible accommodations and discuss arrangements so that students can complete course requirements.
 
 ### Communication with Peers: 
 
-With a diversity of perspectives and experience, we may find ourselves in disagreement and/or debate with one another. As such, it is important that we agree to conduct ourselves in a professional manner and that we work together to foster and preserve a virtual classroom environment in which we can respectfully discuss and deliberate controversial questions. I encourage you to confidently exercise your right to free speech—bearing in mind, of course, that you will be expected to craft and defend arguments that support your position. Keep in mind, that free speech has its limit and this course is NOT the space for hate speech, harassment, and derogatory language. I will make every reasonable attempt to create an atmosphere in which each student feels comfortable voicing their argument without fear of being personally attacked, mocked, demeaned, or devalued. Any behavior (including harassment, sexual harassment, and racially and/or culturally derogatory language) that threatens this atmosphere will not be tolerated. Please alert me immediately if you feel threatened, dismissed, or silenced at any point during our semester together and/or if your engagement in discussion has been in some way hindered by the learning environment.
+With a diversity of perspectives and experience, we may find ourselves in disagreement and/or debate with one another. As such, it is important that we agree to conduct ourselves in a professional manner and that we work together to foster and preserve a virtual classroom environment in which we can respectfully discuss and deliberate controversial questions. We encourage you to confidently exercise your right to free speech—bearing in mind, of course, that you will be expected to craft and defend arguments that support your position. Keep in mind, that free speech has its limit and this course is NOT the space for hate speech, harassment, and derogatory language. We will make every reasonable attempt to create an atmosphere in which each student feels comfortable voicing their argument without fear of being personally attacked, mocked, demeaned, or devalued. Any behavior (including harassment, sexual harassment, and racially and/or culturally derogatory language) that threatens this atmosphere will not be tolerated. Please alert us immediately if you feel threatened, dismissed, or silenced at any point during our semester together and/or if your engagement in discussion has been in some way hindered by the learning environment.
 
 ### Student Resources and Academic Services: 
 
-Taking personal responsibility for you own learning means acknowledging when your performance does not match your goals and doing something about it.  I hope you will come talk to me so that I can help you find the right approach to success in this course, and I encourage you to visit [UMD’s Student Academic Support Services website](http://tutoring.umd.edu) to learn more about the wide range of campus resources available to you. In particular, everyone can use some help sharpen their communication skills (and improving their grade) by visiting [UMD’s Writing Center](http://www.english.umd.edu/academics/writingcenter/schedule) and schedule an appointment with the campus Writing Center. You should also know there are a wide range of resources to support you with whatever you might need ([UMD’s Student Resources and Services website](https://sph.umd.edu/content/student-resources-and-services) may help). If you feel it would be helpful to have someone to talk to, visit [UMD’s Counseling Center](https://www.counseling.umd.edu/) or [one of the many other mental health resources on campus](https://tltc.umd.edu/supporting-whole-student).
+Taking personal responsibility for you own learning means acknowledging when your performance does not match your goals and doing something about it.  We hope you will come talk to me so that we can help you find the right approach to success in this course, and we encourage you to visit [UMD’s Student Academic Support Services website](http://tutoring.umd.edu) to learn more about the wide range of campus resources available to you. In particular, everyone can use some help sharpen their communication skills (and improving their grade) by visiting [UMD’s Writing Center](http://www.english.umd.edu/academics/writingcenter/schedule) and schedule an appointment with the campus Writing Center. You should also know there are a wide range of resources to support you with whatever you might need ([UMD’s Student Resources and Services website](https://sph.umd.edu/content/student-resources-and-services) may help). If you feel it would be helpful to have someone to talk to, visit [UMD’s Counseling Center](https://www.counseling.umd.edu/) or [one of the many other mental health resources on campus](https://tltc.umd.edu/supporting-whole-student).
 
 ### Basic Needs Security: 
 

@@ -12,7 +12,7 @@ Submit Before Class:
 
 In class:
 
-* Weekly Reading Report: Topic Modeling in R
+* Weekly Reading Report: Topic Modeling in R (Matthew Thomas Miller).
 * First brainstorming session on final project topics.
 
 

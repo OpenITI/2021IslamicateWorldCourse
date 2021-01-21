@@ -12,6 +12,6 @@ Submit Before Class:
 
 In class:
 
-* Weekly Reading Report: Analyzing Text Reuse Data in R (Sarah Bowen Savant)
+* Weekly Reading Report: Analyzing Text Reuse Data in R (Sarah Bowen Savant).
 * “Sheykh Google” activity (bring your computers!).
 

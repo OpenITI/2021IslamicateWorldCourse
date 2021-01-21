@@ -8,7 +8,7 @@ Prepare for Class:
 
 In class:
 
-* Weekly reading report
+* Weekly reading report.
 * Regex workshop.
 * Introduction to R and R installation: [https://cran.r-project.org/](https://cran.r-project.org/) and [https://www.rstudio.com/](https://www.rstudio.com/) (bring your computers!)
 

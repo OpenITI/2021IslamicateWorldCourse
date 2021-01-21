@@ -12,6 +12,6 @@ Submit Before Class:
 
 In class:
 
-* Weekly Reading Report: Geolocation Analysis in R (Peter Verkinderen)
+* Weekly Reading Report: Geolocation Analysis in R (Peter Verkinderen).
 * Second brainstorming session on final project topics (by end of this class, we will set the text analysis groups and their respective assigned chapters for week 10 based your initial ideas for the final project).
 * Research collaboratory groups finalized and first set of individualized assignments distributed in preparation for your research group’s first research collaboratory.
