@@ -1,4 +1,4 @@
-course-syllabus---preliminaries
+course-overview
 course-summary
 virtual-classroom
 instructors
