@@ -1,9 +1,10 @@
 course-syllabus---preliminaries
 course-summary
+virtual-classroom
 instructors
 dr.-jonathan-parkes-allen
 dr.-matthew-thomas-miller
-professor-sarah-bowen-savant
+dr.-sarah-bowen-savant
 dr.-peter-verkinderen
 required-texts-and-technologies
 learning-objectives
