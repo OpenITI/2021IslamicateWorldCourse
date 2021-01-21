@@ -49,7 +49,7 @@ student-resources-and-academic-services
 basic-needs-security
 technology-policy
 acknowledgements
-week-1-class-introduction-and-introduction-to-computational-textual-analysis-1
+week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities.
 week-2-corpus-construction-and-modeling-digital-humanities-data-1
 week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1
 week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1
