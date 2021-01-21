@@ -8,6 +8,8 @@ You can Access the course website here: https://openiti.github.io/2021Islamicate
 
 A very short and easy explanation of Bookdown can be found here: https://bookdown.org/home/about/
 
+Follow these easy steps to set up a local version of the repo on your machine and add to the course website: 
+
 1. Clone the current repository on your local machine: 
 
 `$ git clone https://github.com/OpenITI/2021IslamicateWorldCourse.git`
