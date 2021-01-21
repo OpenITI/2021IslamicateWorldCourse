@@ -130,7 +130,7 @@ This course will be conducted via Zoom.
 
 ## Course schedule
 
-### Week 1: Class Introduction and Introduction to Computational Textual Analysis as a Method
+### Week 1: Class Introduction and Introduction to Computational Textual Analysis
 
 ***1/28/2021 Thursday***
 
@@ -142,28 +142,32 @@ Prepare for Class:
 * Ramsay, Stephen. *Reading Machines: Toward an Algorithmic Criticism*. Champaign, IL: University of Illinois Press, 2011. 1-17. [Course Google Drive]
 * Underwood, Ted. “A Genealogy of Distant Reading.” *DHQ* 11 (2017): [http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html](http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html) 
 
-### Week 2: Corpus Construction and Past Approaches to Computational Textual Analysis I 
+### Week 2: Corpus Construction and Modeling Digital Humanities Data 
 
 ***2/4/2021 Thursday***
 
 Prepare for Class:
 
-* Savant, Sarah Bowen. “The History of Arabic books in the digital age.” *British Academy Review* Summer 2016: 42-45. [Course Google Drive]
-* Martin Weisser. “Understanding Corpus Design.” In *Practical Corpus Linguistics: An Introduction to Corpus‐Based Language Analysis*, edited by Martin Weisser, 29-42. London: Wiley (2015). [Course Google Drive]
+* Flanders, Julia and Fotis Jannidis. "Data Modeling in a Digital Humanities Context." In *The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources*, edited by Julia Flanders and Fotis Jannidis, 3-25. New York: Rotuledge, 2019. [Course Google Drive]   
+* Underwood, Ted. "Algorithmic Modeling: Or, Modeling Data We Do Not Yet Understand." In *The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources*, edited by Julia Flanders and Fotis Jannidis, 250-263. New York: Rotuledge, 2019. [Course Google Drive] 
+* Martin Weisser. “Understanding Corpus Design.” In *Practical Corpus Linguistics: An Introduction to Corpus‐Based Language Analysis*, edited by Martin Weisser, 29-42. London: Wiley (2015). [Course Google Drive] 
+* Watch eScriptorium training video #1, “Introduction to eScriptorium.”
 
 In class:
 
 * Weekly reading report.
 * Collaboratory assignment on digital text production (bring your computers!).
 
-### Week 3: Corpus Construction and Past Approaches to Computational Textual Analysis II
+
+### Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies
 
 ***2/11/2021 Thursday***
 
 Prepare for Class:
 
+* Savant, Sarah Bowen. “The History of Arabic books in the digital age.” *British Academy Review* Summer 2016: 42-45. [Course Google Drive]        
 * Romanov, Maxim. “Toward Abstract Models for Islamic History.” In *The Digital Humanities + Islamic Middle Eastern Studies*, edited by Elias Muhanna, 117–149. Berlin: De Gruyter, 2016. [Course Google Drive]
-* Bulliet, Richard. *Conversion to Islam in the Medieval Period*. Cambridge: Harvard University Press, 1979, 1-32. [Course Google Drive]
+* Bulliet, Richard. *Conversion to Islam in the Medieval Period*. Cambridge: Harvard University Press, 1979, 1-32.
 * Watch eScriptorium training video #2, “Best Practices for Training Data Production.”
 * Upload and OCR a test text.
 
@@ -173,7 +177,9 @@ In class:
 * Collaboratory assignment on digital text production (bring your computers!).
 
 
-### Week 4: Corpus Construction and Past Approaches to Computational Textual Analysis III
+
+
+### Week 4: Corpus Construction and Latest Approaches to Computational Textual Analysis I
 
 ***2/18/2021 Thursday***
 
@@ -190,7 +196,7 @@ In class:
 * Collaboratory assignment on digital text production (bring your computers!).
 
 
-### Week 5: Corpus Construction and Past Approaches to Computational Textual Analysis IV
+### Week 5: Corpus Construction and Latest Approaches to Computational Textual Analysis II
 
 ***2/25/2021 Thursday***
 

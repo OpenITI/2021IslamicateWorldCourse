@@ -1,4 +1,4 @@
-# Week 4: Corpus Construction and Past Approaches to Computational Textual Analysis III
+# Week 4: Corpus Construction and Latest Approaches to Computational Textual Analysis I
 
 ***2/18/2021 Thursday***
 

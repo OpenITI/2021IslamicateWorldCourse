@@ -1,9 +1,10 @@
-# Week 3: Corpus Construction and Past Approaches to Computational Textual Analysis II
+# Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies
 
 ***2/11/2021 Thursday***
 
 Prepare for Class:
 
+* Savant, Sarah Bowen. “The History of Arabic books in the digital age.” *British Academy Review* Summer 2016: 42-45. [Course Google Drive]        
 * Romanov, Maxim. “Toward Abstract Models for Islamic History.” In *The Digital Humanities + Islamic Middle Eastern Studies*, edited by Elias Muhanna, 117–149. Berlin: De Gruyter, 2016. [Course Google Drive]
 * Bulliet, Richard. *Conversion to Islam in the Medieval Period*. Cambridge: Harvard University Press, 1979, 1-32.
 * Watch eScriptorium training video #2, “Best Practices for Training Data Production.”
