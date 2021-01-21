@@ -13,8 +13,6 @@ description: "This is the syllabus for this course. The output format for this e
 
 # Course syllabus - preliminaries
 
-![](img/logos.png)
-
 ## Course summary
 
 The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis is a [Global Classrooms](https://globalmaryland.umd.edu/content/global-classrooms) course that will be taught collaboratively by professors at the Roshan Institute for Persian Studies at the University of Maryland (College Park) and Aga Khan University (London). In this exciting, new project-based course, students from both institutions will come together to learn the basics of computational textual analysis while participating as student researchers in the nascent project of exploring the vast and largely unexplored tomes of textual data about the Islamicate world. It will also introduce students to theoretical and methodological debates in the field of global digital humanities. Like the digital humanities field that inspires its approach, it will be a highly interdisciplinary course that studies texts from multiple genres (lyric poetry to historical chronicles, legal treatises to the Quran) and languages (Arabic, Persian) with the aid of computational textual analysis tools. There are no language prerequisites, but it is preferable if students at least have elementary knowledge of either Arabic, Persian, Turkish, or Urdu.
@@ -452,4 +450,10 @@ University Chaplains: University Chapel, 301.314.9866, [http://thestamp.umd.edu/
 
 Please refrain from using cellphones, laptops, and other electronic devices during class sessions unless we have designated such use as part of a class exercise.
 
+## Acknowledgements
+
+This course is a Global Classrooms course, taught by staff at the University of Maryland, College Park (UMD) and the Institute for Muslim Civilizations at Aga Khan University, London. It is based on their research, which has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (Grant agreement No. 772989), The Andrew W. Mellon Foundation, the University of Maryland, and Aga Khan University.
+
+
+![](img/logos.png)
 
