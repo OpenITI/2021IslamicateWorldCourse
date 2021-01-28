@@ -10,8 +10,8 @@ link-citations: yes
 description: "This is the syllabus for this course. The output format for this example is bookdown::gitbook."
 ---
 
-
-# Course syllabus - preliminaries
+# Course Overview
+![](img/courseflyer.jpg)
 
 ## Course summary
 
