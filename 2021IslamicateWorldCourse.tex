@@ -1,0 +1,1183 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis},
+  pdfauthor={Jonathan Parkes Allen, Matthew Thomas Miller, Sarah Savant, Peter Verkinderen},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis}
+\author{Jonathan Parkes Allen, Matthew Thomas Miller, Sarah Savant, Peter Verkinderen}
+\date{Spring 2021 Th 12:30pm - 3:00pm EST}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{course-overview}{%
+\chapter{Course Overview}\label{course-overview}}
+
+\includegraphics{img/courseflyer.jpg}
+
+\hypertarget{course-summary}{%
+\section{Course summary}\label{course-summary}}
+
+The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis is a \href{https://globalmaryland.umd.edu/content/global-classrooms}{Global Classrooms} course that will be taught collaboratively by professors at the Roshan Institute for Persian Studies at the University of Maryland (College Park) and Aga Khan University (London). In this exciting, new project-based course, students from both institutions will come together to learn the basics of computational textual analysis while participating as student researchers in the nascent project of exploring the vast and largely unexplored tomes of textual data about the Islamicate world. It will also introduce students to theoretical and methodological debates in the field of global digital humanities. Like the digital humanities field that inspires its approach, it will be a highly interdisciplinary course that studies texts from multiple genres (lyric poetry to historical chronicles, legal treatises to the Quran) and languages (Arabic, Persian) with the aid of computational textual analysis tools. There are no language prerequisites, but it is preferable if students at least have elementary knowledge of either Arabic, Persian, Turkish, or Urdu.
+
+\hypertarget{virtual-classroom}{%
+\section{Virtual Classroom}\label{virtual-classroom}}
+
+This course will be conducted over Zoom. The Zoom link will be provided to you in the course email group.
+
+\hypertarget{instructors}{%
+\section{Instructors}\label{instructors}}
+
+\hypertarget{dr.-jonathan-parkes-allen}{%
+\subsection{Dr.~Jonathan Parkes Allen}\label{dr.-jonathan-parkes-allen}}
+
+Office Hours: by appointment
+E-mail: \href{mailto:jallen22@umd.edu}{\nolinkurl{jallen22@umd.edu}}
+Roshan Institute for Persian Studies
+University of Maryland, College Park
+Bio: Jonathan Parkes Allen is the Mellon Humanities Postdoctoral Fellow for the \href{https://medium.com/@openiti/openiti-aocp-9802865a6586}{Open Islamicate Texts Initiative Arabic-script OCR Catalyst Project (OpenITI AOCP)}. He is a historian of early modern and medieval Islamicate history, with particular interests in the history of religious practice and thought in the Ottoman Empire as well as the application of digital methods to the study of global Islamicate history at scale. His current research focuses on Islamicate sainthood, devotion, and ritual, as well as the historical evolution of Arabic script and typography. Visit his website for more on his ongoing research interests.
+
+\hypertarget{dr.-matthew-thomas-miller}{%
+\subsection{Dr.~Matthew Thomas Miller}\label{dr.-matthew-thomas-miller}}
+
+Office Hours: by appointment
+E-mail: \href{mailto:mtmiller@umd.edu}{\nolinkurl{mtmiller@umd.edu}}
+Roshan Institute for Persian Studies
+University of Maryland, College Park
+Bio: Matthew Thomas Miller, PhD. is Assistant Professor of Persian Literature and Digital Humanities at \href{http://sllc.umd.edu/persian}{Roshan Institute for Persian Studies at the University of Maryland, College Park} and and an affiliate of the \href{https://mith.umd.edu/people/}{Maryland Institute for Technology in the Humanities}. He also serves as the Director of the \href{http://persdig.umd.edu/}{Roshan Initiative in Persian Digital Humanities (PersDig@UMD)} and as the co-PI for the multi-institutional \href{https://www.openiti.org/}{Open Islamicate Texts Initiative (OpenITI)} and the \href{http://www.persianmanuscript.org/}{Persian Manuscript Initiative (PMI)}. He has received funding for these projects from \href{https://mellon.org/}{The Andrew W. Mellon Foundation} and \href{https://www.neh.gov/}{The National Endowment for the Humanities}. His research focuses on medieval Sufi literature, the history of sexuality and the body, and digital humanities. He currently is working on a book project, entitled \emph{Beautiful Bodies: Embodiment and Mystical Modes of Meaning Creation in Medieval Persian Sufi Literature,} and a number of articles on computational or ``distant reading'' approaches to Persian literature and carnivalesque Sufi poetry. See \href{https://matthewthomasmiller.github.io/}{his website} for more details.
+
+\hypertarget{dr.-sarah-bowen-savant}{%
+\subsection{Dr.~Sarah Bowen Savant}\label{dr.-sarah-bowen-savant}}
+
+Office Hours: by appointment
+E-mail: \href{mailto:sarah.savant@aku.edu}{\nolinkurl{sarah.savant@aku.edu}}
+AKU ISMC, 10 Handyside Street, Kings Cross, London N1C 4DN
+Bio: At the AKU-ISMC, Professor Savant is a cultural historian working on the history and historiography of the Middle East and Iran up to 1400. She is the co-Principal Investigator, with Matthew Miller and Maxim Romanov, of the OpenITI, and the PI of the KITAB project, which focuses on Arabic book history using digital methods, especially text reuse detection. Her books include \emph{The New Muslims of Post-Conquest Iran: Tradition, Memory, and Conversion} (Cambridge: Cambridge University Press, 2013) and \emph{The Excellence of the Arabs: A Translation of Ibn Qutaybah's Faḍl al-ʿArab wa l-tanbīh ʿalā ʿulūmihā} (with Peter Webb; The Library of Arabic Literature; Abu Dhabi: New York University Press, 2016) as well as articles and edited volumes on history writing, cultural memory, and the formation of identities. Her current book project - entitled \emph{A Cultural History of the Arabic Book} - explores how the reuse of earlier texts helped to shape the historic tradition from its formative days onwards, as well as how authors conceived of their work and the very meaning of the book itself.
+
+\hypertarget{dr.-peter-verkinderen}{%
+\subsection{Dr.~Peter Verkinderen}\label{dr.-peter-verkinderen}}
+
+Office Hours: by appointment
+E-mail: \href{mailto:peter.verkinderen@aku.edu}{\nolinkurl{peter.verkinderen@aku.edu}}
+AKU ISMC, 10 Handyside Street, Kings Cross, London N1C 4DN
+Bio: Peter Verkinderen is a Post-doctoral Research Fellow at KITAB working on the central regions of the Islamic lands. He studied Classics and Arabic and Islamic studies at Ghent University. His PhD dissertation, also at Ghent University, was a reconstruction of the fluvial landscape of early Islamic Lower Mesopotamia, based on (mostly Arabic) texts, satellite imagery and data from archaeological and geological research. He has worked as the assistant director of the Netherlands-Flemish Institute in Cairo (2009-2014) and as a research fellow in the ERC project ``The Early Islamic Empire at Work'' (Hamburg University, 2014-2019), where he focussed on the position of Fārs (SW Iran) in the early Islamic empire. His main research interests lie with the historical and geographical literature on the early Islamic empire. In recent years, the development of digital tools for historical and philological research has become one of his main interests. He is currently also involved in IslamAtlas, a research project aimed at the study and digital edition of the geographical texts and maps usually attributed to al-Iṣṭakhrī and Ibn Ḥawqal.
+
+\hypertarget{required-texts-and-technologies}{%
+\section{Required texts and technologies}\label{required-texts-and-technologies}}
+
+Arnold, Taylor and Lauren Tilton. \emph{Humanities Data in R: Exploring Networks, Geospatial Data, Images, and Text}. Springer International Publishing: 2015. ISBN: 9783319207018. Book \href{http://humanitiesdata.org/}{website}.
+
+Jockers, Matthew. \emph{Text Analysis with R for Students of Literature}. Springer International Publishing: 2014. ISBN: 9783319031637. Book \href{http://www.matthewjockers.net/text-analysis-with-r-for-students-of-literature/}{website}.
+
+NB: These books are available through UMD libraries and in e-book format.
+
+Download R and R Studio (R is the actual programming language, while RStudio is a convenient interface for interacting with R; you need to download and install both --- first R, then RStudio):
+\url{https://cran.r-project.org/}
+\url{https://www.rstudio.com/}
+
+NB: Students must have or be able to borrow a laptop for classwork. This course requires extensive use of a computer.
+
+\hypertarget{learning-objectives}{%
+\section{Learning objectives}\label{learning-objectives}}
+
+By the end of this course students will have:
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\tightlist
+\item
+  become acquainted with the major debates and tools in computational textual studies;
+\item
+  developed intermediate-level skills in the R programming language;
+\item
+  gained extensive experience working in international teams (termed ``collaboratories'' here) to solve complex problems;
+\item
+  produced a mini-research publication that will be published on the course site (with the student's permission).
+\end{enumerate}
+
+\hypertarget{expectations-and-grading-procedures}{%
+\section{Expectations and grading procedures}\label{expectations-and-grading-procedures}}
+
+The grade breakdown for this class is as follows (and see more details on each element in subsections below):
+
+\begin{itemize}
+\tightlist
+\item
+  20\% Participation
+\item
+  10\% Co-discussion Leading
+\item
+  20\% Class Assignments
+\item
+  40\% Final (Group) Project
+\item
+  10\% Class (Group) Presentation
+\end{itemize}
+
+All grades will be posted on the course ELMS page. If you would like to review any of your grades, or have questions about how something was scored, please email me to schedule a time for us to meet and discuss. I am happy to discuss any of your grades with you, and if we have made a mistake we will immediately correct it. Any formal grade disputes must be submitted in writing and within one week of receiving the grade.
+
+Final letter grades are assigned based on the percentage of total assessment points earned. To be fair to everyone I have to establish clear standards and apply them consistently, so please understand that being close to a cutoff is not the same as making the cut (89.99 ≠ 90.00). It would be unethical to make exceptions for some and not others. If you think you are very close to a cut-off point and would like the higher grade, please contact me about extra credit opportunities.
+
+\hypertarget{final-grade-cutoffs}{%
+\subsection{Final Grade Cutoffs}\label{final-grade-cutoffs}}
+
+\begin{longtable}[]{@{}rlllllllll@{}}
+\toprule
+\endhead
++ & 97.00\% & + & 87.00\% & + & 77.00\% & + & 67.00\% & + &\tabularnewline
+A & 93.00\% & B & 84.00\% & C & 74.00\% & D & 64.00\% & F & \textless60.0\%\tabularnewline
+- & 90.00\% & - & 80.00\% & - & 70.00\% & - & 60.00\% & - &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{participation-20}{%
+\subsection{Participation (20\%)}\label{participation-20}}
+
+Students will be expected to come to class ready to discuss each text or technical training exercises in depth. Class participation is very important. However, please note, it is the quality of participation that We are interested in---not quantity. Again, we cannot stress enough how important your regular attendance and active participation in class discussion is for your grade (for attendance policy, see \#1 in the ``Course Procedures and Policies'' section below). If you have questions about your grade in this area, please visit me in office hours or schedule a time to come meet with me to discuss.
+
+\hypertarget{co-discussion-leading-10}{%
+\subsection{Co-discussion Leading (10\%)}\label{co-discussion-leading-10}}
+
+You will be asked to serve as co-discussion leaders (alongside the instructors) on a rotating basis for the sessions in which we have specific assigned readings. You will be responsible for introducing and contextualizing the readings for the class and formulating class discussion questions based on the readings.
+
+\hypertarget{class-assignments-20}{%
+\subsection{Class Assignments (20\%)}\label{class-assignments-20}}
+
+Beginning in the ninth week of the semester, you will be assigned specific assignments to complete in R. These assignments will be posted in ELMS and they must be turned in before class time in order to receive credit.
+
+\hypertarget{final-group-project-40-and-the-research-collaboratories}{%
+\subsection{Final (Group) Project (40\%) (and the Research Collaboratories)}\label{final-group-project-40-and-the-research-collaboratories}}
+
+This course is a project-based learning course. The final project, therefore, will occupy a substantial amount of our class time throughout the semester and will be a major component of your final grade. But, fear not! The instructors will work closely with each of you and your groups to construct a collaborative research project. You will spend much of the second half of the course working on this project during class time with your fellow group members in the ``research collaboratory'' groups that we will form in week 11.
+
+At the conclusion of each research collaboratory session, each student will take on an assignment, which must be completed before the next class period. These will be reported to the instructors after class so they can keep track of each individual's contributions to the project and grade them on these weekly assignments. These tasks will vary greatly on the basis of each group's project: some students may be working on cleaning and/or reformatting texts, others on developing a R script, and still others may be tasked with doing traditional humanities research in order to properly contextualize the results of the group's new computational textual analysis. We do not expect that you will have all of the answers when you begin work on your final project. You will need to play and experiment with the texts and different modes of textual analysis and visualization available to you in R, and you certainly will hit dead ends and completely fail (productively) at times too. In this process, however, you will learn a great deal, as the research on experiential and problem/project-based learning has shown. We will guide you throughout your work on the final project, making sure that it eventually comes together to form a micro-publication by the end of the course. You will present on and submit your final projects on the assigned exam day for this course, May 18th by 6:00pm.
+
+\hypertarget{class-presentation-10}{%
+\subsection{Class presentation (10\%)}\label{class-presentation-10}}
+
+Your class presentation is an opportunity for you to present your group's final project to the class. It should be between 20-30 minutes in length. You should provide an overview of your initial hypothesis, methods of analysis, problems you encountered in your research, and your research findings (including, how they corroborate or problematize the existing scholarly narratives). You will be graded on the quality of both your research and presentation of it. You will present on your final project sometime around May 18th (we will mutually determine a time for class presentations based on everyone's availability and timezone restrictions).
+
+\hypertarget{faculty-student-communication}{%
+\section{Faculty-student communication}\label{faculty-student-communication}}
+
+Faculty and advisors use email to convey important information. Students are responsible for keeping their email address up to date. Failure to check email or errors in forwarding are the responsibility of the student, and do not constitute an excuse for missing announcements or deadlines. For better or for worse, in the modern digital world, it is a necessity that you check your email at least a few times per day (during regular work hours) and respond promptly to messages. I would suggest checking messages in the morning and late afternoon at the minimum.
+
+\hypertarget{emergency-protocol}{%
+\section{Emergency protocol}\label{emergency-protocol}}
+
+This course will be conducted via Zoom.
+
+\hypertarget{course-schedule}{%
+\section{Course schedule}\label{course-schedule}}
+
+\hypertarget{week-1-class-introduction-and-introduction-to-computational-textual-analysis}{%
+\subsection{Week 1: Class Introduction and Introduction to Computational Textual Analysis}\label{week-1-class-introduction-and-introduction-to-computational-textual-analysis}}
+
+\textbf{\emph{1/28/2021 Thursday}}
+
+{[}NB: Keep in mind that dates below are given according to the American convention: Month/Day/Year{]}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Underwood, Ted. ``Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.'' \emph{Representations} 127, no. 1 (Summer 2014): 64--72. {[}Course Google Drive{]}
+\item
+  Ramsay, Stephen. \emph{Reading Machines: Toward an Algorithmic Criticism}. Champaign, IL: University of Illinois Press, 2011. 1-17. {[}Course Google Drive{]}
+\item
+  Underwood, Ted. ``A Genealogy of Distant Reading.'' \emph{DHQ} 11 (2017): \url{http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html}
+\end{itemize}
+
+\hypertarget{week-2-corpus-construction-and-modeling-digital-humanities-data}{%
+\subsection{Week 2: Corpus Construction and Modeling Digital Humanities Data}\label{week-2-corpus-construction-and-modeling-digital-humanities-data}}
+
+\textbf{\emph{2/4/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Flanders, Julia and Fotis Jannidis. ``Data Modeling in a Digital Humanities Context.'' In \emph{The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources}, edited by Julia Flanders and Fotis Jannidis, 3-25. New York: Rotuledge, 2019. {[}Course Google Drive{]}\\
+\item
+  Underwood, Ted. ``Algorithmic Modeling: Or, Modeling Data We Do Not Yet Understand.'' In \emph{The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources}, edited by Julia Flanders and Fotis Jannidis, 250-263. New York: Rotuledge, 2019. {[}Course Google Drive{]}
+\item
+  Martin Weisser. ``Understanding Corpus Design.'' In \emph{Practical Corpus Linguistics: An Introduction to Corpus‐Based Language Analysis}, edited by Martin Weisser, 29-42. London: Wiley (2015). {[}Course Google Drive{]}
+\item
+  Watch eScriptorium training video \#1, ``Introduction to eScriptorium.''
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment on digital text production (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies}{%
+\subsection{Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies}\label{week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies}}
+
+\textbf{\emph{2/11/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Savant, Sarah Bowen. ``The History of Arabic books in the digital age.'' \emph{British Academy Review} Summer 2016: 42-45. {[}Course Google Drive{]}\\
+\item
+  Romanov, Maxim. ``Toward Abstract Models for Islamic History.'' In \emph{The Digital Humanities + Islamic Middle Eastern Studies}, edited by Elias Muhanna, 117--149. Berlin: De Gruyter, 2016. {[}Course Google Drive{]}
+\item
+  Bulliet, Richard. \emph{Conversion to Islam in the Medieval Period}. Cambridge: Harvard University Press, 1979, 1-32.
+\item
+  Watch eScriptorium training video \#2, ``Best Practices for Training Data Production.''
+\item
+  Upload and OCR a test text.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment on digital text production (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i}{%
+\subsection{Week 4: Corpus Construction and Latest Approaches to Computational Textual Analysis I}\label{week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i}}
+
+\textbf{\emph{2/18/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Underwood, Ted. \emph{Distant Horizons: Digital Evidence and Literary Change}. Chicago: University of Chicago Press, 2019. (selections). {[}Course Google Drive{]}
+\item
+  Watch eScriptorium training video \#3, ``Advanced Functionalities in eScriptorium.''
+\item
+  Watch eScriptorium training video \#4, ``Data Export.''
+\item
+  Produce five pages of training data on your text and submit (after watching video \#4).
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment on digital text production (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii}{%
+\subsection{Week 5: Corpus Construction and Latest Approaches to Computational Textual Analysis II}\label{week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii}}
+
+\textbf{\emph{2/25/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Piper, Andrew. \emph{Enumerations: Data and Literary Study}. Chicago: University of Chicago Press, 2018. (selections). {[}Course Google Drive{]}
+\item
+  Watch eScriptorium training video \#5, ``Training Your own Models in eScriptorim.''
+\item
+  Re-OCR your new transcription and segmentation models.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment on digital text production (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-6-interacting-with-the-openiti-corpus-using-github-and-editpad}{%
+\subsection{week 6: Interacting with the OpenITI Corpus Using Github and EditPad}\label{week-6-interacting-with-the-openiti-corpus-using-github-and-editpad}}
+
+\textbf{\emph{3/4/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Introduction to the command line! Go here: \url{http://programminghistorian.org/lessons/intro-to-bash}
+\item
+  A more detailed introduction (and useful list of commands) is available here: \url{https://learnpythonthehardway.org/book/appendixa.html}
+\item
+  Introduction to using Github: \url{https://guides.github.com/activities/hello-world/}
+\item
+  Introduction to Github from command line: \url{https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6}
+\item
+  Raising an Issue in Github
+\item
+  Watch video, ``Interacting with the OpenITI Corpus through Github.''
+\item
+  Watch video, ``Introduction to Working with Texts in OpenITI EditPad Pro.''
+\item
+  Watch video, ``Introduction to OpenITI mARkdown.''
+\item
+  Do Github pull/edit/push activity (link)
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  OpenITI mARkdown bootcamp!
+\end{itemize}
+
+\hypertarget{week-7-using-regex-on-texts}{%
+\subsection{week 7: Using Regex on Texts}\label{week-7-using-regex-on-texts}}
+
+\textbf{\emph{3/11/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Regex tutorials \#1-16: \url{Regexone.com}
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Regex workshop.
+\item
+  Introduction to R and R installation: \url{https://cran.r-project.org/} and \url{https://www.rstudio.com/} (bring your computers!)
+\end{itemize}
+
+\textbf{\emph{3/14/2021 - 3/21/2021: UMD Spring Break (No class)}}
+
+\hypertarget{week-8-introducing-r-in-gui-through-stylometry}{%
+\subsection{week 8: Introducing R (in GUI) through Stylo(metry)}\label{week-8-introducing-r-in-gui-through-stylometry}}
+
+\textbf{\emph{3/25/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Holmes, David I. ``The Evolution of Stylometry in Humanities Scholarship.'' \emph{Literary \& Linguistic Computing} 13, no. 3 (1998): 111-117. {[}Course Google Drive{]}
+\item
+  Koppel, M., Schler, J. and Argamon, S. ``Computational Methods in Authorship Attribution.'' \emph{Journal of the American Society for Information Science and Technology} 60, no. 1 (2009): 9-26. {[}Course Google Drive{]}
+\item
+  Eder, Maciej, Jan Rybicki, and Mike Kestemont. ``Stylometry with R---A Package for Computational Text Analysis.'' The R Journal Vol. 8/1 (2016). {[}Course Google Drive{]}\\
+\item
+  Eder, Maciej, and Jan Rybicki. ``STYLO R Script Mini HOW TO.'' {[}Course Google Drive{]}
+\item
+  Optional (extra credit for UMD students): Sadeghi, Behnam. ``The Chronology of the Qur'ān: A Stylometric Research Program.'' \emph{Arabica} 58.3--4 (2011): 210-99. {[}ELMS{]}
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment with `Stylo' R Package (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-9-r-bootcamp-i}{%
+\subsection{week 9: R Bootcamp I}\label{week-9-r-bootcamp-i}}
+
+\textbf{\emph{4/1/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Chapter 1-2 in Arnold and Tilton and Chapter 1 in Jockers (there will be some overlap).
+\end{itemize}
+
+Submit Before Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Practice exercises for chapter 2 in Arnold \& Tilton, pages 183-186 (Please submit your code (i.e., the R script file) and also any resulting visualizations (e.g., graphs, tables) or answers (in the form of a screenshot)).
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly Reading Report: Analyzing Text Reuse Data in R (Sarah Bowen Savant).
+\item
+  ``Sheykh Google'' activity (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-10-r-bootcamp-ii}{%
+\subsection{week 10: R Bootcamp II}\label{week-10-r-bootcamp-ii}}
+
+\textbf{\emph{4/8/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Chapter 3 in Arnold and Tilton.
+\end{itemize}
+
+Submit Before Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Practice exercises for chapter 3 in Arnold \& Tilton, pages 186-188.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly Reading Report: Topic Modeling in R (Matthew Thomas Miller).
+\item
+  First brainstorming session on final project topics.
+\end{itemize}
+
+\hypertarget{week-11-r-bootcamp-iii}{%
+\subsection{week 11: R Bootcamp III}\label{week-11-r-bootcamp-iii}}
+
+\textbf{\emph{4/15/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Chapter 4 in Arnold and Tilton.
+\end{itemize}
+
+Submit Before Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Practice exercises for chapter 4 in Arnold \& Tilton, pages 188-190.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly Reading Report: Geolocation Analysis in R (Peter Verkinderen).
+\item
+  Second brainstorming session on final project topics (by end of this class, we will set the text analysis groups and their respective assigned chapters for week 10 based your initial ideas for the final project).
+\item
+  Research collaboratory groups finalized and first set of individualized assignments distributed in preparation for your research group's first research collaboratory.
+\end{itemize}
+
+\hypertarget{week-12-research-collaboratory-i}{%
+\subsection{week 12: Research Collaboratory I}\label{week-12-research-collaboratory-i}}
+
+\textbf{\emph{4/22/2021 Thursday}}: Research Collaboratory
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Task(s) assigned to you by your research group in previous collaboratory.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Research collaboratory focused on final project (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-13-research-collaboratory-ii}{%
+\subsection{week 13: Research Collaboratory II}\label{week-13-research-collaboratory-ii}}
+
+\textbf{\emph{4/29/2021 Thursday}}: Research Collaboratory
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Task(s) assigned to you by your research group in previous collaboratory.
+\end{itemize}
+
+Submit Before Class:
+
+\begin{itemize}
+\tightlist
+\item
+  By today's class, all groups need to submit a final project proposal to the instructors. This proposal should include three parts:
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\tightlist
+\item
+  a 1-page overview of the topic on which you are proposing to work;
+\item
+  a timeline for the completion of each phase of the work (which the instructors will need to approve); and
+\item
+  a detailed list of tasks for which each group member will be responsible. After you have submitted these, the instructors will review them together and send you our feedback, recommendations, and expectations for your final project.
+\end{enumerate}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Research collaboratory focused on final project (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-14-research-collaboratory-iii}{%
+\subsection{week 14: Research Collaboratory III}\label{week-14-research-collaboratory-iii}}
+
+\textbf{\emph{5/6/2021 Thursday}}: Research Collaboratory
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Task(s) assigned to you by your research group in previous collaboratory.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Research collaboratory focused on final project (bring your computers!).
+\end{itemize}
+
+\textbf{\emph{Last Day of Classes: Tuesday, May 11th 2021}}
+
+\textbf{\emph{Reading Day: Wednesday, May 12th 2021}}
+
+\hypertarget{final-exam}{%
+\subsection{Final Exam}\label{final-exam}}
+
+\textbf{\emph{Tuesday, May 18th 4:00-6:00 pm}}
+
+(Present final project and submit final version of final project)
+
+\hypertarget{course-procedures-and-policies}{%
+\section{Course procedures and policies}\label{course-procedures-and-policies}}
+
+For full list of campus policies, please see: \url{https://www.ugst.umd.edu/courserelatedpolicies.html}
+
+Below are some important policies related to this course:
+
+\hypertarget{attendance-and-absences}{%
+\subsection{Attendance and Absences*:}\label{attendance-and-absences}}
+
+Students are expected to attend classes regularly. Consistent attendance offers students the most effective opportunity to gain command of course concepts and materials. Students who miss class without an excused absence will receive a 0\% for that day's participation grade. Events that justify an excused absence include: religious observances; mandatory military obligation; illness of the student or illness of an immediate family member; participation in university activities at the request of university authorities; and compelling circumstances beyond the student's control (e.g., death in the family, required court appearance). Absences stemming from work duties other than military obligation (e.g., unexpected changes in shift assignments) and traffic/transit problems do not typically qualify for excused absence. Students claiming an excused absence must notify the course instructor in a timely manner and provide appropriate documentation. The notification should be provided either prior to the absence or as soon afterwards as possible. In the case of religious observances, athletic events, and planned absences known at the beginning of the semester, the student must inform the instructor during the schedule adjustment period. All other absences must be reported as soon as is practical. The student must provide appropriate documentation of the absence. The documentation must be provided in writing to the instructor. The full university attendance/absence policy can be found here.
+
+* As long as COVID-19 persists, we will be willing to make exceptions to these general rules on a case-by-case basis. Please discuss with me concerns you have about attendance and we can develop alternative plans, if necessary.
+
+\hypertarget{academic-integrity}{%
+\subsection{Academic Integrity:}\label{academic-integrity}}
+
+The University's \href{https://president.umd.edu/sites/president.umd.edu/files/files/documents/policies/III-100A.pdf}{Code of Academic Integrity} is designed to ensure that the principles of academic honesty and integrity are upheld. In accordance with this code, academic dishonesty will not be tolerated. Please ensure that you fully understand this code and its implications because all acts of academic dishonesty will be dealt with in accordance with the provisions of this code. All students are expected to adhere to this Code. It is your responsibility to read it and know what it says, so you can start your professional life on the right path. It is important to note that course assistance websites, such as CourseHero, are not permitted sources, unless the instructor explicitly gives permission for you to use one of these sites. Material taken or copied from these sites can be deemed unauthorized material and a violation of academic integrity. These sites offer information that might not be accurate and that shortcut the learning process, particularly the critical thinking steps necessary for college-level assignments. Additionally, it is understandable that students may use a variety of online or virtual forums for course-wide discussion (e.g., GroupME or WeChat). Collaboration in this way regarding concepts discussed in this course is permissible. However, collaboration on graded assignments is strictly prohibited unless otherwise stated. Examples of prohibited collaboration include: asking classmates for answers on quizzes or exams, asking for access codes to clicker polls, etc. Finally, on each exam or assignment you must write out and sign the following pledge: \textbf{\emph{``I pledge on my honor that I have not given or received any unauthorized assistance on this exam/assignment.''}} Please visit the \href{http://www.ugst.umd.edu/courserelatedpolicies.html}{Office of Undergraduate Studies' full list of campus-wide policies} and follow up with me if you have questions.
+
+\hypertarget{accessibility-and-disability-support}{%
+\subsection{Accessibility and Disability Support:}\label{accessibility-and-disability-support}}
+
+The University of Maryland is committed to creating and maintaining a welcoming and inclusive educational, working, and living environment for people of all abilities. The University of Maryland is also committed to the principle that no qualified individual with a disability shall, on the basis of disability, be excluded from participation in or be denied the benefits of the services, programs, or activities of the University, or be subjected to discrimination. The \href{https://www.counseling.umd.edu/ads/}{Accessibility \& Disability Service (ADS)} provides reasonable accommodations to qualified individuals to provide equal access to services, programs and activities. ADS cannot assist retroactively, so it is generally best to request accommodations several weeks before the semester begins or as soon as a disability becomes known. Any student who needs accommodations should contact me as soon as possible so that I have sufficient time to make arrangements. For assistance in obtaining an accommodation, contact Accessibility and Disability Service at 301-314-7682, or email them at \href{mailto:adsfrontdesk@umd.edu}{\nolinkurl{adsfrontdesk@umd.edu}}. Information about \href{https://www.counseling.umd.edu/ads/accommodations/sharingwithinstructors/}{sharing your accommodations with instructors}, \href{https://www.counseling.umd.edu/ads/notetaking/}{note taking assistance} and more is available from the \href{http://counseling.umd.edu/ads/}{Counseling Center}.
+
+\hypertarget{copyright-notice}{%
+\subsection{Copyright Notice:}\label{copyright-notice}}
+
+Class lectures and other materials are protected by a Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA) license. Copyright infringements may be referred to the Office of Student Conduct.
+
+\hypertarget{academic-accommodations-for-students-who-experience-sexual-misconduct}{%
+\subsection{Academic Accommodations for Students Who Experience Sexual Misconduct:}\label{academic-accommodations-for-students-who-experience-sexual-misconduct}}
+
+The University of Maryland is committed to providing support and resources, including academic accommodations, for students who experience sexual or relationship violence as defined by the University's Sexual Misconduct Policy. To report an incident and/or obtain an academic accommodation, contact the Office of Civil Rights and Sexual Misconduct at 301-405-1142. If you wish to speak confidentially, contact Campus Advocates Respond and Educate (CARE) to Stop Violence at 301-741-3555. As `responsible university employees' faculty are mandatory reporters and are required to report any disclosure of sexual misconduct, i.e., they may not hold such disclosures in confidence. More information can be found \href{http://www.umd.edu/ocrsm/}{here}.
+
+\hypertarget{diversity}{%
+\subsection{Diversity:}\label{diversity}}
+
+The University of Maryland values the diversity of its student body. Along with the University, the instructor(s) are committed to providing a classroom atmosphere that encourages the equitable participation of all students regardless of age, disability, ethnicity, gender, national origin, race, religion, or sexual orientation. Potential devaluation of students in the classroom that can occur by reference to demeaning stereotypes of any group and/or overlooking the contributions of a particular group to the topic under discussion is inappropriate and will not be tolerated.
+
+\hypertarget{faculty-student-communication-1}{%
+\subsection{Faculty-Student Communication:}\label{faculty-student-communication-1}}
+
+Faculty and advisors use email and ELMS to convey important information, and students are responsible for keeping their email address up to date, and must ensure that forwarding to another address functions properly. Failure to check email, errors in forwarding, and returned email are the responsibility of the student, and do not constitute an excuse for missing announcements or deadlines. In the modern digital world, it is a necessity that students check email and other forms of digital communication (e.g., ELMS) at least a few times per day and respond promptly to messages. I would suggest checking messages in the morning and evening at the minimum.
+
+\hypertarget{emergency-protocol-1}{%
+\subsection{Emergency Protocol:}\label{emergency-protocol-1}}
+
+This course is conducted via Zoom.
+
+\hypertarget{forms-of-address-names-and-pronouns-and-self-identification}{%
+\subsection{Forms of Address (Names and Pronouns) and Self-Identification:}\label{forms-of-address-names-and-pronouns-and-self-identification}}
+
+Our institution's official policy states that ``The University of Maryland recognizes that name and gender identity are central to most individuals' sense of self and well-being, and that it is important for the University to establish mechanisms to acknowledge and support individuals' self-identification.'' One way we can support self-identification is by honoring the name and pronouns that each of us go by. Many people (e.g.~international students, performers/writers, trans people, and others) might go by a name in daily life that is different from their legal name. In this classroom, we seek to refer to people by the names that they go by. Pronouns can be a way to affirm someone's gender identity, but they can also be unrelated to a person's identity. They are simply a public way in which people are referred to in place of their name (e.g., ``he'' or ``she'' or ``they'' or ``ze'' or something else). In this classroom, you are invited (if you want to) to share what pronouns you go by, and we seek to refer to people using the pronouns that they share. The pronouns someone indicates are not necessarily indicative of their gender identity. Visit please visit the following links to learn more about gender identity and pronouns: \url{https://lgbt.umd.edu/rainbow-terrapin-network-transterps} and \url{https://lgbt.umd.edu/good-practices-names-and-pronouns}. Additionally, I would like to emphasize that how you identify in terms of your gender, race, class, sexuality, religion, and dis/ability, among all aspects of your identity, is your choice whether to disclose (e.g., should it come up in classroom conversation about our experiences and perspectives) and should be self-identified, not presumed or imposed. I will do my best to address and refer to all students accordingly and will support you in doing so as well.
+
+\hypertarget{statement-in-support-of-students-with-children}{%
+\subsection{Statement in Support of Students with Children:}\label{statement-in-support-of-students-with-children}}
+
+We welcome and support students who are parents. We appreciate that parenthood presents unique challenges and demands on a student's time and availability. If childcare constraints present an issue with class attendance, we invite student parents to work with us to discuss alternate arrangements. We also welcome and support pregnant students and will provide possible accommodations and discuss arrangements so that students can complete course requirements.
+
+\hypertarget{communication-with-peers}{%
+\subsection{Communication with Peers:}\label{communication-with-peers}}
+
+With a diversity of perspectives and experience, we may find ourselves in disagreement and/or debate with one another. As such, it is important that we agree to conduct ourselves in a professional manner and that we work together to foster and preserve a virtual classroom environment in which we can respectfully discuss and deliberate controversial questions. We encourage you to confidently exercise your right to free speech---bearing in mind, of course, that you will be expected to craft and defend arguments that support your position. Keep in mind, that free speech has its limit and this course is NOT the space for hate speech, harassment, and derogatory language. We will make every reasonable attempt to create an atmosphere in which each student feels comfortable voicing their argument without fear of being personally attacked, mocked, demeaned, or devalued. Any behavior (including harassment, sexual harassment, and racially and/or culturally derogatory language) that threatens this atmosphere will not be tolerated. Please alert us immediately if you feel threatened, dismissed, or silenced at any point during our semester together and/or if your engagement in discussion has been in some way hindered by the learning environment.
+
+\hypertarget{student-resources-and-academic-services}{%
+\subsection{Student Resources and Academic Services:}\label{student-resources-and-academic-services}}
+
+Taking personal responsibility for you own learning means acknowledging when your performance does not match your goals and doing something about it. We hope you will come talk to me so that we can help you find the right approach to success in this course, and we encourage you to visit \href{http://tutoring.umd.edu}{UMD's Student Academic Support Services website} to learn more about the wide range of campus resources available to you. In particular, everyone can use some help sharpen their communication skills (and improving their grade) by visiting \href{http://www.english.umd.edu/academics/writingcenter/schedule}{UMD's Writing Center} and schedule an appointment with the campus Writing Center. You should also know there are a wide range of resources to support you with whatever you might need (\href{https://sph.umd.edu/content/student-resources-and-services}{UMD's Student Resources and Services website} may help). If you feel it would be helpful to have someone to talk to, visit \href{https://www.counseling.umd.edu/}{UMD's Counseling Center} or \href{https://tltc.umd.edu/supporting-whole-student}{one of the many other mental health resources on campus}.
+
+\hypertarget{basic-needs-security}{%
+\subsection{Basic Needs Security:}\label{basic-needs-security}}
+
+Any student who has difficulty affording groceries or accessing sufficient food to eat every day, or who lacks a safe and stable place to live, and believes this may affect their performance in this course, is encouraged to use the resources listed below for support and visit \href{https://studentaffairs.umd.edu/basic-needs-security}{UMD's Division of Student Affairs website} for more information. Students are better served and supported when such circumstances are shared with the professor. Please consider sharing your situation with your professor who may be able to assist you in finding the appropriate resources.
+
+\textbf{Campus Pantry}: Alleviates food insecurity and provides a safe space to distribute emergency food to current UMD students. The Campus Pantry is located in the Health Center, Heilsa Room 0143 (Ground Floor), and is open each Friday during the semester from 9 a.m. - 5 p.m. Individual appointments are also available. Contact 301.314.8054 or \href{mailto:campuspantry@umd.edu}{\nolinkurl{campuspantry@umd.edu}}. More information is available at \url{http://campuspantry.umd.edu/}.
+
+\textbf{Fostering Terp Success}: Provides a safe and supportive campus network for students who were or are in foster care, who are homeless or at risk of being homeless, and who are without a supportive family system. Contact 301.314.8440 or \href{mailto:fosteringterpsuccess@umd.edu}{\nolinkurl{fosteringterpsuccess@umd.edu}}. More information is available at {[}www.studentaffairs.umd.edu/fostering-terp-success)(www.studentaffairs.umd.edu/fostering-terp-success).
+
+\textbf{Counseling \& Mental Health Services}:
+
+Counseling Center: Shoemaker Building, 301.314.7651, \url{www.counseling.umd.edu}
+
+Mental Health Service (University Health Center): Campus Drive, 301.314.8106, \url{http://www.health.umd.edu/mentalhealth/services}
+
+University Chaplains: University Chapel, 301.314.9866, \url{http://thestamp.umd.edu/engagement/memorial_chapel/chaplains}
+
+\textbf{Student Crisis Fund}: For students who have an unexpected critical situation and need immediate financial support. Students will be asked for basic information to describe their circumstances of the emergency need and what other sources of funds are available. For more information, visit \url{http://www.crisisfund.umd.edu/gethelp.html}
+
+\hypertarget{technology-policy}{%
+\subsection{Technology Policy:}\label{technology-policy}}
+
+Please refrain from using cellphones, laptops, and other electronic devices during class sessions unless we have designated such use as part of a class exercise.
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+This course is a Global Classrooms course, taught by staff at the University of Maryland, College Park (UMD) and the Institute for Muslim Civilizations at Aga Khan University, London. It is based on their research, which has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (Grant agreement No.~772989), The Andrew W. Mellon Foundation, the University of Maryland, and Aga Khan University.
+
+\includegraphics{img/logos.png}
+
+\hypertarget{week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities}{%
+\chapter{Week 1: Class Introduction and Introduction to Computational Textual Analysis in the Humanities}\label{week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities}}
+
+\textbf{\emph{1/28/2021 Thursday}}
+
+{[}NB: Keep in mind that dates below are given according to the American convention: Month/Day/Year{]}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Underwood, Ted. ``Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.'' \emph{Representations} 127, no. 1 (Summer 2014): 64--72. {[}Course Google Drive{]}
+\item
+  Ramsay, Stephen. \emph{Reading Machines: Toward an Algorithmic Criticism}. Champaign, IL: University of Illinois Press, 2011. 1-17. {[}Course Google Drive{]}
+\item
+  Underwood, Ted. ``A Genealogy of Distant Reading.'' \emph{DHQ} 11 (2017): \url{http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html}
+\end{itemize}
+
+\hypertarget{week-2-corpus-construction-and-modeling-digital-humanities-data-1}{%
+\chapter{Week 2: Corpus Construction and Modeling Digital Humanities Data}\label{week-2-corpus-construction-and-modeling-digital-humanities-data-1}}
+
+\textbf{\emph{2/4/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Flanders, Julia and Fotis Jannidis. ``Data Modeling in a Digital Humanities Context.'' In \emph{The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources}, edited by Julia Flanders and Fotis Jannidis, 3-25. New York: Rotuledge, 2019. {[}Course Google Drive{]}\\
+\item
+  Underwood, Ted. ``Algorithmic Modeling: Or, Modeling Data We Do Not Yet Understand.'' In \emph{The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources}, edited by Julia Flanders and Fotis Jannidis, 250-263. New York: Rotuledge, 2019. {[}Course Google Drive{]}
+\item
+  Martin Weisser. ``Understanding Corpus Design.'' In \emph{Practical Corpus Linguistics: An Introduction to Corpus‐Based Language Analysis}, edited by Martin Weisser, 29-42. London: Wiley (2015). {[}Course Google Drive{]}
+\item
+  Watch eScriptorium training video \#1, ``Introduction to eScriptorium.'': \url{https://www.youtube.com/watch?v=N0hSNC3YvD4}
+\end{itemize}
+
+\includegraphics{https://www.youtube.com/watch?v=N0hSNC3YvD4}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment on digital text production (bring your computers!).
+\end{itemize}
+
+\hypertarget{most-recent-ocr-transcription-model-for-escriptorium}{%
+\section{most recent OCR transcription model for eScriptorium}\label{most-recent-ocr-transcription-model-for-escriptorium}}
+
+Download it \href{./2021IslamicateWorldCourse_files/arabPers-WithDiffTypefaces.mlmodel}{here}
+
+\hypertarget{week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1}{%
+\chapter{Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies}\label{week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1}}
+
+\textbf{\emph{2/11/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Savant, Sarah Bowen. ``The History of Arabic books in the digital age.'' \emph{British Academy Review} Summer 2016: 42-45. {[}Course Google Drive{]}\\
+\item
+  Romanov, Maxim. ``Toward Abstract Models for Islamic History.'' In \emph{The Digital Humanities + Islamic Middle Eastern Studies}, edited by Elias Muhanna, 117--149. Berlin: De Gruyter, 2016. {[}Course Google Drive{]}
+\item
+  Bulliet, Richard. \emph{Conversion to Islam in the Medieval Period}. Cambridge: Harvard University Press, 1979, 1-32.
+\item
+  Watch eScriptorium training video \#2, ``Best Practices for Training Data Production.''
+\item
+  Upload and OCR a test text.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment on digital text production (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1}{%
+\chapter{Week 4: Corpus Construction and Latest Approaches to Computational Textual Analysis I}\label{week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1}}
+
+\textbf{\emph{2/18/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Underwood, Ted. \emph{Distant Horizons: Digital Evidence and Literary Change}. Chicago: University of Chicago Press, 2019. (selections). {[}Course Google Drive{]}
+\item
+  Watch eScriptorium training video \#3, ``Advanced Functionalities in eScriptorium.''
+\item
+  Watch eScriptorium training video \#4, ``Data Export.''
+\item
+  Produce five pages of training data on your text and submit (after watching video \#4).
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment on digital text production (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1}{%
+\chapter{Week 5: Corpus Construction and Latest Approaches to Computational Textual Analysis II}\label{week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1}}
+
+\textbf{\emph{2/25/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Piper, Andrew. \emph{Enumerations: Data and Literary Study}. Chicago: University of Chicago Press, 2018. (selections). {[}Course Google Drive{]}
+\item
+  Watch eScriptorium training video \#5, ``Training Your own Models in eScriptorim.''
+\item
+  Re-OCR your new transcription and segmentation models.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment on digital text production (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-6-interacting-with-the-openiti-corpus-using-github-and-editpad-1}{%
+\chapter{week 6: Interacting with the OpenITI Corpus Using Github and EditPad}\label{week-6-interacting-with-the-openiti-corpus-using-github-and-editpad-1}}
+
+\textbf{\emph{3/4/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Introduction to the command line! Go here: \url{http://programminghistorian.org/lessons/intro-to-bash}
+\item
+  A more detailed introduction (and useful list of commands) is available here: \url{https://learnpythonthehardway.org/book/appendixa.html}
+\item
+  Introduction to using Github: \url{https://guides.github.com/activities/hello-world/}
+\item
+  Introduction to Github from command line: \url{https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6}
+\item
+  Raising an Issue in Github
+\item
+  Watch video, ``Interacting with the OpenITI Corpus through Github.''
+\item
+  Watch video, ``Introduction to Working with Texts in OpenITI EditPad Pro.''
+\item
+  Watch video, ``Introduction to OpenITI mARkdown.''
+\item
+  Do Github pull/edit/push activity (link)
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  OpenITI mARkdown bootcamp!
+\end{itemize}
+
+\hypertarget{week-7-using-regex-on-texts-1}{%
+\chapter{week 7: Using Regex on Texts}\label{week-7-using-regex-on-texts-1}}
+
+\textbf{\emph{3/11/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Regex tutorials \#1-16: \url{Regexone.com}
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Regex workshop.
+\item
+  Introduction to R and R installation: \url{https://cran.r-project.org/} and \url{https://www.rstudio.com/} (bring your computers!)
+\end{itemize}
+
+\textbf{\emph{3/14/2021 - 3/21/2021: UMD Spring Break (No class)}}
+
+\hypertarget{week-8-introducing-r-in-gui-through-stylometry-1}{%
+\chapter{week 8: Introducing R (in GUI) through Stylo(metry)}\label{week-8-introducing-r-in-gui-through-stylometry-1}}
+
+\textbf{\emph{3/25/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Holmes, David I. ``The Evolution of Stylometry in Humanities Scholarship.'' \emph{Literary \& Linguistic Computing} 13, no. 3 (1998): 111-117. {[}Course Google Drive{]}
+\item
+  Koppel, M., Schler, J. and Argamon, S. ``Computational Methods in Authorship Attribution.'' \emph{Journal of the American Society for Information Science and Technology} 60, no. 1 (2009): 9-26. {[}Course Google Drive{]}\\
+\item
+  Eder, Maciej, Jan Rybicki, and Mike Kestemont. ``Stylometry with R---A Package for Computational Text Analysis.'' The R Journal Vol. 8/1 (2016). {[}Course Google Drive{]}\\
+\item
+  Eder, Maciej, and Jan Rybicki. ``STYLO R Script Mini HOW TO.'' {[}Course Google Drive{]}\\
+\item
+  Optional (extra credit for UMD students): Sadeghi, Behnam. ``The Chronology of the Qur'ān: A Stylometric Research Program.'' \emph{Arabica} 58.3--4 (2011): 210-99. {[}Course Google Drive{]}
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly reading report.
+\item
+  Collaboratory assignment with `Stylo' R Package (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-9-r-bootcamp-i-1}{%
+\chapter{week 9: R Bootcamp I}\label{week-9-r-bootcamp-i-1}}
+
+\textbf{\emph{4/1/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Chapter 1-2 in Arnold and Tilton and Chapter 1 in Jockers (there will be some overlap).
+\end{itemize}
+
+Submit Before Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Practice exercises for chapter 2 in Arnold \& Tilton, pages 183-186 (Please submit your code (i.e., the R script file) and also any resulting visualizations (e.g., graphs, tables) or answers (in the form of a screenshot)).
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly Reading Report: Analyzing Text Reuse Data in R (Sarah Bowen Savant).
+\item
+  ``Sheykh Google'' activity (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-10-r-bootcamp-ii-1}{%
+\chapter{week 10: R Bootcamp II}\label{week-10-r-bootcamp-ii-1}}
+
+\textbf{\emph{4/8/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Chapter 3 in Arnold and Tilton.
+\end{itemize}
+
+Submit Before Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Practice exercises for chapter 3 in Arnold \& Tilton, pages 186-188.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly Reading Report: Topic Modeling in R (Matthew Thomas Miller).
+\item
+  First brainstorming session on final project topics.
+\end{itemize}
+
+\hypertarget{week-11-r-bootcamp-iii-1}{%
+\chapter{week 11: R Bootcamp III}\label{week-11-r-bootcamp-iii-1}}
+
+\textbf{\emph{4/15/2021 Thursday}}
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Chapter 4 in Arnold and Tilton.
+\end{itemize}
+
+Submit Before Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Practice exercises for chapter 4 in Arnold \& Tilton, pages 188-190.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Weekly Reading Report: Geolocation Analysis in R (Peter Verkinderen).
+\item
+  Second brainstorming session on final project topics (by end of this class, we will set the text analysis groups and their respective assigned chapters for week 10 based your initial ideas for the final project).
+\item
+  Research collaboratory groups finalized and first set of individualized assignments distributed in preparation for your research group's first research collaboratory.
+\end{itemize}
+
+\hypertarget{week-12-research-collaboratory-i-1}{%
+\chapter{week 12: Research Collaboratory I}\label{week-12-research-collaboratory-i-1}}
+
+\textbf{\emph{4/22/2021 Thursday}}: Research Collaboratory
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Task(s) assigned to you by your research group in previous collaboratory.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Research collaboratory focused on final project (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-13-research-collaboratory-ii-1}{%
+\chapter{week 13: Research Collaboratory II}\label{week-13-research-collaboratory-ii-1}}
+
+\textbf{\emph{4/29/2021 Thursday}}: Research Collaboratory
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Task(s) assigned to you by your research group in previous collaboratory.
+\end{itemize}
+
+Submit Before Class:
+
+\begin{itemize}
+\tightlist
+\item
+  By today's class, all groups need to submit a final project proposal to the instructors. This proposal should include three parts:
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\tightlist
+\item
+  a 1-page overview of the topic on which you are proposing to work;
+\item
+  a timeline for the completion of each phase of the work (which the instructors will need to approve); and
+\item
+  a detailed list of tasks for which each group member will be responsible. After you have submitted these, the instructors will review them together and send you our feedback, recommendations, and expectations for your final project.
+\end{enumerate}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Research collaboratory focused on final project (bring your computers!).
+\end{itemize}
+
+\hypertarget{week-14-research-collaboratory-iii-1}{%
+\chapter{week 14: Research Collaboratory III}\label{week-14-research-collaboratory-iii-1}}
+
+\textbf{\emph{5/6/2021 Thursday}}: Research Collaboratory
+
+Prepare for Class:
+
+\begin{itemize}
+\tightlist
+\item
+  Task(s) assigned to you by your research group in previous collaboratory.
+\end{itemize}
+
+In class:
+
+\begin{itemize}
+\tightlist
+\item
+  Research collaboratory focused on final project (bring your computers!).
+\end{itemize}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
