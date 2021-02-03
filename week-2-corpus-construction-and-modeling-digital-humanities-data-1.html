@@ -128,6 +128,13 @@
 <li class="chapter" data-level="2" data-path="week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities.html"><a href="week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities.html"><i class="fa fa-check"></i><b>2</b> Week 1: Class Introduction and Introduction to Computational Textual Analysis in the Humanities</a></li>
 <li class="chapter" data-level="3" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><i class="fa fa-check"></i><b>3</b> Week 2: Corpus Construction and Modeling Digital Humanities Data</a><ul>
 <li class="chapter" data-level="3.1" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#most-recent-ocr-transcription-model-for-escriptorium"><i class="fa fa-check"></i><b>3.1</b> most recent OCR transcription model for eScriptorium</a></li>
+<li class="chapter" data-level="3.2" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#getting-started-with-escriptorium-0.6.9"><i class="fa fa-check"></i><b>3.2</b> Getting started with eScriptorium 0.6.9</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#additional-documentation"><i class="fa fa-check"></i><b>3.2.1</b> Additional Documentation:</a></li>
+<li class="chapter" data-level="3.2.2" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#prerequisites"><i class="fa fa-check"></i><b>3.2.2</b> Prerequisites:</a></li>
+<li class="chapter" data-level="3.2.3" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#summary"><i class="fa fa-check"></i><b>3.2.3</b> Summary</a></li>
+<li class="chapter" data-level="3.2.4" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#step-by-step"><i class="fa fa-check"></i><b>3.2.4</b> 1. Step by step</a></li>
+<li class="chapter" data-level="3.2.5" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#manage-a-collaborative-annotation-campaign"><i class="fa fa-check"></i><b>3.2.5</b> 2. Manage a collaborative annotation campaign</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1.html"><a href="week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1.html"><i class="fa fa-check"></i><b>4</b> Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies</a></li>
 <li class="chapter" data-level="5" data-path="week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1.html"><a href="week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1.html"><i class="fa fa-check"></i><b>5</b> Week 4: Corpus Construction and Latest Approaches to Computational Textual Analysis I</a></li>
@@ -182,7 +189,492 @@
 <div id="most-recent-ocr-transcription-model-for-escriptorium" class="section level2">
 <h2><span class="header-section-number">3.1</span> most recent OCR transcription model for eScriptorium</h2>
 <p>Download it <a href="./2021IslamicateWorldCourse_files/arabPers-WithDiffTypefaces.mlmodel">here</a></p>
+</div>
+<div id="getting-started-with-escriptorium-0.6.9" class="section level2">
+<h2><span class="header-section-number">3.2</span> Getting started with eScriptorium 0.6.9</h2>
+<div id="additional-documentation" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Additional Documentation:</h3>
+<ul>
+<li><p>Video demo of part of the eScriptorium features: <a href="https://translate.google.com/website?sl=auto&amp;tl=en&amp;u=https://escripta.hypotheses.org/escriptorium-video-gallery"><span class="underline">https://escripta.hypotheses.org/escriptorium-video-gallery</span></a></p></li>
+<li><p>Source code of eScriptorium: <a href="https://translate.google.com/website?sl=auto&amp;tl=en&amp;u=https://gitlab.inria.fr/scripta/escriptorium"><span class="underline">https://gitlab.inria.fr/scripta/escriptorium</span></a></p></li>
+</ul>
+</div>
+<div id="prerequisites" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Prerequisites:</h3>
+<ul>
+<li><p>Secure an account on an eScriptorium instance;</p></li>
+<li><p>Or install a local instance of eScriptorium ( with Docker or without Docker ).</p></li>
+</ul>
+</div>
+<div id="summary" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Summary</h3>
+<ul>
+<li><ol style="list-style-type: decimal">
+<li>Step by step</li>
+</ol>
+<ul>
+<li><p>1.1. Connection to eScriptorium</p></li>
+<li><p>1.2. Create a new document</p>
+<ul>
+<li><p>1.2.1. Point terminology</p></li>
+<li><p>1.2.2. Instructions</p></li>
+</ul></li>
+<li><p>1.3. Upload images</p>
+<ul>
+<li><p>1.3.1. Access the interface</p></li>
+<li><p>1.3.2. Import local files</p></li>
+<li><p>1.3.3. Import images from PDF file</p></li>
+<li><p>1.3.4. Use an IIIF manifesto</p></li>
+</ul></li>
+<li><p>1.4. Manually annotate documents</p>
+<ul>
+<li><p>1.4.1. Access the interface</p></li>
+<li><p>1.4.2. Annotate segments and areas on the image</p></li>
+<li><p>1.4.3. Annotate the transcript</p></li>
+<li><p>1.4.4. Aparté on the articulation of <em>baselines</em> , polygons
+and transcriptions</p></li>
+<li><p>1.4.5. Change the order of segments</p></li>
+<li><p>1.4.6. Semantic annotation</p></li>
+</ul></li>
+<li><p>1.5. Import annotations</p>
+<ul>
+<li><p>1.5.1. Import structured annotations in XML</p></li>
+<li><p>1.5.2. Import annotations from plain text</p></li>
+</ul></li>
+<li><p>1.6. Automatically annotate documents</p>
+<ul>
+<li><p>1.6.1. Instructions</p></li>
+<li><p>1.6.2. Setting up segmentation</p></li>
+</ul></li>
+<li><p>1.7. Train models</p></li>
+<li><p>1.8. Export data</p></li>
+</ul></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li>Manage a collaborative annotation campaign</li>
+</ol>
+<ul>
+<li><p>2.1. Create a user group</p></li>
+<li><p>2.2. Share a document with another user or with a group</p></li>
+<li><p>2.3. Share a template with another user or with a group</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="step-by-step" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> 1. Step by step</h3>
+<div id="logging-into-escriptorium" class="section level4">
+<h4><span class="header-section-number">3.2.4.1</span> 1.1. Logging into eScriptorium</h4>
+<p>You log into eScriptorium with an individual account made up of a login,
+a password and an email address. An account is created by the user after
+receiving an invitation or by the site administrator:</p>
+<div class="figure">
+<img src="img/eScrTut/image1.png" style="width:5.20833in;height:1.27778in" alt="" />
+<p class="caption">Overview of the connection interface, where you enter your login and
+password before clicking on
+"login".</p>
+</div>
+<p><em>Login form</em></p>
+<p>Once logged on, you will see the dashboard which allows you to manage
+all the documents created by and shared with the account. On first
+login, this dashboard is empty:</p>
+<div class="figure">
+<img src="img/eScrTut/image2.png" style="width:5.20833in;height:1.81944in" alt="" />
+<p class="caption">Dashboard preview,
+empty</p>
+</div>
+</div>
+<div id="create-a-new-document" class="section level4">
+<h4><span class="header-section-number">3.2.4.2</span> 1.2. Create a new document</h4>
+<div id="point-terminology" class="section level5">
+<h5><span class="header-section-number">3.2.4.2.1</span> 1.2.1. Point terminology</h5>
+<ul>
+<li><p>A "<strong>document</strong>" is a collection of images forming a whole unit;</p></li>
+<li><p>A " <strong>document-part</strong>" is an image--a page belonging to a
+document.</p></li>
+</ul>
+</div>
+<div id="instructions" class="section level5">
+<h5><span class="header-section-number">3.2.4.2.2</span> 1.2.2. Instructions</h5>
+<p>To create a document, click on the “<strong>Create new</strong>” button; a new page
+is displayed as well as an input form:</p>
+<div class="figure">
+<img src="img/eScrTut/image3.png" style="width:5.20833in;height:2.48611in" alt="" />
+<p class="caption">Document description tab</p>
+</div>
+<p>The document "description" tab is where you fill in the metadata.</p>
+<p>The "Name" field is mandatory. The others are optional and can be
+completed later. We will come back to the “Ontology” section later.</p>
+<p>Once the information has been entered, click on “Create” to create the
+document; a message is then displayed: "Document created successfully!"
+You can still modify the data entered: the "Create" button has been
+replaced by an "Update" button.</p>
+<div class="figure">
+<img src="img/eScrTut/image4.png" style="width:5.20833in;height:0.81944in" alt="" />
+<p class="caption">Access the document editing interface from the dashboard.</p>
+</div>
+<p>To return to this form from the dashboard, click on the “Edit” icon in
+front of the document.</p>
+</div>
+</div>
+<div id="upload-images" class="section level4">
+<h4><span class="header-section-number">3.2.4.3</span> 1.3. Upload images</h4>
+<div id="access-the-interface" class="section level5">
+<h5><span class="header-section-number">3.2.4.3.1</span> 1.3.1. Access the interface</h5>
+<p>The “Images” interface is used to manage most of the tasks related to
+automatic image processing and imports and exports.</p>
+<p>To access the image loading interface, click on the “Images” tab.</p>
+<div class="figure">
+<img src="img/eScrTut/image5.gif" style="width:6.5in;height:3.19444in" alt="" />
+<p class="caption">Navigation between the "Description" and "Images" tabs.</p>
+</div>
+<p>There are several ways to import images to the platform.</p>
+</div>
+<div id="import-local-files" class="section level5">
+<h5><span class="header-section-number">3.2.4.3.2</span> 1.3.2. Import local files</h5>
+<p>Simply load the files using drag-and-drop or click in the box to open
+the file explorer. <strong>Note:</strong> you must wait until <strong>all</strong> the images are
+loaded before refreshing the page!</p>
+<div class="figure">
+<img src="img/eScrTut/image6.gif" style="width:6.5in;height:4.08333in" alt="" />
+<p class="caption">How to import images from the local file system.</p>
+</div>
+</div>
+<div id="import-images-from-pdf-file" class="section level5">
+<h5><span class="header-section-number">3.2.4.3.3</span> 1.3.3. Import images from PDF file</h5>
+<p>Click on the Import button, then Images (PDF) option to load a PDF file
+and automatically extract the images. Please note, only the images are
+imported. If the PDF contains a text layer corresponding to the
+transcription, it is not imported.</p>
+<div class="figure">
+<img src="img/eScrTut/image7.gif" style="width:6.04945in;height:3.63278in" alt="" />
+<p class="caption">demonstration of importing images from a
+PDF</p>
+</div>
+</div>
+<div id="use-an-iiif-manifesto" class="section level5">
+<h5><span class="header-section-number">3.2.4.3.4</span> 1.3.4. Use an IIIF manifesto</h5>
+<p>Click on the Import button, then the Images (IIIF) option, then enter
+the url of an IIIF manifesto. All the images associated with the
+manifesto are then copied locally, as well as the metadata, which is
+visible in the “Description” tab.</p>
+<p>Example:
+<a href="https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json" target="_blank">https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json</a></p>
+<p><img src="img/eScrTut/image8.gif" style="width:6.5in;height:4.08333in" alt="demonstration of importing images via IIIF" />
+<em>Demonstration of importing images through an IIIF manifesto.</em></p>
+</div>
+</div>
+<div id="manually-annotate-documents" class="section level4">
+<h4><span class="header-section-number">3.2.4.4</span> 1.4. Manually annotate documents</h4>
+<div id="access-the-interface-1" class="section level5">
+<h5><span class="header-section-number">3.2.4.4.1</span> 1.4.1. Access the interface</h5>
+<p>Manual annotation is necessary to generate <em>ground truth data</em> used to
+train models, or to correct the result of these operations. It can also
+be used as part of an annotation campaign that does not make use of
+Kraken models (eScriptorium only serves as an input environment).</p>
+<p>The <em>document-parts</em> edit tab allows you to create or modify annotation
+elements manually. It is accessed by clicking on the “Edit” tab at the
+top of the page or by clicking on the “Edit” button on each “map”
+representing a part-document. There are several viewing panes in this
+tab corresponding to each possible editing task.</p>
+<div class="figure">
+<img src="img/eScrTut/image9.png" style="width:5.20833in;height:1.79167in" alt="" />
+<p class="caption">Several visualization panes can be activated within the "Edit" tab</p>
+</div>
+<div class="figure">
+<img src="img/eScrTut/image10.png" style="width:1.04167in;height:1.40278in" alt="" />
+<p class="caption">Click on the "Edit" button on each card representing a
+part-document</p>
+</div>
+<p>Another way to access the "Edit" tab</p>
+<ul>
+<li><p>"Image source" allows you to display the source image;</p></li>
+<li><p>“Segmentation” displays the segmentation editing pane;</p></li>
+<li><p>"Transcription" displays the editing pane of the transcription in
+diplomatic view;</p></li>
+<li><p>"Text" is used to display the editing pane of the transcription in
+text mode.</p></li>
+</ul>
+<div class="figure">
+<img src="img/eScrTut/image11.gif" style="width:6.5in;height:2.90278in" alt="" />
+<p class="caption">Enabling and disabling edit panes</p>
+</div>
+</div>
+<div id="annotate-segments-and-areas-on-the-image" class="section level5">
+<h5><span class="header-section-number">3.2.4.4.2</span> 1.4.2. Annotate segments and areas on the image</h5>
+<p>The segment editing pane allows you to perform several essential
+operations:</p>
+<ul>
+<li><p>Drawing <em>baselines</em> corresponding to the locations of the text on
+the image in two ways:</p>
+<ul>
+<li><p>Free route (not recommended);</p></li>
+<li><p>Point by point plot.</p></li>
+</ul></li>
+<li><p>Adding points on a line (select it then double-click at the point's
+location);</p></li>
+<li><p>Moving one or more point (s) by a simple select-drag;</p></li>
+<li><p>Deleting one or more point (s) on a line;</p></li>
+<li><p>Cutting one or more lines using the scissors tool;</p></li>
+<li><p>Joining one or more lines;</p></li>
+<li><p>Configuring the reading direction of a line;</p></li>
+<li><p>Activating the calculation of the polygons associated with each line
+(this task is automatic and managed asynchronously without any
+action on the part of the user after the first use).</p></li>
+</ul>
+<p>In this pane, it is also possible to create regions (or <em>zones</em> ) and
+associate segments to them. A segment located within the perimeter of a
+region is therefore not automatically associated with it.</p>
+<p>All the operations that can be carried out in this pane are detailed in
+a help window (to display it, click on "?"). It will thus be noted
+that there are many shortcuts making it possible to simplify all these
+operations.</p>
+</div>
+<div id="annotate-the-transcript" class="section level5">
+<h5><span class="header-section-number">3.2.4.4.3</span> 1.4.3. Annotate the transcript</h5>
+<p>Only when there are segments and masks on the image is it possible to
+use the functionalities of the “Transcription” and “Text” tabs.</p>
+<p>To add or modify a transcription associated with a segment from the
+“Transcription” pane, click on the corresponding zone. An input window
+is displayed. To record a transcription, press “Enter”: the
+transcription interface automatically displays the input field for the
+next segment.</p>
+<p>As you type in the “Transcription” pane, the crenellated areas are
+replaced by text and the content of the “Text” pane changes. It is
+therefore also possible to modify the text from the “Text” pane and even
+to copy and paste several lines at once.</p>
+<div class="figure">
+<img src="img/eScrTut/image12.gif" style="width:6.5in;height:2.58333in" alt="" />
+<p class="caption">Manually edit the transcription from the "Transcription" pane.</p>
+</div>
+</div>
+<div id="a-note-on-the-articulation-of-baselines-polygons-and-transcriptions" class="section level5">
+<h5><span class="header-section-number">3.2.4.4.4</span> 1.4.4. A note on the articulation of baselines, polygons and transcriptions**</h5>
+<p>The <em>baseline</em> is the central element for storing information in the
+eScriptorium database. So :</p>
+<ul>
+<li><p>It is possible to modify a <em>baseline</em> (remove / move / add points)
+without impacting the transcription;</p></li>
+<li><p>The polygon is always calculated from the <em>baseline</em>, including
+during training</p></li>
+<li><p>It is possible to modify the polygon manually (not recommended)
+without this impacting the transcription.</p></li>
+</ul>
+<p><img src="img/eScrTut/image13.png" style="width:5.20833in;height:2.31944in" /></p>
+<p>During the training of the Kraken models, the calculation of the
+polygons is reset: the user therefore has an interest in not intervening
+on the polygons and on the contrary to ensure that the <em>baselines</em> are
+drawn in such a way that the automatically generated polygons are
+correct. . Moreover, when manually entering ground truth data, care
+should be taken to transcribe only what is inside the polygon.</p>
+</div>
+<div id="changing-the-order-of-segments" class="section level5">
+<h5><span class="header-section-number">3.2.4.4.5</span> 1.4.5. Changing the order of segments</h5>
+<p>The playback order of the segments is calculated automatically. You can
+display the order number of each segment from the “Segmentation” pane by
+clicking on “Toggle ordering display (L)” or from the “Text” pane where
+the lines are displayed in the following order.</p>
+<p>It is possible to modify this order from the “Text” pane by clicking
+“Toggle sorting mode.” A simple drag and drop of the lines is then
+enough to carry out the modification.</p>
+<p><strong>Note:</strong> it is advisable to ensure the quality of the segmentation
+before changing the order of the lines because adding or deleting lines
+systematically restarts the calculation of this order, overwriting
+manual modifications in the process.</p>
+<div class="figure">
+<img src="img/eScrTut/image14.gif" style="width:6.5in;height:2.58333in" alt="" />
+<p class="caption">Edit the order of the segments from the “Text” pane</p>
+</div>
+</div>
+<div id="semantic-annotation" class="section level5">
+<h5><span class="header-section-number">3.2.4.4.6</span> 1.4.6. Semantic annotation</h5>
+<p>It is possible to associate labels (or <em>tags</em> ) with segments and
+regions by following an ontology pre-defined by the user from the
+“Description” tab. There are default <em>tags</em> , but it is possible to add
+some using the input fields (click on "+" then "Update" to add the
+new <em>tag</em> to the list) or to delete (uncheck the box in front of the
+<em>tag</em> then click on "Update").</p>
+<p>From the “Segmentation” pane, select an area or a segment, then click on
+“Set the type on all selected lines / regions (T)” and choose the
+appropriate <em>tag</em> . The color of the area or line changes.</p>
+<p>It is possible to apply a <em>tag</em> to several regions or segments at once:
+all you have to do is select several (Ctrl + click-drag or keep Ctrl
+pressed and click the targeted segments / regions).</p>
+<div class="figure">
+<img src="img/eScrTut/image15.gif" style="width:6.5in;height:3.5in" alt="" />
+<p class="caption">Add elements in the ontology from the "Description" pane then apply
+the tags to the segments / regions from the "Edit"
+pane.</p>
+</div>
+</div>
+</div>
+<div id="import-annotations" class="section level4">
+<h4><span class="header-section-number">3.2.4.5</span> 1.5. Import annotations</h4>
+<div id="import-structured-annotations-in-xml" class="section level5">
+<h5><span class="header-section-number">3.2.4.5.1</span> 1.5.1. Import structured annotations in XML</h5>
+<p>It is possible to import segments and / or a transcript generated
+outside of eScriptorium. To do this, in the “Images” tab, click on the
+“Import / Transcription (XML)” option.</p>
+<p>A form appears allowing you to specify a name to identify the version to
+import and to load the file to import. This can be an ALTO XML file, a
+PAGE XML file or a ZIP containing several ALTO or PAGE XML files.</p>
+<p>It is not necessary to select beforehand which document-parts are
+concerned by the import: the link is made automatically according to the
+information contained in the XML files.</p>
+<div class="figure">
+<img src="img/eScrTut/image16.png" style="width:5.20833in;height:3.56944in" alt="" />
+<p class="caption">Form for configuring segmentation and / or transcription
+imports</p>
+</div>
+<p><strong>Please note</strong>, after importing segments generated without Kraken /
+eScriptorium, it is essential to <strong>reset the polygons ( <em>masks</em> )</strong>
+before using these documents to train a transcription model.</p>
+</div>
+<div id="import-annotations-from-plain-text" class="section level5">
+<h5><span class="header-section-number">3.2.4.5.2</span> 1.5.2. Import annotations from plain text</h5>
+<p>It is possible to manually import a transcription from a plain text
+version using the “Text” pane of the “Edit” tab. Each line break then
+indicates the passage to a new segment. It is therefore necessary to
+ensure that the reading order of the lines matches.</p>
+</div>
+</div>
+<div id="automatically-annotate-documents" class="section level4">
+<h4><span class="header-section-number">3.2.4.6</span> 1.6. Automatically annotate documents</h4>
+<div id="instructions-1" class="section level5">
+<h5><span class="header-section-number">3.2.4.6.1</span> 1.6.1. Instructions</h5>
+<p>Automatic document annotation is managed from the “Images” tab.</p>
+<ul>
+<li><p>Select the images to annotate;</p></li>
+<li><p>Click on “Segment” (for the detection of baselines, polygons and /
+or areas) or on “Transcribe” (for transcription);</p></li>
+<li><p>A form is displayed: it allows you to load a Kraken model or to use
+a model already available in eScriptorium and, for segmentation, to
+configure the annotation.</p></li>
+</ul>
+</div>
+<div id="setting-up-segmentation" class="section level5">
+<h5><span class="header-section-number">3.2.4.6.2</span> 1.6.2. Setting up segmentation</h5>
+<ul>
+<li><p>"Segmentation steps" allows you to manage what level of
+segmentation is carried out:</p>
+<ul>
+<li><p>“Line and Regions” leads to the generation of zones (provided
+that the model used has been trained for this), baselines and
+associated polygons.</p></li>
+<li><p>“Line Baselines and Masks” leads to the generation of baselines
+and associated polygons.</p></li>
+<li><p>"Only line Masks" does not require loading a model; this
+option allows you to reset on the fly the calculation of the
+polygons associated with the baselines already present on the
+images.</p></li>
+<li><p>“Regions” makes it possible to keep intact the baselines and
+polygons already present on the images and to generate only the
+zones.</p></li>
+</ul></li>
+<li><p>"Text direction" is used to indicate the reading direction of the
+lines.</p></li>
+</ul>
+<div class="figure">
+<img src="img/eScrTut/image17.gif" style="width:3.19444in;height:3.375in" alt="" />
+<p class="caption">Overview of the options available in the automatic segmentation
+configuration form.</p>
+</div>
+</div>
+</div>
+<div id="train-models" class="section level4">
+<h4><span class="header-section-number">3.2.4.7</span> 1.7. Train models</h4>
+<div id="start-a-workout" class="section level5">
+<h5><span class="header-section-number">3.2.4.7.1</span> 1.7.1. Start a workout</h5>
+<p>Training of Kraken models is started from the “Images” tab; it is
+tracked from the “Models” tab (inactive as long as no model other than
+the default model is associated with the document).</p>
+<p>Access to training functions may be subject to authorization. It is
+managed from the administration interface.</p>
+<p>To train a model, all the mobilized images / annotations must be in the
+same document.</p>
+<ul>
+<li><p>Select the share documents containing the ground truth;</p></li>
+<li><p>Click on "Train" then select the type of model to train:
+"Segment" for a segmentation model, "Recognizer" for a
+transcription model;</p></li>
+<li><p>Fill out the form then click on "Train";</p></li>
+<li><p>The training task is started, sometimes you have to wait before this
+is displayed.</p></li>
+</ul>
+<p>When the training is finished, the user receives a notification and can
+access the final model from the “Models” tab. It is then possible to
+download the model or use it on the document.</p>
+</div>
+<div id="refine-a-model-or-start-from-scratch" class="section level5">
+<h5><span class="header-section-number">3.2.4.7.2</span> 1.7.2. Refine a model or start from scratch?</h5>
+<p>The training configuration form allows you to choose:</p>
+<ul>
+<li><p>If you want to start from scratch (simply indicate the name to give
+to the new model that will be created);</p></li>
+<li><p>Or if you want to refine a model (it can be loaded from the file
+manager, or be already present in the list of models associated with
+the current document).</p></li>
+</ul>
+<p><strong>Caution:</strong> in version 0.6.9, modifying the name of the model to train
+is only taken into account in the case of a model starting from zero. In
+order not to overwrite an already existing model, make sure to download
+the model locally, rename it according to the name desired for the new
+model, then load it into eScriptorium from the form.</p>
+</div>
+</div>
+<div id="export-annotations" class="section level4">
+<h4><span class="header-section-number">3.2.4.8</span> 1.8. Export annotations</h4>
+<p>The export of annotations is carried out from the “Images” tab.</p>
+<ul>
+<li><p>Select the relevant part-documents;</p></li>
+<li><p>Click on "Export" then fill out the form:</p>
+<ul>
+<li><p>Specify the version of the transcription to export;</p></li>
+<li><p>Specify the export format ("Alto" for XML ALTO, "Pagexml"
+for XML PAGE, or "Text" for plain text);</p></li>
+<li><p>Check "Include Images" if you also want to export the images;</p></li>
+</ul></li>
+<li><p>Click on Export and save the generated ZIP file.</p></li>
+</ul>
+</div>
+</div>
+<div id="manage-a-collaborative-annotation-campaign" class="section level3">
+<h3><span class="header-section-number">3.2.5</span> 2. Manage a collaborative annotation campaign</h3>
+<div id="create-a-user-group-admin" class="section level4">
+<h4><span class="header-section-number">3.2.5.1</span> 2.1. Create a user group (admin)</h4>
+<p>It is possible to create user groups from the administrator's dashboard
+(provided you have the associated rights). These groups are used to
+define work teams or to assign certain rights to a set of users.</p>
+<p>It will soon be possible for a user with sufficient rights to create a
+team and invite other users to it.</p>
+</div>
+<div id="share-a-document-with-another-user-or-with-a-group" class="section level4">
+<h4><span class="header-section-number">3.2.5.2</span> 2.2. Share a document with another user or with a group</h4>
+<p>A user can share a document with multiple users, including outside of
+the group (s) to which it belongs. From the "Description" tab:</p>
+<ul>
+<li><p>Click on the "Share" button</p></li>
+<li><p>Enter the name of the user with whom to share the document, or check
+his name in the list that appears</p></li>
+<li><p>To confirm, click on "Share"</p></li>
+</ul>
+<div class="figure">
+<img src="img/eScrTut/image18.gif" style="width:6.5in;height:3.19444in" alt="" />
+<p class="caption">Share a document with a group or a user.</p>
+</div>
+</div>
+<div id="share-a-template-with-another-user-or-with-a-group" class="section level4">
+<h4><span class="header-section-number">3.2.5.3</span> 2.3. Share a template with another user or with a group</h4>
+<p>A template is associated with a document and not with a user. To share a
+model with another user, there are two possibilities:</p>
+<ul>
+<li><p>Download the model from the “Models” tab and send the model via
+another exchange system (e-mails, etc.);</p></li>
+<li><p>Share with the user the document to which the template is
+associated. It is then up to the other user to download the model
+and then load it into the document where he wishes to apply it.</p></li>
+</ul>
 
+</div>
+</div>
 </div>
 </div>
             </section>
