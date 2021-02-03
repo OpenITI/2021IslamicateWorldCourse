@@ -25,16 +25,20 @@ In class:
 
 Download it [here](./2021IslamicateWorldCourse_files/arabPers-WithDiffTypefaces.mlmodel)
 
+## where do I find eScriptorium? 
+
+The UMD instance of eScriptorium can be found here: [http://simorgh.umd.edu:8080/](http://simorgh.umd.edu:8080/){target="_blank"}
+
 
 ## Getting started with eScriptorium 0.6.9
 
+Tutorial written by [Alix Chague](https://escripta.hypotheses.org/440){target="_blank"}, and translated by Jonathan Allen.
 
 ### Additional Documentation:
 
+-   Video demo of part of the eScriptorium features: [https://escripta.hypotheses.org/escriptorium-video-gallery](https://translate.google.com/website?sl=auto&tl=en&u=https://escripta.hypotheses.org/escriptorium-video-gallery){target="_blank"}
 
--   Video demo of part of the eScriptorium features: [[https://escripta.hypotheses.org/escriptorium-video-gallery]{.underline}](https://translate.google.com/website?sl=auto&tl=en&u=https://escripta.hypotheses.org/escriptorium-video-gallery)
-
--   Source code of eScriptorium: [[https://gitlab.inria.fr/scripta/escriptorium]{.underline}](https://translate.google.com/website?sl=auto&tl=en&u=https://gitlab.inria.fr/scripta/escriptorium)
+-   Source code of eScriptorium: [https://gitlab.inria.fr/scripta/escriptorium](https://translate.google.com/website?sl=auto&tl=en&u=https://gitlab.inria.fr/scripta/escriptorium){target="_blank"}
 
 ### Prerequisites:
 
