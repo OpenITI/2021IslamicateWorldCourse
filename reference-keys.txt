@@ -52,6 +52,7 @@ acknowledgements
 week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities
 week-2-corpus-construction-and-modeling-digital-humanities-data-1
 most-recent-ocr-transcription-model-for-escriptorium
+where-do-i-find-escriptorium
 getting-started-with-escriptorium-0.6.9
 additional-documentation
 prerequisites
