@@ -139,7 +139,14 @@
 </ul></li>
 <li class="chapter" data-level="4" data-path="week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1.html"><a href="week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1.html"><i class="fa fa-check"></i><b>4</b> Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies</a></li>
 <li class="chapter" data-level="5" data-path="week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1.html"><a href="week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1.html"><i class="fa fa-check"></i><b>5</b> Week 4: Corpus Construction and Latest Approaches to Computational Textual Analysis I</a></li>
-<li class="chapter" data-level="6" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><i class="fa fa-check"></i><b>6</b> Week 5: Corpus Construction and Latest Approaches to Computational Textual Analysis II</a></li>
+<li class="chapter" data-level="6" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><i class="fa fa-check"></i><b>6</b> Week 5: Corpus Construction and Latest Approaches to Computational Textual Analysis II</a><ul>
+<li class="chapter" data-level="6.1" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html#regular-expressions"><i class="fa fa-check"></i><b>6.1</b> Regular expressions</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html#useful-resources"><i class="fa fa-check"></i><b>6.1.1</b> Useful resources</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html#installing-editpad-pro"><i class="fa fa-check"></i><b>6.2</b> Installing EditPad Pro</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html#installing-the-openiti-highlighting-schema"><i class="fa fa-check"></i><b>6.2.1</b> Installing the OpenITI highlighting schema</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="week-6-interacting-with-the-openiti-corpus-using-github-and-editpad-1.html"><a href="week-6-interacting-with-the-openiti-corpus-using-github-and-editpad-1.html"><i class="fa fa-check"></i><b>7</b> week 6: Interacting with the OpenITI Corpus Using Github and EditPad</a></li>
 <li class="chapter" data-level="8" data-path="week-7-using-regex-on-texts-1.html"><a href="week-7-using-regex-on-texts-1.html"><i class="fa fa-check"></i><b>8</b> week 7: Using Regex on Texts</a></li>
 <li class="chapter" data-level="9" data-path="week-8-introducing-r-in-gui-through-stylometry-1.html"><a href="week-8-introducing-r-in-gui-through-stylometry-1.html"><i class="fa fa-check"></i><b>9</b> week 8: Introducing R (in GUI) through Stylo(metry)</a></li>
@@ -172,18 +179,63 @@
 <div id="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1" class="section level1">
 <h1><span class="header-section-number">6</span> Week 5: Corpus Construction and Latest Approaches to Computational Textual Analysis II</h1>
 <p><strong><em>2/25/2021 Thursday</em></strong></p>
+<p><strong><em>Since we are still experiencing trouble with the eScriptorium instance on the UMD server, we will pause the eScriptorium tutorials until next week, and move material from the coming weeks forward.</em></strong></p>
 <p>Prepare for Class:</p>
 <ul>
+<li>Regular Expressions tutorials #1-14: <a href="https://Regexone.com">Regexone.com</a></li>
+<li>Install the free version of the text editor EditPad Pro: <a href="https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe">https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe</a> (for instructions, see below)</li>
+<li>Underwood, Ted. <em>Distant Horizons: Digital Evidence and Literary Change</em>. Chicago: University of Chicago Press, 2019. (selections). [Course Google Drive]</li>
 <li>Piper, Andrew. <em>Enumerations: Data and Literary Study</em>. Chicago: University of Chicago Press, 2018. (selections). [Course Google Drive]</li>
-<li>Watch eScriptorium training video #5, “Training Your own Models in eScriptorim.”</li>
-<li>Re-OCR your new transcription and segmentation models.</li>
 </ul>
 <p>In class:</p>
 <ul>
 <li>Weekly reading report.</li>
-<li>Collaboratory assignment on digital text production (bring your computers!).</li>
+<li>Regular expressions exercises</li>
+<li>Introduction to using EditPad Pro.</li>
+</ul>
+<div id="regular-expressions" class="section level2">
+<h2><span class="header-section-number">6.1</span> Regular expressions</h2>
+<p>Regular expressions is a formal language that can be used to describe patterns in strings (a string is a sequence of characters, what we humanists would loosely call “text”). Regular expressions are especially useful for creating complex search and replace operations.</p>
+<p>For example, there are many ways to transcribe the Arabic name “Muḥammad” in Latin script. The regular expression (or short, regex) <code>M[uo]hammad</code> matches both “Muhammad” and “Mohammad”: the square brackets tell the computer that between “M” and “hammad” we will accept a “u” or an “o”.</p>
+<p>The same device can be used to build a regex that can match many more transcriptions of Muḥammad: <code>M[uo][hḥ]am+[ae]d</code> (here we used also the operator <code>+</code> to indicate that the letter “m” may appear one or more times).</p>
+<p>Regular expressions are easy to learn (the language uses only 14 special characters: <code>.+*?^$()[]{}|\</code>), very useful for textual research and a good introduction to formal computer languages.</p>
+<p>A very good way to learn regular expressions is through the short regex tutorial at <a href="https://Regexone.com">Regexone.com</a>.
+Please go through lessons 1-14 (last lesson: “It’s all conditional”) to prepare for class. We will do some exercises in class, so please come prepared!</p>
+<p>NB: each lesson takes only 2-3 minutes, and contains a short introduction and an elucidating exercise. You should be able to complete the tutorial in about 30-40 minutes (20 if you have already some experience with regular expressions).</p>
+<div id="useful-resources" class="section level3">
+<h3><span class="header-section-number">6.1.1</span> Useful resources</h3>
+<ul>
+<li><a href="https://www.regular-expressions.info/tutorial.html">regular-expressions.info</a>: detailed tutorial for regular expressions, with a lot of background, by one of the regex gurus, Jan Goyvaerts</li>
+<li><a href="https://www.rexegg.com/regex-quickstart.html#chars">rexegg.com “cheatsheet”</a>: a list of all special characters and devices used in regular expressions, with examples. Using this is not cheating!</li>
+</ul>
+</div>
+</div>
+<div id="installing-editpad-pro" class="section level2">
+<h2><span class="header-section-number">6.2</span> Installing EditPad Pro</h2>
+<p>For dealing with digitized text in Islamicate languages, we need a text editor that can handle right-to-left languages well, and can deal with the sometimes very large texts in the pre-modern written tradition.</p>
+<p>Our text editor of choice is EditPad Pro, which in addition to the two characteristics above, has a number of other powerful features that are very useful for searching, annotating and analyzing texts. One of the most useful features is that you can develop your own highlighting schema for your texts; for texts in the OpenITI corpus, for example, we have developed a schema that highlights the different levels of sections in a different colour, allowing the reader to easily navigate the text. The texts can also be folded to show only those headers, creating a table of contents.</p>
+<p>You can download the free version of the software (EditPad Pro 8) here: <a href="https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe">https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe</a>. This is a trial version, but is fully functional for our needs.</p>
+<p>NB: EditPad Pro works on Windows only. If you use a Mac or Linux computer, you can still run the program using an emulator software like Wine (<a href="https://www.winehq.org/">whinehq.org</a>), which makes it possible to use Windows programs on Mac and Linux. For Mac, see: <a href="https://wiki.winehq.org/MacOS">https://wiki.winehq.org/MacOS</a>. Alternatively, you can install a virtual machine on your computer that runs Windows:</p>
+<ul>
+<li>Parallels (commercial): <a href="https://www.parallels.com/products/desktop/" class="uri">https://www.parallels.com/products/desktop/</a></li>
+<li>VirtualBox (free): <a href="https://www.virtualbox.org/" class="uri">https://www.virtualbox.org/</a></li>
+</ul>
+<div id="installing-the-openiti-highlighting-schema" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Installing the OpenITI highlighting schema</h3>
+<p>Once you have downloaded and installed EditPad Pro, take the following steps to install the OpenITI mARkdown schema (see <a href="https://github.com/OpenITI/mARkdown_scheme">https://github.com/OpenITI/mARkdown_scheme</a> for more detail):</p>
+<ul>
+<li><strong>VERY IMPORTANT:</strong> Make sure that EditPad Pro is fully closed. <strong>Do not close it using the “X” in the upper right corner</strong> (which will not fully close the program) but go to ‘file &gt; exit’ in Edit Pad Pro.</li>
+<li>Download the schema from <a href="./2021IslamicateWorldCourse_files/EditPadPro8_20210118_144130.zip">here</a></li>
+<li>Unzip the downloaded file.</li>
+<li>Open the unzipped folder, and copy all of the files in it</li>
+<li>Within the unzipped folder, double click on the link <code>__Follow_this_link_to_paste_mARkdownScheme8.lnk</code>. This link takes you to the location where EditPad Pro was installed on your computer (<code>%APPDATA%\JGsoft\EditPad Pro 8</code>)</li>
+<li>Paste the files into this folder</li>
+<li>Now, open EditPadPro. If you have done everything correctly, the background in EditPadPro should be of yellowish color. If the background is still white, you need to repeat the whole procedure; now, make absolutely sure to shut down EditPadPro (not just click on the x in the top right corner, but shut it down through FILE &gt; Exit), then repeat all steps from the beginning of this section.</li>
+<li>Try opening an OpenITI file to see the highlighing scheme in action. E.g., download the OpenITI version of al-Iṣṭakhrī’s <em>Kitāb al-Mamālik wa-al-mamālik</em> <a href="./2021IslamicateWorldCourse_files/0346Istakhri.MasalikWaMamalik.Shamela0011680-ara1.mARkdown">here</a> and open it in EditPad Pro.</li>
 </ul>
 
+</div>
+</div>
 </div>
             </section>
 
