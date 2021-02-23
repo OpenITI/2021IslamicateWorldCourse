@@ -91,6 +91,10 @@ share-a-template-with-another-user-or-with-a-group
 week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1
 week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1
 week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1
+regular-expressions
+useful-resources
+installing-editpad-pro
+installing-the-openiti-highlighting-schema
 week-6-interacting-with-the-openiti-corpus-using-github-and-editpad-1
 week-7-using-regex-on-texts-1
 week-8-introducing-r-in-gui-through-stylometry-1

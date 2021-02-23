@@ -2,15 +2,74 @@
 
 ***2/25/2021 Thursday***
 
+***Since we are still experiencing trouble with the eScriptorium instance on the UMD server, we will pause the eScriptorium tutorials until next week, and move material from the coming weeks forward.***
+
 Prepare for Class:
 
+* Regular Expressions tutorials #1-14: [Regexone.com](https://Regexone.com)
+* Install the free version of the text editor EditPad Pro: [https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe](https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe) (for instructions, see below)
+* Underwood, Ted. *Distant Horizons: Digital Evidence and Literary Change*. Chicago: University of Chicago Press, 2019. (selections). [Course Google Drive]
 * Piper, Andrew. *Enumerations: Data and Literary Study*. Chicago: University of Chicago Press, 2018. (selections). [Course Google Drive]
-* Watch eScriptorium training video #5, “Training Your own Models in eScriptorim.”
-* Re-OCR your new transcription and segmentation models.
 
 In class:
 
 * Weekly reading report.
-* Collaboratory assignment on digital text production (bring your computers!).
+* Regular expressions exercises
+* Introduction to using EditPad Pro.
+
+## Regular expressions
+
+Regular expressions is a formal language that can be used to describe patterns in strings (a string is a sequence of characters, what we humanists would loosely call "text"). Regular expressions are especially useful for creating complex search and replace operations. 
+
+For example, there are many ways to transcribe the Arabic name "Muḥammad" in Latin script. The regular expression (or short, regex) `M[uo]hammad` matches both "Muhammad" and "Mohammad": the square brackets tell the computer that between "M" and "hammad" we will accept a "u" or an "o". 
+
+The same device can be used to build a regex that can match many more transcriptions of Muḥammad: `M[uo][hḥ]am+[ae]d` (here we used also the operator `+` to indicate that the letter "m" may appear one or more times).
+
+Regular expressions are easy to learn (the language uses only 14 special characters: `.+*?^$()[]{}|\`), very useful for textual research and a good introduction to formal computer languages. 
+
+A very good way to learn regular expressions is through the short regex tutorial at [Regexone.com](https://Regexone.com). 
+Please go through lessons 1-14 (last lesson: "It's all conditional") to prepare for class. We will do some exercises in class, so please come prepared!
+
+NB: each lesson takes only 2-3 minutes, and contains a short introduction and an elucidating exercise. You should be able to complete the tutorial in about 30-40 minutes (20 if you have already some experience with regular expressions). 
+
+### Useful resources
+
+* [regular-expressions.info](https://www.regular-expressions.info/tutorial.html): detailed tutorial for regular expressions, with a lot of background, by one of the regex gurus, Jan Goyvaerts
+* [rexegg.com "cheatsheet"](https://www.rexegg.com/regex-quickstart.html#chars): a list of all special characters and devices used in regular expressions, with examples. Using this is not cheating!
+
+## Installing EditPad Pro
+
+For dealing with digitized text in Islamicate languages, we need a text editor that can handle right-to-left languages well, and can deal with the sometimes very large texts in the pre-modern written tradition. 
+
+Our text editor of choice is EditPad Pro, which in addition to the two characteristics above, has a number of other powerful features that are very useful for searching, annotating and analyzing texts. One of the most useful features is that you can develop your own highlighting schema for your texts; for texts in the OpenITI corpus, for example, we have developed a schema that highlights the different levels of sections in a different colour, allowing the reader to easily navigate the text. The texts can also be folded to show only those headers, creating a table of contents. 
+
+You can download the free version of the software (EditPad Pro 8) here: [https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe](https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe). This is a trial version, but is fully functional for our needs. 
+
+NB: EditPad Pro works on Windows only. If you use a Mac or Linux computer, you can still run the program using an emulator software like Wine ([whinehq.org](https://www.winehq.org/)), which makes it possible to use Windows programs on Mac and Linux.  For Mac, see: [https://wiki.winehq.org/MacOS](https://wiki.winehq.org/MacOS). Alternatively, you can install a virtual machine on your computer that runs Windows: 
+
+* Parallels (commercial): https://www.parallels.com/products/desktop/ 
+* VirtualBox (free): https://www.virtualbox.org/
+
+### Installing the OpenITI highlighting schema
+
+Once you have downloaded and installed EditPad Pro, take the following steps to install the OpenITI mARkdown schema (see [https://github.com/OpenITI/mARkdown_scheme](https://github.com/OpenITI/mARkdown_scheme) for more detail):
+
+* **VERY IMPORTANT:** Make sure that EditPad Pro is fully closed. **Do not close it using the “X” in the upper right corner** (which will not fully close the program) but go to ‘file > exit’ in Edit Pad Pro.
+* Download the schema from [here](./2021IslamicateWorldCourse_files/EditPadPro8_20210118_144130.zip)
+* Unzip the downloaded file. 
+* Open the unzipped folder, and copy all of the files in it
+* Within the unzipped folder, double click on the link `__Follow_this_link_to_paste_mARkdownScheme8.lnk`. This link takes you to the location where EditPad Pro was installed on your computer (`%APPDATA%\JGsoft\EditPad Pro 8`)
+* Paste the files into this folder
+* Now, open EditPadPro. If you have done everything correctly, the background in EditPadPro should be of yellowish color. If the background is still white, you need to repeat the whole procedure; now, make absolutely sure to shut down EditPadPro (not just click on the x in the top right corner, but shut it down through FILE > Exit), then repeat all steps from the beginning of this section.
+* Try opening an OpenITI file to see the highlighing scheme in action. E.g., download the OpenITI version of al-Iṣṭakhrī's *Kitāb al-Mamālik wa-al-mamālik* [here](./2021IslamicateWorldCourse_files/0346Istakhri.MasalikWaMamalik.Shamela0011680-ara1.mARkdown) and open it in EditPad Pro. 
+
+
+
+
+
+
+
+
+
 
 
