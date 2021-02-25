@@ -61,8 +61,9 @@ Once you have downloaded and installed EditPad Pro, take the following steps to 
 * Within the unzipped folder, double click on the link `__Follow_this_link_to_paste_mARkdownScheme8.lnk`. This link takes you to the location where EditPad Pro was installed on your computer (`%APPDATA%\JGsoft\EditPad Pro 8`)
 * Paste the files into this folder
 * Now, open EditPadPro. If you have done everything correctly, the background in EditPadPro should be of yellowish color. If the background is still white, you need to repeat the whole procedure; now, make absolutely sure to shut down EditPadPro (not just click on the x in the top right corner, but shut it down through FILE > Exit), then repeat all steps from the beginning of this section.
-* Try opening an OpenITI file to see the highlighing scheme in action. E.g., download the OpenITI version of al-Iṣṭakhrī's *Kitāb al-Mamālik wa-al-mamālik* [here](./2021IslamicateWorldCourse_files/0346Istakhri.MasalikWaMamalik.Shamela0011680-ara1.mARkdown) and open it in EditPad Pro. 
+* Try opening an OpenITI file to see the highlighing scheme in action. E.g., download the OpenITI/Shamela version of al-Iṣṭakhrī's *Kitāb al-Mamālik wa-al-mamālik* from [here](https://github.com/OpenITI/0350AH/tree/master/data/0346Istakhri/0346Istakhri.MasalikWaMamalik) by right-clicking on the file 0346Istakhri.MasalikWaMamalik.Shamela0011680-ara1.mARkdown, and choosing "Save link as"; then open the saved document in EditPad Pro. 
 
+NB: in a previous version of this course, the link led to a [corrupted file](./2021IslamicateWorldCourse_files/0346Istakhri.MasalikWaMamalik.Shamela0011680-ara1.mARkdown)
 
 
 

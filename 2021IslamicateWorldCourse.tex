@@ -791,16 +791,18 @@ Prepare for Class:
 \begin{itemize}
 \tightlist
 \item
-  Flanders, Julia and Fotis Jannidis. ``Data Modeling in a Digital Humanities Context.'' In \emph{The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources}, edited by Julia Flanders and Fotis Jannidis, 3-25. New York: Rotuledge, 2019. {[}Course Google Drive{]}\\
+  Flanders, Julia and Fotis Jannidis. ``Data Modeling in a Digital Humanities Context.'' In \emph{The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources}, edited by Julia Flanders and Fotis Jannidis, 3-25. New York: Routledge, 2019. {[}Course Google Drive{]}\\
 \item
-  Underwood, Ted. ``Algorithmic Modeling: Or, Modeling Data We Do Not Yet Understand.'' In \emph{The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources}, edited by Julia Flanders and Fotis Jannidis, 250-263. New York: Rotuledge, 2019. {[}Course Google Drive{]}
+  Underwood, Ted. ``Algorithmic Modeling: Or, Modeling Data We Do Not Yet Understand.'' In \emph{The Shape of Data in the Digital Humanities: Modeling Texts and Text-based Resources}, edited by Julia Flanders and Fotis Jannidis, 250-263. New York: Routledge, 2019. {[}Course Google Drive{]}
 \item
   Martin Weisser. ``Understanding Corpus Design.'' In \emph{Practical Corpus Linguistics: An Introduction to Corpus‐Based Language Analysis}, edited by Martin Weisser, 29-42. London: Wiley (2015). {[}Course Google Drive{]}
 \item
-  Watch eScriptorium training video \#1, ``Introduction to eScriptorium.'': \url{https://www.youtube.com/watch?v=N0hSNC3YvD4}
+  Watch eScriptorium training video \#1, ``Introduction to eScriptorium.'':
 \end{itemize}
 
-\includegraphics{https://www.youtube.com/watch?v=N0hSNC3YvD4}
+\href{https://www.youtube.com/watch?v=N0hSNC3YvD4}{\includegraphics{img/eScriptorium_video1_screenshot.png}}
+
+\url{https://www.youtube.com/watch?v=N0hSNC3YvD4}
 
 In class:
 
@@ -816,6 +818,690 @@ In class:
 \section{most recent OCR transcription model for eScriptorium}\label{most-recent-ocr-transcription-model-for-escriptorium}}
 
 Download it \href{./2021IslamicateWorldCourse_files/arabPers-WithDiffTypefaces.mlmodel}{here}
+
+\hypertarget{where-do-i-find-escriptorium}{%
+\section{where do I find eScriptorium?}\label{where-do-i-find-escriptorium}}
+
+The UMD instance of eScriptorium can be found here: \url{http://simorgh.umd.edu:8080/}
+
+\hypertarget{getting-started-with-escriptorium-0.6.9}{%
+\section{Getting started with eScriptorium 0.6.9}\label{getting-started-with-escriptorium-0.6.9}}
+
+Tutorial written by \href{https://escripta.hypotheses.org/440}{Alix Chague}, and translated by Jonathan Allen.
+
+\hypertarget{additional-documentation}{%
+\subsection{Additional Documentation:}\label{additional-documentation}}
+
+\begin{itemize}
+\item
+  Video demo of part of the eScriptorium features: \href{https://translate.google.com/website?sl=auto\&tl=en\&u=https://escripta.hypotheses.org/escriptorium-video-gallery}{https://escripta.hypotheses.org/escriptorium-video-gallery}
+\item
+  Source code of eScriptorium: \href{https://translate.google.com/website?sl=auto\&tl=en\&u=https://gitlab.inria.fr/scripta/escriptorium}{https://gitlab.inria.fr/scripta/escriptorium}
+\end{itemize}
+
+\hypertarget{prerequisites}{%
+\subsection{Prerequisites:}\label{prerequisites}}
+
+\begin{itemize}
+\item
+  Secure an account on an eScriptorium instance;
+\item
+  Or install a local instance of eScriptorium ( with Docker or without Docker ).
+\end{itemize}
+
+\hypertarget{summary}{%
+\subsection{Summary}\label{summary}}
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Step by step
+  \end{enumerate}
+
+  \begin{itemize}
+  \item
+    1.1. Connection to eScriptorium
+  \item
+    1.2. Create a new document
+
+    \begin{itemize}
+    \item
+      1.2.1. Point terminology
+    \item
+      1.2.2. Instructions
+    \end{itemize}
+  \item
+    1.3. Upload images
+
+    \begin{itemize}
+    \item
+      1.3.1. Access the interface
+    \item
+      1.3.2. Import local files
+    \item
+      1.3.3. Import images from PDF file
+    \item
+      1.3.4. Use an IIIF manifesto
+    \end{itemize}
+  \item
+    1.4. Manually annotate documents
+
+    \begin{itemize}
+    \item
+      1.4.1. Access the interface
+    \item
+      1.4.2. Annotate segments and areas on the image
+    \item
+      1.4.3. Annotate the transcript
+    \item
+      1.4.4. Aparté on the articulation of \emph{baselines} , polygons
+      and transcriptions
+    \item
+      1.4.5. Change the order of segments
+    \item
+      1.4.6. Semantic annotation
+    \end{itemize}
+  \item
+    1.5. Import annotations
+
+    \begin{itemize}
+    \item
+      1.5.1. Import structured annotations in XML
+    \item
+      1.5.2. Import annotations from plain text
+    \end{itemize}
+  \item
+    1.6. Automatically annotate documents
+
+    \begin{itemize}
+    \item
+      1.6.1. Instructions
+    \item
+      1.6.2. Setting up segmentation
+    \end{itemize}
+  \item
+    1.7. Train models
+  \item
+    1.8. Export data
+  \end{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    Manage a collaborative annotation campaign
+  \end{enumerate}
+
+  \begin{itemize}
+  \item
+    2.1. Create a user group
+  \item
+    2.2. Share a document with another user or with a group
+  \item
+    2.3. Share a template with another user or with a group
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{step-by-step}{%
+\subsection{1. Step by step}\label{step-by-step}}
+
+\hypertarget{logging-into-escriptorium}{%
+\subsubsection{1.1. Logging into eScriptorium}\label{logging-into-escriptorium}}
+
+You log into eScriptorium with an individual account made up of a login,
+a password and an email address. An account is created by the user after
+receiving an invitation or by the site administrator:
+
+\begin{figure}
+\centering
+\includegraphics[width=5.20833in,height=1.27778in]{img/eScrTut/image1.png}
+\caption{Overview of the connection interface, where you enter your login and
+password before clicking on
+"login".}
+\end{figure}
+
+\emph{Login form}
+
+Once logged on, you will see the dashboard which allows you to manage
+all the documents created by and shared with the account. On first
+login, this dashboard is empty:
+
+\begin{figure}
+\centering
+\includegraphics[width=5.20833in,height=1.81944in]{img/eScrTut/image2.png}
+\caption{Dashboard preview,
+empty}
+\end{figure}
+
+\hypertarget{create-a-new-document}{%
+\subsubsection{1.2. Create a new document}\label{create-a-new-document}}
+
+\hypertarget{point-terminology}{%
+\paragraph{1.2.1. Point terminology}\label{point-terminology}}
+
+\begin{itemize}
+\item
+  A "\textbf{document}" is a collection of images forming a whole unit;
+\item
+  A " \textbf{document-part}" is an image-\/-a page belonging to a
+  document.
+\end{itemize}
+
+\hypertarget{instructions}{%
+\paragraph{1.2.2. Instructions}\label{instructions}}
+
+To create a document, click on the ``\textbf{Create new}'' button; a new page
+is displayed as well as an input form:
+
+\begin{figure}
+\centering
+\includegraphics[width=5.20833in,height=2.48611in]{img/eScrTut/image3.png}
+\caption{Document description tab}
+\end{figure}
+
+The document "description" tab is where you fill in the metadata.
+
+The "Name" field is mandatory. The others are optional and can be
+completed later. We will come back to the ``Ontology'' section later.
+
+Once the information has been entered, click on ``Create'' to create the
+document; a message is then displayed: "Document created successfully!"
+You can still modify the data entered: the "Create" button has been
+replaced by an "Update" button.
+
+\begin{figure}
+\centering
+\includegraphics[width=5.20833in,height=0.81944in]{img/eScrTut/image4.png}
+\caption{Access the document editing interface from the dashboard.}
+\end{figure}
+
+To return to this form from the dashboard, click on the ``Edit'' icon in
+front of the document.
+
+\hypertarget{upload-images}{%
+\subsubsection{1.3. Upload images}\label{upload-images}}
+
+\hypertarget{access-the-interface}{%
+\paragraph{1.3.1. Access the interface}\label{access-the-interface}}
+
+The ``Images'' interface is used to manage most of the tasks related to
+automatic image processing and imports and exports.
+
+To access the image loading interface, click on the ``Images'' tab.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.5in,height=3.19444in]{img/eScrTut/image5.gif}
+\caption{Navigation between the "Description" and "Images" tabs.}
+\end{figure}
+
+There are several ways to import images to the platform.
+
+\hypertarget{import-local-files}{%
+\paragraph{1.3.2. Import local files}\label{import-local-files}}
+
+Simply load the files using drag-and-drop or click in the box to open
+the file explorer. \textbf{Note:} you must wait until \textbf{all} the images are
+loaded before refreshing the page!
+
+\begin{figure}
+\centering
+\includegraphics[width=6.5in,height=4.08333in]{img/eScrTut/image6.gif}
+\caption{How to import images from the local file system.}
+\end{figure}
+
+\hypertarget{import-images-from-pdf-file}{%
+\paragraph{1.3.3. Import images from PDF file}\label{import-images-from-pdf-file}}
+
+Click on the Import button, then Images (PDF) option to load a PDF file
+and automatically extract the images. Please note, only the images are
+imported. If the PDF contains a text layer corresponding to the
+transcription, it is not imported.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.04945in,height=3.63278in]{img/eScrTut/image7.gif}
+\caption{demonstration of importing images from a
+PDF}
+\end{figure}
+
+\hypertarget{use-an-iiif-manifesto}{%
+\paragraph{1.3.4. Use an IIIF manifesto}\label{use-an-iiif-manifesto}}
+
+Click on the Import button, then the Images (IIIF) option, then enter
+the url of an IIIF manifesto. All the images associated with the
+manifesto are then copied locally, as well as the metadata, which is
+visible in the ``Description'' tab.
+
+Example:
+\url{https://gallica.bnf.fr/iiif/ark:/12148/btv1b53026595r/manifest.json}
+
+\includegraphics[width=6.5in,height=4.08333in]{img/eScrTut/image8.gif}
+\emph{Demonstration of importing images through an IIIF manifesto.}
+
+\hypertarget{manually-annotate-documents}{%
+\subsubsection{1.4. Manually annotate documents}\label{manually-annotate-documents}}
+
+\hypertarget{access-the-interface-1}{%
+\paragraph{1.4.1. Access the interface}\label{access-the-interface-1}}
+
+Manual annotation is necessary to generate \emph{ground truth data} used to
+train models, or to correct the result of these operations. It can also
+be used as part of an annotation campaign that does not make use of
+Kraken models (eScriptorium only serves as an input environment).
+
+The \emph{document-parts} edit tab allows you to create or modify annotation
+elements manually. It is accessed by clicking on the ``Edit'' tab at the
+top of the page or by clicking on the ``Edit'' button on each ``map''
+representing a part-document. There are several viewing panes in this
+tab corresponding to each possible editing task.
+
+\begin{figure}
+\centering
+\includegraphics[width=5.20833in,height=1.79167in]{img/eScrTut/image9.png}
+\caption{Several visualization panes can be activated within the "Edit" tab}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.04167in,height=1.40278in]{img/eScrTut/image10.png}
+\caption{Click on the "Edit" button on each card representing a
+part-document}
+\end{figure}
+
+Another way to access the "Edit" tab
+
+\begin{itemize}
+\item
+  "Image source" allows you to display the source image;
+\item
+  ``Segmentation'' displays the segmentation editing pane;
+\item
+  "Transcription" displays the editing pane of the transcription in
+  diplomatic view;
+\item
+  "Text" is used to display the editing pane of the transcription in
+  text mode.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.5in,height=2.90278in]{img/eScrTut/image11.gif}
+\caption{Enabling and disabling edit panes}
+\end{figure}
+
+\hypertarget{annotate-segments-and-areas-on-the-image}{%
+\paragraph{1.4.2. Annotate segments and areas on the image}\label{annotate-segments-and-areas-on-the-image}}
+
+The segment editing pane allows you to perform several essential
+operations:
+
+\begin{itemize}
+\item
+  Drawing \emph{baselines} corresponding to the locations of the text on
+  the image in two ways:
+
+  \begin{itemize}
+  \item
+    Free route (not recommended);
+  \item
+    Point by point plot.
+  \end{itemize}
+\item
+  Adding points on a line (select it then double-click at the point's
+  location);
+\item
+  Moving one or more point (s) by a simple select-drag;
+\item
+  Deleting one or more point (s) on a line;
+\item
+  Cutting one or more lines using the scissors tool;
+\item
+  Joining one or more lines;
+\item
+  Configuring the reading direction of a line;
+\item
+  Activating the calculation of the polygons associated with each line
+  (this task is automatic and managed asynchronously without any
+  action on the part of the user after the first use).
+\end{itemize}
+
+In this pane, it is also possible to create regions (or \emph{zones} ) and
+associate segments to them. A segment located within the perimeter of a
+region is therefore not automatically associated with it.
+
+All the operations that can be carried out in this pane are detailed in
+a help window (to display it, click on "?"). It will thus be noted
+that there are many shortcuts making it possible to simplify all these
+operations.
+
+\hypertarget{annotate-the-transcript}{%
+\paragraph{1.4.3. Annotate the transcript}\label{annotate-the-transcript}}
+
+Only when there are segments and masks on the image is it possible to
+use the functionalities of the ``Transcription'' and ``Text'' tabs.
+
+To add or modify a transcription associated with a segment from the
+``Transcription'' pane, click on the corresponding zone. An input window
+is displayed. To record a transcription, press ``Enter'': the
+transcription interface automatically displays the input field for the
+next segment.
+
+As you type in the ``Transcription'' pane, the crenellated areas are
+replaced by text and the content of the ``Text'' pane changes. It is
+therefore also possible to modify the text from the ``Text'' pane and even
+to copy and paste several lines at once.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.5in,height=2.58333in]{img/eScrTut/image12.gif}
+\caption{Manually edit the transcription from the "Transcription" pane.}
+\end{figure}
+
+\hypertarget{a-note-on-the-articulation-of-baselines-polygons-and-transcriptions}{%
+\paragraph{1.4.4. A note on the articulation of baselines, polygons and transcriptions**}\label{a-note-on-the-articulation-of-baselines-polygons-and-transcriptions}}
+
+The \emph{baseline} is the central element for storing information in the
+eScriptorium database. So :
+
+\begin{itemize}
+\item
+  It is possible to modify a \emph{baseline} (remove / move / add points)
+  without impacting the transcription;
+\item
+  The polygon is always calculated from the \emph{baseline}, including
+  during training
+\item
+  It is possible to modify the polygon manually (not recommended)
+  without this impacting the transcription.
+\end{itemize}
+
+\includegraphics[width=5.20833in,height=2.31944in]{img/eScrTut/image13.png}
+
+During the training of the Kraken models, the calculation of the
+polygons is reset: the user therefore has an interest in not intervening
+on the polygons and on the contrary to ensure that the \emph{baselines} are
+drawn in such a way that the automatically generated polygons are
+correct. . Moreover, when manually entering ground truth data, care
+should be taken to transcribe only what is inside the polygon.
+
+\hypertarget{changing-the-order-of-segments}{%
+\paragraph{1.4.5. Changing the order of segments}\label{changing-the-order-of-segments}}
+
+The playback order of the segments is calculated automatically. You can
+display the order number of each segment from the ``Segmentation'' pane by
+clicking on ``Toggle ordering display (L)'' or from the ``Text'' pane where
+the lines are displayed in the following order.
+
+It is possible to modify this order from the ``Text'' pane by clicking
+``Toggle sorting mode.'' A simple drag and drop of the lines is then
+enough to carry out the modification.
+
+\textbf{Note:} it is advisable to ensure the quality of the segmentation
+before changing the order of the lines because adding or deleting lines
+systematically restarts the calculation of this order, overwriting
+manual modifications in the process.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.5in,height=2.58333in]{img/eScrTut/image14.gif}
+\caption{Edit the order of the segments from the ``Text'' pane}
+\end{figure}
+
+\hypertarget{semantic-annotation}{%
+\paragraph{1.4.6. Semantic annotation}\label{semantic-annotation}}
+
+It is possible to associate labels (or \emph{tags} ) with segments and
+regions by following an ontology pre-defined by the user from the
+``Description'' tab. There are default \emph{tags} , but it is possible to add
+some using the input fields (click on "+" then "Update" to add the
+new \emph{tag} to the list) or to delete (uncheck the box in front of the
+\emph{tag} then click on "Update").
+
+From the ``Segmentation'' pane, select an area or a segment, then click on
+``Set the type on all selected lines / regions (T)'' and choose the
+appropriate \emph{tag} . The color of the area or line changes.
+
+It is possible to apply a \emph{tag} to several regions or segments at once:
+all you have to do is select several (Ctrl + click-drag or keep Ctrl
+pressed and click the targeted segments / regions).
+
+\begin{figure}
+\centering
+\includegraphics[width=6.5in,height=3.5in]{img/eScrTut/image15.gif}
+\caption{Add elements in the ontology from the "Description" pane then apply
+the tags to the segments / regions from the "Edit"
+pane.}
+\end{figure}
+
+\hypertarget{import-annotations}{%
+\subsubsection{1.5. Import annotations}\label{import-annotations}}
+
+\hypertarget{import-structured-annotations-in-xml}{%
+\paragraph{1.5.1. Import structured annotations in XML}\label{import-structured-annotations-in-xml}}
+
+It is possible to import segments and / or a transcript generated
+outside of eScriptorium. To do this, in the ``Images'' tab, click on the
+``Import / Transcription (XML)'' option.
+
+A form appears allowing you to specify a name to identify the version to
+import and to load the file to import. This can be an ALTO XML file, a
+PAGE XML file or a ZIP containing several ALTO or PAGE XML files.
+
+It is not necessary to select beforehand which document-parts are
+concerned by the import: the link is made automatically according to the
+information contained in the XML files.
+
+\begin{figure}
+\centering
+\includegraphics[width=5.20833in,height=3.56944in]{img/eScrTut/image16.png}
+\caption{Form for configuring segmentation and / or transcription
+imports}
+\end{figure}
+
+\textbf{Please note}, after importing segments generated without Kraken /
+eScriptorium, it is essential to \textbf{reset the polygons ( \emph{masks} )}
+before using these documents to train a transcription model.
+
+\hypertarget{import-annotations-from-plain-text}{%
+\paragraph{1.5.2. Import annotations from plain text}\label{import-annotations-from-plain-text}}
+
+It is possible to manually import a transcription from a plain text
+version using the ``Text'' pane of the ``Edit'' tab. Each line break then
+indicates the passage to a new segment. It is therefore necessary to
+ensure that the reading order of the lines matches.
+
+\hypertarget{automatically-annotate-documents}{%
+\subsubsection{1.6. Automatically annotate documents}\label{automatically-annotate-documents}}
+
+\hypertarget{instructions-1}{%
+\paragraph{1.6.1. Instructions}\label{instructions-1}}
+
+Automatic document annotation is managed from the ``Images'' tab.
+
+\begin{itemize}
+\item
+  Select the images to annotate;
+\item
+  Click on ``Segment'' (for the detection of baselines, polygons and /
+  or areas) or on ``Transcribe'' (for transcription);
+\item
+  A form is displayed: it allows you to load a Kraken model or to use
+  a model already available in eScriptorium and, for segmentation, to
+  configure the annotation.
+\end{itemize}
+
+\hypertarget{setting-up-segmentation}{%
+\paragraph{1.6.2. Setting up segmentation}\label{setting-up-segmentation}}
+
+\begin{itemize}
+\item
+  "Segmentation steps" allows you to manage what level of
+  segmentation is carried out:
+
+  \begin{itemize}
+  \item
+    ``Line and Regions'' leads to the generation of zones (provided
+    that the model used has been trained for this), baselines and
+    associated polygons.
+  \item
+    ``Line Baselines and Masks'' leads to the generation of baselines
+    and associated polygons.
+  \item
+    "Only line Masks" does not require loading a model; this
+    option allows you to reset on the fly the calculation of the
+    polygons associated with the baselines already present on the
+    images.
+  \item
+    ``Regions'' makes it possible to keep intact the baselines and
+    polygons already present on the images and to generate only the
+    zones.
+  \end{itemize}
+\item
+  "Text direction" is used to indicate the reading direction of the
+  lines.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=3.19444in,height=3.375in]{img/eScrTut/image17.gif}
+\caption{Overview of the options available in the automatic segmentation
+configuration form.}
+\end{figure}
+
+\hypertarget{train-models}{%
+\subsubsection{1.7. Train models}\label{train-models}}
+
+\hypertarget{start-a-workout}{%
+\paragraph{1.7.1. Start a workout}\label{start-a-workout}}
+
+Training of Kraken models is started from the ``Images'' tab; it is
+tracked from the ``Models'' tab (inactive as long as no model other than
+the default model is associated with the document).
+
+Access to training functions may be subject to authorization. It is
+managed from the administration interface.
+
+To train a model, all the mobilized images / annotations must be in the
+same document.
+
+\begin{itemize}
+\item
+  Select the share documents containing the ground truth;
+\item
+  Click on "Train" then select the type of model to train:
+  "Segment" for a segmentation model, "Recognizer" for a
+  transcription model;
+\item
+  Fill out the form then click on "Train";
+\item
+  The training task is started, sometimes you have to wait before this
+  is displayed.
+\end{itemize}
+
+When the training is finished, the user receives a notification and can
+access the final model from the ``Models'' tab. It is then possible to
+download the model or use it on the document.
+
+\hypertarget{refine-a-model-or-start-from-scratch}{%
+\paragraph{1.7.2. Refine a model or start from scratch?}\label{refine-a-model-or-start-from-scratch}}
+
+The training configuration form allows you to choose:
+
+\begin{itemize}
+\item
+  If you want to start from scratch (simply indicate the name to give
+  to the new model that will be created);
+\item
+  Or if you want to refine a model (it can be loaded from the file
+  manager, or be already present in the list of models associated with
+  the current document).
+\end{itemize}
+
+\textbf{Caution:} in version 0.6.9, modifying the name of the model to train
+is only taken into account in the case of a model starting from zero. In
+order not to overwrite an already existing model, make sure to download
+the model locally, rename it according to the name desired for the new
+model, then load it into eScriptorium from the form.
+
+\hypertarget{export-annotations}{%
+\subsubsection{1.8. Export annotations}\label{export-annotations}}
+
+The export of annotations is carried out from the ``Images'' tab.
+
+\begin{itemize}
+\item
+  Select the relevant part-documents;
+\item
+  Click on "Export" then fill out the form:
+
+  \begin{itemize}
+  \item
+    Specify the version of the transcription to export;
+  \item
+    Specify the export format ("Alto" for XML ALTO, "Pagexml"
+    for XML PAGE, or "Text" for plain text);
+  \item
+    Check "Include Images" if you also want to export the images;
+  \end{itemize}
+\item
+  Click on Export and save the generated ZIP file.
+\end{itemize}
+
+\hypertarget{manage-a-collaborative-annotation-campaign}{%
+\subsection{2. Manage a collaborative annotation campaign}\label{manage-a-collaborative-annotation-campaign}}
+
+\hypertarget{create-a-user-group-admin}{%
+\subsubsection{2.1. Create a user group (admin)}\label{create-a-user-group-admin}}
+
+It is possible to create user groups from the administrator's dashboard
+(provided you have the associated rights). These groups are used to
+define work teams or to assign certain rights to a set of users.
+
+It will soon be possible for a user with sufficient rights to create a
+team and invite other users to it.
+
+\hypertarget{share-a-document-with-another-user-or-with-a-group}{%
+\subsubsection{2.2. Share a document with another user or with a group}\label{share-a-document-with-another-user-or-with-a-group}}
+
+A user can share a document with multiple users, including outside of
+the group (s) to which it belongs. From the "Description" tab:
+
+\begin{itemize}
+\item
+  Click on the "Share" button
+\item
+  Enter the name of the user with whom to share the document, or check
+  his name in the list that appears
+\item
+  To confirm, click on "Share"
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.5in,height=3.19444in]{img/eScrTut/image18.gif}
+\caption{Share a document with a group or a user.}
+\end{figure}
+
+\hypertarget{share-a-template-with-another-user-or-with-a-group}{%
+\subsubsection{2.3. Share a template with another user or with a group}\label{share-a-template-with-another-user-or-with-a-group}}
+
+A template is associated with a document and not with a user. To share a
+model with another user, there are two possibilities:
+
+\begin{itemize}
+\item
+  Download the model from the ``Models'' tab and send the model via
+  another exchange system (e-mails, etc.);
+\item
+  Share with the user the document to which the template is
+  associated. It is then up to the other user to download the model
+  and then load it into the document where he wishes to apply it.
+\end{itemize}
 
 \hypertarget{week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1}{%
 \chapter{Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies}\label{week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1}}
@@ -853,6 +1539,8 @@ In class:
 
 \textbf{\emph{2/18/2021 Thursday}}
 
+\textbf{This class was cancelled because of snow storms in Michigan. For the class of Feb 25, see the section on Week 5.}
+
 Prepare for Class:
 
 \begin{itemize}
@@ -882,16 +1570,20 @@ In class:
 
 \textbf{\emph{2/25/2021 Thursday}}
 
+\textbf{\emph{Since we are still experiencing trouble with the eScriptorium instance on the UMD server, we will pause the eScriptorium tutorials until next week, and move material from the coming weeks forward.}}
+
 Prepare for Class:
 
 \begin{itemize}
 \tightlist
 \item
+  Regular Expressions tutorials \#1-14: \href{https://Regexone.com}{Regexone.com}
+\item
+  Install the free version of the text editor EditPad Pro: \url{https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe} (for instructions, see below)
+\item
+  Underwood, Ted. \emph{Distant Horizons: Digital Evidence and Literary Change}. Chicago: University of Chicago Press, 2019. (selections). {[}Course Google Drive{]}
+\item
   Piper, Andrew. \emph{Enumerations: Data and Literary Study}. Chicago: University of Chicago Press, 2018. (selections). {[}Course Google Drive{]}
-\item
-  Watch eScriptorium training video \#5, ``Training Your own Models in eScriptorim.''
-\item
-  Re-OCR your new transcription and segmentation models.
 \end{itemize}
 
 In class:
@@ -901,7 +1593,80 @@ In class:
 \item
   Weekly reading report.
 \item
-  Collaboratory assignment on digital text production (bring your computers!).
+  Regular expressions exercises
+\item
+  Introduction to using EditPad Pro.
+\end{itemize}
+
+\hypertarget{regular-expressions}{%
+\section{Regular expressions}\label{regular-expressions}}
+
+Regular expressions is a formal language that can be used to describe patterns in strings (a string is a sequence of characters, what we humanists would loosely call ``text''). Regular expressions are especially useful for creating complex search and replace operations.
+
+For example, there are many ways to transcribe the Arabic name ``Muḥammad'' in Latin script. The regular expression (or short, regex) \texttt{M{[}uo{]}hammad} matches both ``Muhammad'' and ``Mohammad'': the square brackets tell the computer that between ``M'' and ``hammad'' we will accept a ``u'' or an ``o''.
+
+The same device can be used to build a regex that can match many more transcriptions of Muḥammad: \texttt{M{[}uo{]}{[}hḥ{]}am+{[}ae{]}d} (here we used also the operator \texttt{+} to indicate that the letter ``m'' may appear one or more times).
+
+Regular expressions are easy to learn (the language uses only 14 special characters: \texttt{.+*?\^{}\$(){[}{]}\{\}\textbar{}\textbackslash{}}), very useful for textual research and a good introduction to formal computer languages.
+
+A very good way to learn regular expressions is through the short regex tutorial at \href{https://Regexone.com}{Regexone.com}.
+Please go through lessons 1-14 (last lesson: ``It's all conditional'') to prepare for class. We will do some exercises in class, so please come prepared!
+
+NB: each lesson takes only 2-3 minutes, and contains a short introduction and an elucidating exercise. You should be able to complete the tutorial in about 30-40 minutes (20 if you have already some experience with regular expressions).
+
+\hypertarget{useful-resources}{%
+\subsection{Useful resources}\label{useful-resources}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.regular-expressions.info/tutorial.html}{regular-expressions.info}: detailed tutorial for regular expressions, with a lot of background, by one of the regex gurus, Jan Goyvaerts
+\item
+  \href{https://www.rexegg.com/regex-quickstart.html\#chars}{rexegg.com ``cheatsheet''}: a list of all special characters and devices used in regular expressions, with examples. Using this is not cheating!
+\end{itemize}
+
+\hypertarget{installing-editpad-pro}{%
+\section{Installing EditPad Pro}\label{installing-editpad-pro}}
+
+For dealing with digitized text in Islamicate languages, we need a text editor that can handle right-to-left languages well, and can deal with the sometimes very large texts in the pre-modern written tradition.
+
+Our text editor of choice is EditPad Pro, which in addition to the two characteristics above, has a number of other powerful features that are very useful for searching, annotating and analyzing texts. One of the most useful features is that you can develop your own highlighting schema for your texts; for texts in the OpenITI corpus, for example, we have developed a schema that highlights the different levels of sections in a different colour, allowing the reader to easily navigate the text. The texts can also be folded to show only those headers, creating a table of contents.
+
+You can download the free version of the software (EditPad Pro 8) here: \url{https://download.jgsoft.com/editpad/SetupEditPadProDemo.exe}. This is a trial version, but is fully functional for our needs.
+
+NB: EditPad Pro works on Windows only. If you use a Mac or Linux computer, you can still run the program using an emulator software like Wine (\href{https://www.winehq.org/}{whinehq.org}), which makes it possible to use Windows programs on Mac and Linux. For Mac, see: \url{https://wiki.winehq.org/MacOS}. Alternatively, you can install a virtual machine on your computer that runs Windows:
+
+\begin{itemize}
+\tightlist
+\item
+  Parallels (commercial): \url{https://www.parallels.com/products/desktop/}
+\item
+  VirtualBox (free): \url{https://www.virtualbox.org/}
+\end{itemize}
+
+\hypertarget{installing-the-openiti-highlighting-schema}{%
+\subsection{Installing the OpenITI highlighting schema}\label{installing-the-openiti-highlighting-schema}}
+
+Once you have downloaded and installed EditPad Pro, take the following steps to install the OpenITI mARkdown schema (see \url{https://github.com/OpenITI/mARkdown_scheme} for more detail):
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{VERY IMPORTANT:} Make sure that EditPad Pro is fully closed. \textbf{Do not close it using the ``X'' in the upper right corner} (which will not fully close the program) but go to `file \textgreater{} exit' in Edit Pad Pro.
+\item
+  Download the schema from \href{./2021IslamicateWorldCourse_files/EditPadPro8_20210118_144130.zip}{here}
+\item
+  Unzip the downloaded file.
+\item
+  Open the unzipped folder, and copy all of the files in it
+\item
+  Within the unzipped folder, double click on the link \texttt{\_\_Follow\_this\_link\_to\_paste\_mARkdownScheme8.lnk}. This link takes you to the location where EditPad Pro was installed on your computer (\texttt{\%APPDATA\%\textbackslash{}JGsoft\textbackslash{}EditPad\ Pro\ 8})
+\item
+  Paste the files into this folder
+\item
+  Now, open EditPadPro. If you have done everything correctly, the background in EditPadPro should be of yellowish color. If the background is still white, you need to repeat the whole procedure; now, make absolutely sure to shut down EditPadPro (not just click on the x in the top right corner, but shut it down through FILE \textgreater{} Exit), then repeat all steps from the beginning of this section.
+\item
+  Try opening an OpenITI file to see the highlighing scheme in action. E.g., download the OpenITI version of al-Iṣṭakhrī's \emph{Kitāb al-Mamālik wa-al-mamālik} \href{./2021IslamicateWorldCourse_files/0346Istakhri.MasalikWaMamalik.Shamela0011680-ara1.mARkdown}{here} and open it in EditPad Pro.
 \end{itemize}
 
 \hypertarget{week-6-interacting-with-the-openiti-corpus-using-github-and-editpad-1}{%

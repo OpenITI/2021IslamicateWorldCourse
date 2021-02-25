@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.1.20)  1 FEB 2021 19:48
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.1.20)  25 FEB 2021 15:20
 entering extended mode
 **./2021IslamicateWorldCourse.tex
 (2021IslamicateWorldCourse.tex
@@ -926,22 +926,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 794--796
 
  []
 
+File: img/eScriptorium_video1_screenshot.png Graphic file (type bmp)
+<img/eScriptorium_video1_screenshot.png>
 
-! LaTeX Error: File `https://www.youtube.com/watch?v=N0hSNC3YvD4' not found.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.803 ...ps://www.youtube.com/watch?v=N0hSNC3YvD4}
+[27]
+Overfull \hbox (87.24501pt too wide) in paragraph at lines 837--839
+[]\TU/lmr/m/n/10 Video demo of part of the eScriptorium features: []https://esc
+ripta.hypotheses.org/escriptorium-
+ []
+
+
+Overfull \hbox (132.00735pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 28 \TU/lmr/m/sl/10 CHAPTER 3.  WEEK 2: CORPUS CONSTRUCTION AND M
+ODELING DIGITAL HUMANITIES DATA
+ []
+
+[28] [29]
+
+LaTeX Warning: File `img/eScrTut/image1.png' not found on input line 961.
+
+! Unable to load picture or PDF file 'img/eScrTut/image1.png'.
+<to be read again> 
+                   }
+l.961 ...height=1.27778in]{img/eScrTut/image1.png}
                                                    
 Here is how much of TeX's memory you used:
- 18218 strings out of 412016
- 316192 string characters out of 2844936
+ 18228 strings out of 412016
+ 315677 string characters out of 2844936
  795043 words of memory out of 3000000
- 37648 multiletter control sequences out of 15000+200000
+ 37657 multiletter control sequences out of 15000+200000
  409905 words of font info for 83 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,6n,122p,2074b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 98i,6n,122p,2074b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 2021IslamicateWorldCourse.pdf (26 pages).
+Output written on 2021IslamicateWorldCourse.pdf (29 pages).
