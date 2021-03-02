@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language name="OpenITImARkdown" version="1" kateversion="5.0" section="Markup" extensions="*.inProgress;*.mARkdown;*.completed" priority="9" author="Peter Verkinderen" license="GPL">
+
+<highlighting>
+  <list></list>
+  <contexts>
+    <context name="Start Document" attribute="Normal Text" lineEndContext="FindTags" lineEmptyContext="FindTags" fallthroughContext="FindTags">
+      <RegExpr attribute="Metadata" context="MetadataText" String="^######OpenITI#" column="0" beginRegion="metadata"/>
+    </context>
+    <context name="MetadataText" attribute="Metadata" lineEndContext="#stay">
+      <StringDetect attribute="Metadata" context="#pop!FindTags" fallthroughContext="#pop!FindTags" String="#META#Header#End#" column="0" endRegion="metadata"/>
+    </context>
+    <context name="EditorialText" attribute="Editor" lineEndContext="#stay" lineEmptyContext="#stay">
+      <Detect2Chars attribute="Editor" context="#pop!FindTags" fallthroughContext="#pop!FindTags" char="#" char1="#" column="0" endRegion="editorial" lookAhead="true"/>
+    </context>
+    <context name="FindTags" attribute="Normal Text" lineEndContext="#stay" lineEmptyContext="#stay">
+      <RegExpr attribute="Header H1" context="#pop" String="^### \| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H2" context="#pop" String="^### \|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H3" context="#pop" String="^### \|\|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H4" context="#pop" String="^### \|\|\|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H5" context="#pop" String="^### \|\|\|\|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H6" context="#pop" String="^### \|\|\|\|\|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H7" context="#pop" String="^### \|\|\|\|\|\|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H8" context="#pop" String="^### \|\|\|\|\|\|\|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H9" context="#pop" String="^### \|\|\|\|\|\|\|\|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="Header H10" context="#pop" String="^### \|\|\|\|\|\|\|\|\|\| .*$" column="0" endRegion="section" beginRegion="section"/>
+      <RegExpr attribute="BioMale" context="#pop" String="^### \$ " column="0"/>
+      <RegExpr attribute="BioFemale" context="#pop" String="^### \$\$ " column="0"/>
+      <RegExpr attribute="EditorHeader" context="EditorialText" String="^### \|(?:EDITOR|PARATEXT|APPENDIX)\| ?$" column="0" beginRegion="editorial"/>
+      <RegExpr attribute="Uri" context="#pop" String="\d\d\d\d[A-Z][a-zA-Z]+(?:\.[A-Z][a-zA-Z]+(?:\.[A-Z][a-zA-Z\d]+-[a-z]{3}\d+)?)?"/>
+
+      <RegExpr attribute="Semantic" context="#pop" String="Y[BEAY]\d{1,4}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d1[\s][\sa-zA-Z0-9]*[^\sa-zA-Z0-9]+"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d2(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d3(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d4(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d5(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d6(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){6}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d7(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){7}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d8(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){8}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){9}"/>
+      <RegExpr attribute="Semantic" context="#pop" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){10}"/>
+
+      <!-- Deal with semantic tags that continue after a new line: -->
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d2(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d3(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d4(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d5(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d6(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d7(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){6}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d8(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){7}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){8}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){9}[\sa-zA-Z0-9]*$"/>
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="(?:@[A-Z]|@[A-Z]{3})\d3(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="(?:@[A-Z]|@[A-Z]{3})\d4(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="(?:@[A-Z]|@[A-Z]{3})\d5(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="(?:@[A-Z]|@[A-Z]{3})\d6(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="(?:@[A-Z]|@[A-Z]{3})\d7(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="(?:@[A-Z]|@[A-Z]{3})\d8(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){6}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){7}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){8}[\sa-zA-Z0-9]*$"/>
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="(?:@[A-Z]|@[A-Z]{3})\d4(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="(?:@[A-Z]|@[A-Z]{3})\d5(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="(?:@[A-Z]|@[A-Z]{3})\d6(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="(?:@[A-Z]|@[A-Z]{3})\d7(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="(?:@[A-Z]|@[A-Z]{3})\d8(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){6}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){7}[\sa-zA-Z0-9]*$"/>
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="(?:@[A-Z]|@[A-Z]{3})\d5(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="(?:@[A-Z]|@[A-Z]{3})\d6(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="(?:@[A-Z]|@[A-Z]{3})\d7(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="(?:@[A-Z]|@[A-Z]{3})\d8(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){6}[\sa-zA-Z0-9]*$"/>
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="(?:@[A-Z]|@[A-Z]{3})\d6(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="(?:@[A-Z]|@[A-Z]{3})\d7(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="(?:@[A-Z]|@[A-Z]{3})\d8(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}[\sa-zA-Z0-9]*$"/>
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_6" String="(?:@[A-Z]|@[A-Z]{3})\d7(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_6" String="(?:@[A-Z]|@[A-Z]{3})\d8(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_6" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_6" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_7" String="(?:@[A-Z]|@[A-Z]{3})\d8(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_7" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_7" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_8" String="(?:@[A-Z]|@[A-Z]{3})\d9(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_8" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+
+      <RegExpr attribute="Semantic" context="Semantic_Cont_9" String="(?:@[A-Z]|@[A-Z]{3})\d10(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+
+      <Detect2Chars attribute="Para" context="#pop" char="#" char1=" " column="0"/>
+      <Detect2Chars attribute="ParaCont" context="#pop" char="~" char1="~" column="0"/>
+      <RegExpr attribute="PageNo" context="#pop" String="PageV\d+P\d+"/>
+      <RegExpr attribute="Milestone" context="#pop" String="ms\d\d+"/>
+      <RegExpr attribute="Number" context="#pop" String="\d+"/>
+      <RegExpr attribute="Number" context="#pop" String="[.;?,:،؛؟()[\]]"/>
+    </context>
+    <context name="Semantic_Cont_1" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*"/>
+    </context>
+    <context name="Semantic_Cont_2" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*$"/>
+    </context>
+    <context name="Semantic_Cont_3" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+    </context>
+    <context name="Semantic_Cont_4" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+
+    </context>
+    <context name="Semantic_Cont_5" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+    </context>
+    <context name="Semantic_Cont_6" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+    </context>
+    <context name="Semantic_Cont_7" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){6}"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_6" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}[\sa-zA-Z0-9]*$"/>
+    </context>
+    <context name="Semantic_Cont_8" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){7}"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_7" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_6" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){6}[\sa-zA-Z0-9]*$"/>
+    </context>
+    <context name="Semantic_Cont_9" attribute="Semantic">
+      <Detect2Chars attribute="ParaCont" context="#stay" char="~" char1="~" column="0"/>
+      <RegExpr attribute="Semantic" context="#pop#pop!FindTags" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){8}"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_8" String="[^\sa-zA-Z0-9]+[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_7" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){1}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_6" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){2}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_5" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){3}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_4" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){4}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_3" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){5}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_2" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){6}[\sa-zA-Z0-9]*$"/>
+      <RegExpr attribute="Semantic" context="Semantic_Cont_1" String="[^\sa-zA-Z0-9]+(?:[\sa-zA-Z0-9]+[^\sa-zA-Z0-9]+){7}[\sa-zA-Z0-9]*$"/>
+    </context>
+  </contexts>
+  <itemDatas>
+    <itemData name="Normal Text" defStyleNum="dsNormal" color="#000000"/>
+    <itemData name="Para" defStyleNum="dsNormal" color="#ffff00" backgroundColor="#00008B" bold="true"/>
+    <itemData name="Milestone" defStyleNum="dsNormal" color="#ffff00" backgroundColor="#00008B" bold="true"/>
+    <itemData name="ParaCont" defStyleNum="dsNormal" color="#fafad2" backgroundColor="#7b68ee"/>
+    <itemData name="Uri" defStyleNum="dsNormal" backgroundColor="#90EE90"/>
+    <itemData name="PageNo" defStyleNum="dsNormal" color="#fafad2" backgroundColor="#7b68ee"/>
+    <itemData name="Number" defStyleNum="dsNormal" backgroundColor="#FFE4C4"/>
+    <itemData name="Header H1" defStyleNum="dsNormal" backgroundColor="#ff0000" bold="true"/>
+    <itemData name="Header H2" defStyleNum="dsNormal" backgroundColor="#ff7F50" bold="true"/>
+    <itemData name="Header H3" defStyleNum="dsNormal" backgroundColor="#ffd700" bold="true"/>
+    <itemData name="Header H4" defStyleNum="dsNormal" backgroundColor="#9acd32" bold="true"/>
+    <itemData name="Header H5" defStyleNum="dsNormal" backgroundColor="#00bfff" bold="true"/>
+    <itemData name="Header H6" defStyleNum="dsNormal" backgroundColor="#ff0000"/>
+    <itemData name="Header H7" defStyleNum="dsNormal" backgroundColor="#ff7F50"/>
+    <itemData name="Header H8" defStyleNum="dsNormal" backgroundColor="#ffd700"/>
+    <itemData name="Header H9" defStyleNum="dsNormal" backgroundColor="#9acd32"/>
+    <itemData name="Header H10" defStyleNum="dsNormal" backgroundColor="#ff0000"/>
+    <itemData name="BioMale" defStyleNum="dsNormal" color="#ffffff" backgroundColor="#006400"/>
+    <itemData name="BioFemale" defStyleNum="dsNormal" color="#cccccc" backgroundColor="#800080"/>
+    <itemData name="Semantic" defStyleNum="dsNormal" color="#cccccc" backgroundColor="#800080"/>
+    <itemData name="EditorHeader" defStyleNum="dsNormal" color="#ffffff" backgroundColor="#7B68EE"/>
+    <itemData name="Metadata" defStyleNum="dsComment"/>
+    <itemData name="Editor" defStyleNum="dsComment"/>
+ </itemDatas>
+</highlighting>
+<general></general>
+</language>
+
