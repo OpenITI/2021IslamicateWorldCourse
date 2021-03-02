@@ -302,13 +302,26 @@ This software needs to be updated. Contact the developer for more information.</
 <p>(Thanks to John for figuring this out!)</p>
 <ol style="list-style-type: decimal">
 <li>Download the highlighting scheme <code>OpenITImARkdown.xml</code> file <a href="./2021IslamicateWorldCourse_files/OpenITImARkdown.xml">here</a></li>
+<li>Open Terminal (see <a href="https://www.idownloadblog.com/2019/04/19/ways-open-terminal-mac/">https://www.idownloadblog.com/2019/04/19/ways-open-terminal-mac/</a>)</li>
+<li>Create new subdirectories in the <code>~/Library/Application Support</code> folder by
+executing this command:</li>
+</ol>
+<pre><code>mkdir -p &quot;$HOME/Library/Application Support/org.kde.syntax-highlighting/syntax&quot;</code></pre>
+<p>NB: the quotation marks are essential because there is a space in the path!</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Assuming the <code>OpenITImARkdown.xml</code> file is in the <code>Downloads</code> folder:
+execute the following command to copy it to the newly created folder:</li>
+</ol>
+<pre><code>cp ~/Downloads/OpenITImARkdown.xml &quot;$HOME/Library/Application Support/org.kde.syntax-highlighting/syntax&quot;</code></pre>
+<p>Alternatively:</p>
+<ol start="2" style="list-style-type: decimal">
 <li>Open Finder</li>
 <li>in the Finder menu, choose Go &gt; Go to folder…, write <code>~/Library/Application Support/</code>, then click <code>Go</code></li>
 <li>create a new folder using the combination command+shift+n, and call it <code>org.kde.syntax-highlighting</code></li>
 <li>Move into that folder, and create another subfolder using command+shift+n, called <code>syntax</code></li>
 <li>Copy the <code>OpenITImARkdown.xml</code> file into that folder</li>
-<li>Close the Kate editor if it was open, and open it again.</li>
 </ol>
+<p>Close the Kate editor if it was open, and open it again.</p>
 <p>You should now be able to find the OpenITImARkdown highlighting scheme in the list in the Tools &gt; Highlighting &gt; Markup menu:</p>
 <div class="figure">
 <img src="img/screenshot_kate_tools_highlighting.png" alt="" />
