@@ -81,7 +81,7 @@ In class:
 
 ### On Windows: 
 
-* Download the highlighting scheme `OpenITImARkdown.xml` file [here](./2021IslamicateWorldCourse_files/OpenITImARkdown.xml)
+* Download the highlighting scheme `OpenITImARkdown.xml` file by right-clicking on this [link](./2021IslamicateWorldCourse_files/OpenITImARkdown.xml) and choosing "Save link as". 
 
 * In Windows Explorer, go to `C:/Users` and double-click the folder with your user name
 
@@ -110,7 +110,7 @@ And also in the dropdown menu in the bottom right of your Kate screen:
 
 (Thanks to John for figuring this out!)
 
-1. Download the highlighting scheme `OpenITImARkdown.xml` file [here](./2021IslamicateWorldCourse_files/OpenITImARkdown.xml)
+1. Download the highlighting scheme `OpenITImARkdown.xml` file by right-clicking on this [link](./2021IslamicateWorldCourse_files/OpenITImARkdown.xml) and choosing "Save link as". 
 2. Open Terminal (see [https://www.idownloadblog.com/2019/04/19/ways-open-terminal-mac/](https://www.idownloadblog.com/2019/04/19/ways-open-terminal-mac/))
 3. Create new subdirectories in the `~/Library/Application Support` folder by
 executing this command:
@@ -131,7 +131,7 @@ cp ~/Downloads/OpenITImARkdown.xml "$HOME/Library/Application Support/org.kde.sy
 Alternatively:
 
 2. Open Finder
-3. in the Finder menu, choose Go > Go to folder..., write `~/Library/Application Support/`, then click `Go`
+3. in the Finder menu, choose `Go > Go to folder...`, write `~/Library/Application Support/`, then click `Go`
 4. create a new folder using the combination command+shift+n, and call it `org.kde.syntax-highlighting`
 5. Move into that folder, and create another subfolder using command+shift+n, called `syntax`
 6. Copy the `OpenITImARkdown.xml` file into that folder
@@ -150,10 +150,10 @@ And also in the dropdown menu in the bottom right of your Kate screen:
 
 ## Working with GitHub
 
-GitHub is primarily a software development platform but it can be used for other
-projects that require intensive cooperation and/or version control as well.
+GitHub is primarily a software development platform but it is very useful as well 
+for other projects that require intensive cooperation and/or version control.
 
-It uses the distributed version-control system Git
+GitHub uses the distributed version-control system Git
 ([https://en.wikipedia.org/wiki/Git](https://en.wikipedia.org/wiki/Git))
 for keeping track of changes to files on each of the different
 developers' machines. GitHub also offers additional features that
