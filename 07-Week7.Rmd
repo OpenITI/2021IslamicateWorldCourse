@@ -1,16 +1,14 @@
-# week 7: Using Regex on Texts
+# week 7: Advanced eScriptorium functionality
 
 ***3/11/2021 Thursday*** 
 
-Prepare for Class:
+For class on Thursday, we are going to do two things:
 
-* Regex tutorials #1-16: [Regexone.com](Regexone.com)
+(1) An activity on more advanced eScriptorium functionality. Jonathan will be posting the training videos for this in the next day or two. Please review these before class, and then in class you will work with him on a guided in-class activity on advanced functionality in eScriptorium.
 
-In class:
+(2) We are going to do all of the the reading report assignments in this week's class. For this, we are going to ask you to form small groups of 2-3 students and select an article from the "Cultural Analytics" journal to present to class (please see the syllabus on the "Reading Report" assignment—the summary: provide a basic summary of an article to the class in 10-12 min or so—nothing too complex). You can use this listserv to coordinate groups. My suggestion would be for each of you to quickly review the CA archives (they aren't big) and list a few articles that you would be interested in forming a group around. Others then can express their interest in joining forces with you to co-present one of the articles. Groups can be 2 or 3 people. (Alternatively, if you have another "distant reading" article from another journal that you really want to read and present, you can send that along to us and we will approve it if it looks good.)
 
-* Weekly reading report.
-* Regex workshop.
-* Introduction to R and R installation: [https://cran.r-project.org/](https://cran.r-project.org/) and [https://www.rstudio.com/](https://www.rstudio.com/) (bring your computers!)
+This will knock out two birds with one stone (such a violent and distressing phrase, no?). We will get everyone's reading reports done and you will get a chance to see more applications of computational approaches before we dive into R.
 
 
 ***3/14/2021 - 3/21/2021: UMD Spring Break (No class)***
