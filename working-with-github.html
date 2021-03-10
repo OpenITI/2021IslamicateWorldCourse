@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>16 Working with GitHub | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis</title>
+  <meta name="description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="16 Working with GitHub | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="16 Working with GitHub | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
+  
+  <meta name="twitter:description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Jonathan Parkes Allen, Matthew Thomas Miller, Sarah Savant, Peter Verkinderen" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="week-14-research-collaboratory-iii-1.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">The Islamicate World 2.0</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Course Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#course-summary"><i class="fa fa-check"></i><b>1.1</b> Course summary</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#virtual-classroom"><i class="fa fa-check"></i><b>1.2</b> Virtual Classroom</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#instructors"><i class="fa fa-check"></i><b>1.3</b> Instructors</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#dr.-jonathan-parkes-allen"><i class="fa fa-check"></i><b>1.3.1</b> Dr. Jonathan Parkes Allen</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#dr.-matthew-thomas-miller"><i class="fa fa-check"></i><b>1.3.2</b> Dr. Matthew Thomas Miller</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="index.html#dr.-sarah-bowen-savant"><i class="fa fa-check"></i><b>1.3.3</b> Dr. Sarah Bowen Savant</a></li>
+<li class="chapter" data-level="1.3.4" data-path="index.html"><a href="index.html#dr.-peter-verkinderen"><i class="fa fa-check"></i><b>1.3.4</b> Dr. Peter Verkinderen</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#required-texts-and-technologies"><i class="fa fa-check"></i><b>1.4</b> Required texts and technologies</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i><b>1.5</b> Learning objectives</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#expectations-and-grading-procedures"><i class="fa fa-check"></i><b>1.6</b> Expectations and grading procedures</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#final-grade-cutoffs"><i class="fa fa-check"></i><b>1.6.1</b> Final Grade Cutoffs</a></li>
+<li class="chapter" data-level="1.6.2" data-path="index.html"><a href="index.html#participation-20"><i class="fa fa-check"></i><b>1.6.2</b> Participation (20%)</a></li>
+<li class="chapter" data-level="1.6.3" data-path="index.html"><a href="index.html#co-discussion-leading-10"><i class="fa fa-check"></i><b>1.6.3</b> Co-discussion Leading (10%)</a></li>
+<li class="chapter" data-level="1.6.4" data-path="index.html"><a href="index.html#class-assignments-20"><i class="fa fa-check"></i><b>1.6.4</b> Class Assignments (20%)</a></li>
+<li class="chapter" data-level="1.6.5" data-path="index.html"><a href="index.html#final-group-project-40-and-the-research-collaboratories"><i class="fa fa-check"></i><b>1.6.5</b> Final (Group) Project (40%) (and the Research Collaboratories)</a></li>
+<li class="chapter" data-level="1.6.6" data-path="index.html"><a href="index.html#class-presentation-10"><i class="fa fa-check"></i><b>1.6.6</b> Class presentation (10%)</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faculty-student-communication"><i class="fa fa-check"></i><b>1.7</b> Faculty-student communication</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#emergency-protocol"><i class="fa fa-check"></i><b>1.8</b> Emergency protocol</a></li>
+<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#course-schedule"><i class="fa fa-check"></i><b>1.9</b> Course schedule</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="index.html"><a href="index.html#week-1-class-introduction-and-introduction-to-computational-textual-analysis"><i class="fa fa-check"></i><b>1.9.1</b> Week 1: Class Introduction and Introduction to Computational Textual Analysis</a></li>
+<li class="chapter" data-level="1.9.2" data-path="index.html"><a href="index.html#week-2-corpus-construction-and-modeling-digital-humanities-data"><i class="fa fa-check"></i><b>1.9.2</b> Week 2: Corpus Construction and Modeling Digital Humanities Data</a></li>
+<li class="chapter" data-level="1.9.3" data-path="index.html"><a href="index.html#week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies"><i class="fa fa-check"></i><b>1.9.3</b> Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies</a></li>
+<li class="chapter" data-level="1.9.4" data-path="index.html"><a href="index.html#week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i"><i class="fa fa-check"></i><b>1.9.4</b> Week 4: Corpus Construction and Latest Approaches to Computational Textual Analysis I</a></li>
+<li class="chapter" data-level="1.9.5" data-path="index.html"><a href="index.html#week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii"><i class="fa fa-check"></i><b>1.9.5</b> Week 5: Corpus Construction and Latest Approaches to Computational Textual Analysis II</a></li>
+<li class="chapter" data-level="1.9.6" data-path="index.html"><a href="index.html#week-6-interacting-with-the-openiti-corpus-using-github-and-editpad"><i class="fa fa-check"></i><b>1.9.6</b> week 6: Interacting with the OpenITI Corpus Using Github and EditPad</a></li>
+<li class="chapter" data-level="1.9.7" data-path="index.html"><a href="index.html#week-7-using-regex-on-texts"><i class="fa fa-check"></i><b>1.9.7</b> week 7: Using Regex on Texts</a></li>
+<li class="chapter" data-level="1.9.8" data-path="index.html"><a href="index.html#week-8-introducing-r-in-gui-through-stylometry"><i class="fa fa-check"></i><b>1.9.8</b> week 8: Introducing R (in GUI) through Stylo(metry)</a></li>
+<li class="chapter" data-level="1.9.9" data-path="index.html"><a href="index.html#week-9-r-bootcamp-i"><i class="fa fa-check"></i><b>1.9.9</b> week 9: R Bootcamp I</a></li>
+<li class="chapter" data-level="1.9.10" data-path="index.html"><a href="index.html#week-10-r-bootcamp-ii"><i class="fa fa-check"></i><b>1.9.10</b> week 10: R Bootcamp II</a></li>
+<li class="chapter" data-level="1.9.11" data-path="index.html"><a href="index.html#week-11-r-bootcamp-iii"><i class="fa fa-check"></i><b>1.9.11</b> week 11: R Bootcamp III</a></li>
+<li class="chapter" data-level="1.9.12" data-path="index.html"><a href="index.html#week-12-research-collaboratory-i"><i class="fa fa-check"></i><b>1.9.12</b> week 12: Research Collaboratory I</a></li>
+<li class="chapter" data-level="1.9.13" data-path="index.html"><a href="index.html#week-13-research-collaboratory-ii"><i class="fa fa-check"></i><b>1.9.13</b> week 13: Research Collaboratory II</a></li>
+<li class="chapter" data-level="1.9.14" data-path="index.html"><a href="index.html#week-14-research-collaboratory-iii"><i class="fa fa-check"></i><b>1.9.14</b> week 14: Research Collaboratory III</a></li>
+<li class="chapter" data-level="1.9.15" data-path="index.html"><a href="index.html#final-exam"><i class="fa fa-check"></i><b>1.9.15</b> Final Exam</a></li>
+</ul></li>
+<li class="chapter" data-level="1.10" data-path="index.html"><a href="index.html#course-procedures-and-policies"><i class="fa fa-check"></i><b>1.10</b> Course procedures and policies</a><ul>
+<li class="chapter" data-level="1.10.1" data-path="index.html"><a href="index.html#attendance-and-absences"><i class="fa fa-check"></i><b>1.10.1</b> Attendance and Absences*:</a></li>
+<li class="chapter" data-level="1.10.2" data-path="index.html"><a href="index.html#academic-integrity"><i class="fa fa-check"></i><b>1.10.2</b> Academic Integrity:</a></li>
+<li class="chapter" data-level="1.10.3" data-path="index.html"><a href="index.html#accessibility-and-disability-support"><i class="fa fa-check"></i><b>1.10.3</b> Accessibility and Disability Support:</a></li>
+<li class="chapter" data-level="1.10.4" data-path="index.html"><a href="index.html#copyright-notice"><i class="fa fa-check"></i><b>1.10.4</b> Copyright Notice:</a></li>
+<li class="chapter" data-level="1.10.5" data-path="index.html"><a href="index.html#academic-accommodations-for-students-who-experience-sexual-misconduct"><i class="fa fa-check"></i><b>1.10.5</b> Academic Accommodations for Students Who Experience Sexual Misconduct:</a></li>
+<li class="chapter" data-level="1.10.6" data-path="index.html"><a href="index.html#diversity"><i class="fa fa-check"></i><b>1.10.6</b> Diversity:</a></li>
+<li class="chapter" data-level="1.10.7" data-path="index.html"><a href="index.html#faculty-student-communication-1"><i class="fa fa-check"></i><b>1.10.7</b> Faculty-Student Communication:</a></li>
+<li class="chapter" data-level="1.10.8" data-path="index.html"><a href="index.html#emergency-protocol-1"><i class="fa fa-check"></i><b>1.10.8</b> Emergency Protocol:</a></li>
+<li class="chapter" data-level="1.10.9" data-path="index.html"><a href="index.html#forms-of-address-names-and-pronouns-and-self-identification"><i class="fa fa-check"></i><b>1.10.9</b> Forms of Address (Names and Pronouns) and Self-Identification:</a></li>
+<li class="chapter" data-level="1.10.10" data-path="index.html"><a href="index.html#statement-in-support-of-students-with-children"><i class="fa fa-check"></i><b>1.10.10</b> Statement in Support of Students with Children:</a></li>
+<li class="chapter" data-level="1.10.11" data-path="index.html"><a href="index.html#communication-with-peers"><i class="fa fa-check"></i><b>1.10.11</b> Communication with Peers:</a></li>
+<li class="chapter" data-level="1.10.12" data-path="index.html"><a href="index.html#student-resources-and-academic-services"><i class="fa fa-check"></i><b>1.10.12</b> Student Resources and Academic Services:</a></li>
+<li class="chapter" data-level="1.10.13" data-path="index.html"><a href="index.html#basic-needs-security"><i class="fa fa-check"></i><b>1.10.13</b> Basic Needs Security:</a></li>
+<li class="chapter" data-level="1.10.14" data-path="index.html"><a href="index.html#technology-policy"><i class="fa fa-check"></i><b>1.10.14</b> Technology Policy:</a></li>
+</ul></li>
+<li class="chapter" data-level="1.11" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i><b>1.11</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities.html"><a href="week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities.html"><i class="fa fa-check"></i><b>2</b> Week 1: Class Introduction and Introduction to Computational Textual Analysis in the Humanities</a></li>
+<li class="chapter" data-level="3" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><i class="fa fa-check"></i><b>3</b> Week 2: Corpus Construction and Modeling Digital Humanities Data</a><ul>
+<li class="chapter" data-level="3.1" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#most-recent-ocr-transcription-model-for-escriptorium"><i class="fa fa-check"></i><b>3.1</b> most recent OCR transcription model for eScriptorium</a></li>
+<li class="chapter" data-level="3.2" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#where-do-i-find-escriptorium"><i class="fa fa-check"></i><b>3.2</b> where do I find eScriptorium?</a></li>
+<li class="chapter" data-level="3.3" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#getting-started-with-escriptorium-0.6.9"><i class="fa fa-check"></i><b>3.3</b> Getting started with eScriptorium 0.6.9</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#additional-documentation"><i class="fa fa-check"></i><b>3.3.1</b> Additional Documentation:</a></li>
+<li class="chapter" data-level="3.3.2" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#prerequisites"><i class="fa fa-check"></i><b>3.3.2</b> Prerequisites:</a></li>
+<li class="chapter" data-level="3.3.3" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#summary"><i class="fa fa-check"></i><b>3.3.3</b> Summary</a></li>
+<li class="chapter" data-level="3.3.4" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#step-by-step"><i class="fa fa-check"></i><b>3.3.4</b> 1. Step by step</a></li>
+<li class="chapter" data-level="3.3.5" data-path="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"><a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html#manage-a-collaborative-annotation-campaign"><i class="fa fa-check"></i><b>3.3.5</b> 2. Manage a collaborative annotation campaign</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1.html"><a href="week-3-corpus-construction-and-computational-textual-analysis-in-islamicate-studies-1.html"><i class="fa fa-check"></i><b>4</b> Week 3: Corpus Construction and Computational Textual Analysis in Islamicate Studies</a></li>
+<li class="chapter" data-level="5" data-path="week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1.html"><a href="week-4-corpus-construction-and-latest-approaches-to-computational-textual-analysis-i-1.html"><i class="fa fa-check"></i><b>5</b> Week 4: Corpus Construction and Latest Approaches to Computational Textual Analysis I</a></li>
+<li class="chapter" data-level="6" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><i class="fa fa-check"></i><b>6</b> Week 5: Corpus Construction and Latest Approaches to Computational Textual Analysis II</a><ul>
+<li class="chapter" data-level="6.1" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html#regular-expressions"><i class="fa fa-check"></i><b>6.1</b> Regular expressions</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html#useful-resources"><i class="fa fa-check"></i><b>6.1.1</b> Useful resources</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html#installing-editpad-pro"><i class="fa fa-check"></i><b>6.2</b> Installing EditPad Pro</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html"><a href="week-5-corpus-construction-and-latest-approaches-to-computational-textual-analysis-ii-1.html#installing-the-openiti-highlighting-schema"><i class="fa fa-check"></i><b>6.2.1</b> Installing the OpenITI highlighting schema</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html"><a href="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html"><i class="fa fa-check"></i><b>7</b> week 6: Interacting with the OpenITI Corpus Using Github and Kate</a><ul>
+<li class="chapter" data-level="7.1" data-path="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html"><a href="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html#installing-kate-editor"><i class="fa fa-check"></i><b>7.1</b> Installing Kate editor</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html"><a href="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html#on-windows"><i class="fa fa-check"></i><b>7.1.1</b> On Windows</a></li>
+<li class="chapter" data-level="7.1.2" data-path="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html"><a href="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html#on-mac"><i class="fa fa-check"></i><b>7.1.2</b> on Mac</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html"><a href="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html#installing-the-openiti-markdown-highlighting-scheme-for-kate"><i class="fa fa-check"></i><b>7.2</b> Installing the OpenITI mARkdown highlighting scheme for Kate</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html"><a href="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html#on-windows-1"><i class="fa fa-check"></i><b>7.2.1</b> On Windows:</a></li>
+<li class="chapter" data-level="7.2.2" data-path="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html"><a href="week-6-interacting-with-the-openiti-corpus-using-github-and-kate.html#on-mac-1"><i class="fa fa-check"></i><b>7.2.2</b> On Mac:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="week-7-advanced-escriptorium-functionality.html"><a href="week-7-advanced-escriptorium-functionality.html"><i class="fa fa-check"></i><b>8</b> week 7: Advanced eScriptorium functionality</a></li>
+<li class="chapter" data-level="9" data-path="week-8-introducing-r-in-gui-through-stylometry-1.html"><a href="week-8-introducing-r-in-gui-through-stylometry-1.html"><i class="fa fa-check"></i><b>9</b> week 8: Introducing R (in GUI) through Stylo(metry)</a></li>
+<li class="chapter" data-level="10" data-path="week-9-r-bootcamp-i-1.html"><a href="week-9-r-bootcamp-i-1.html"><i class="fa fa-check"></i><b>10</b> week 9: R Bootcamp I</a></li>
+<li class="chapter" data-level="11" data-path="week-10-r-bootcamp-ii-1.html"><a href="week-10-r-bootcamp-ii-1.html"><i class="fa fa-check"></i><b>11</b> week 10: R Bootcamp II</a></li>
+<li class="chapter" data-level="12" data-path="week-11-r-bootcamp-iii-1.html"><a href="week-11-r-bootcamp-iii-1.html"><i class="fa fa-check"></i><b>12</b> week 11: R Bootcamp III</a></li>
+<li class="chapter" data-level="13" data-path="week-12-research-collaboratory-i-1.html"><a href="week-12-research-collaboratory-i-1.html"><i class="fa fa-check"></i><b>13</b> week 12: Research Collaboratory I</a></li>
+<li class="chapter" data-level="14" data-path="week-13-research-collaboratory-ii-1.html"><a href="week-13-research-collaboratory-ii-1.html"><i class="fa fa-check"></i><b>14</b> week 13: Research Collaboratory II</a></li>
+<li class="chapter" data-level="15" data-path="week-14-research-collaboratory-iii-1.html"><a href="week-14-research-collaboratory-iii-1.html"><i class="fa fa-check"></i><b>15</b> week 14: Research Collaboratory III</a></li>
+<li class="chapter" data-level="16" data-path="working-with-github.html"><a href="working-with-github.html"><i class="fa fa-check"></i><b>16</b> Working with GitHub</a><ul>
+<li class="chapter" data-level="16.1" data-path="working-with-github.html"><a href="working-with-github.html#why-use-a-version-control-system"><i class="fa fa-check"></i><b>16.1</b> Why use a version control system?</a></li>
+<li class="chapter" data-level="16.2" data-path="working-with-github.html"><a href="working-with-github.html#installing-git"><i class="fa fa-check"></i><b>16.2</b> Installing Git</a><ul>
+<li class="chapter" data-level="16.2.1" data-path="working-with-github.html"><a href="working-with-github.html#on-windows-2"><i class="fa fa-check"></i><b>16.2.1</b> On Windows</a></li>
+<li class="chapter" data-level="16.2.2" data-path="working-with-github.html"><a href="working-with-github.html#on-mac-2"><i class="fa fa-check"></i><b>16.2.2</b> On Mac</a></li>
+<li class="chapter" data-level="16.2.3" data-path="working-with-github.html"><a href="working-with-github.html#on-linux"><i class="fa fa-check"></i><b>16.2.3</b> On Linux</a></li>
+</ul></li>
+<li class="chapter" data-level="16.3" data-path="working-with-github.html"><a href="working-with-github.html#introducing-your-main-git-tool-git-bash"><i class="fa fa-check"></i><b>16.3</b> Introducing your main git tool: Git Bash</a><ul>
+<li class="chapter" data-level="16.3.1" data-path="working-with-github.html"><a href="working-with-github.html#on-windows-3"><i class="fa fa-check"></i><b>16.3.1</b> On Windows</a></li>
+<li class="chapter" data-level="16.3.2" data-path="working-with-github.html"><a href="working-with-github.html#on-mac-3"><i class="fa fa-check"></i><b>16.3.2</b> On Mac</a></li>
+<li class="chapter" data-level="16.3.3" data-path="working-with-github.html"><a href="working-with-github.html#on-linux-1"><i class="fa fa-check"></i><b>16.3.3</b> On Linux</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="working-with-github.html"><a href="working-with-github.html#absolute-minimum-knowledge-of-command-line-commands"><i class="fa fa-check"></i><b>16.4</b> Absolute minimum knowledge of command line commands</a><ul>
+<li class="chapter" data-level="16.4.1" data-path="working-with-github.html"><a href="working-with-github.html#the-filesystem-an-introduction"><i class="fa fa-check"></i><b>16.4.1</b> The filesystem: an introduction</a></li>
+<li class="chapter" data-level="16.4.2" data-path="working-with-github.html"><a href="working-with-github.html#moving-from-one-directory-to-another-the-cd-command"><i class="fa fa-check"></i><b>16.4.2</b> Moving from one directory to another: the <code>cd</code> command</a></li>
+<li class="chapter" data-level="16.4.3" data-path="working-with-github.html"><a href="working-with-github.html#more-navigation-in-the-command-line-the-ls-command"><i class="fa fa-check"></i><b>16.4.3</b> More navigation in the command line: the <code>ls</code> command</a></li>
+<li class="chapter" data-level="16.4.4" data-path="working-with-github.html"><a href="working-with-github.html#using-autocomplete"><i class="fa fa-check"></i><b>16.4.4</b> Using autocomplete</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="working-with-github.html"><a href="working-with-github.html#essential-github-commands"><i class="fa fa-check"></i><b>16.5</b> Essential GitHub commands</a></li>
+<li class="chapter" data-level="16.6" data-path="working-with-github.html"><a href="working-with-github.html#creating-your-first-github-repository"><i class="fa fa-check"></i><b>16.6</b> Creating your first GitHub repository</a></li>
+<li class="chapter" data-level="16.7" data-path="working-with-github.html"><a href="working-with-github.html#cloning-downloading-a-github-repository"><i class="fa fa-check"></i><b>16.7</b> Cloning: downloading a GitHub repository</a></li>
+<li class="chapter" data-level="16.8" data-path="working-with-github.html"><a href="working-with-github.html#save-your-changes-add-and-commit"><i class="fa fa-check"></i><b>16.8</b> Save your changes: add and commit</a></li>
+<li class="chapter" data-level="16.9" data-path="working-with-github.html"><a href="working-with-github.html#publish-your-changes-push-changes"><i class="fa fa-check"></i><b>16.9</b> Publish your changes: push changes</a></li>
+<li class="chapter" data-level="16.10" data-path="working-with-github.html"><a href="working-with-github.html#workflows-for-collaboration-with-git"><i class="fa fa-check"></i><b>16.10</b> Workflows for collaboration with Git</a><ul>
+<li class="chapter" data-level="16.10.1" data-path="working-with-github.html"><a href="working-with-github.html#the-centralized-workflow"><i class="fa fa-check"></i><b>16.10.1</b> The centralized workflow</a></li>
+<li class="chapter" data-level="16.10.2" data-path="working-with-github.html"><a href="working-with-github.html#an-alternative-workflow-forking-and-pull-requests"><i class="fa fa-check"></i><b>16.10.2</b> An alternative workflow: forking and pull requests</a></li>
+<li class="chapter" data-level="16.10.3" data-path="working-with-github.html"><a href="working-with-github.html#comparison-of-both-workflows"><i class="fa fa-check"></i><b>16.10.3</b> Comparison of both workflows</a></li>
+</ul></li>
+<li class="chapter" data-level="16.11" data-path="working-with-github.html"><a href="working-with-github.html#solving-merge-conflicts"><i class="fa fa-check"></i><b>16.11</b> Solving merge conflicts</a></li>
+<li class="chapter" data-level="16.12" data-path="working-with-github.html"><a href="working-with-github.html#further-reading"><i class="fa fa-check"></i><b>16.12</b> Further reading</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="working-with-github" class="section level1">
+<h1><span class="header-section-number">16</span> Working with GitHub</h1>
+<p>GitHub is primarily a software development platform but it is very useful as well
+for other projects that require intensive cooperation and/or version control.</p>
+<p>GitHub uses the distributed version-control system Git
+(<a href="https://en.wikipedia.org/wiki/Git">https://en.wikipedia.org/wiki/Git</a>)
+for keeping track of changes to files on each of the different
+developers’ machines. GitHub also offers additional features that
+facilitate collaboration within the core team, collaboration with
+outside contributors and interaction with users.</p>
+<div id="why-use-a-version-control-system" class="section level2">
+<h2><span class="header-section-number">16.1</span> Why use a version control system?</h2>
+<p>(adapted from
+<a href="https://swcarpentry.github.io/git-novice/01-basics/index.html">https://swcarpentry.github.io/git-novice/01-basics/index.html</a>
+)</p>
+<p><img src="img/final_comic.png" /></p>
+<p>Even if working alone, you quickly run into multiple versions of the
+same document. This problem is compounded when working in a team.</p>
+<p>Version control systems start with a base version of the document and
+then record changes you make each step of the way. You can think of it
+as a recording of your progress: you can rewind to start at the base
+document and play back each change you made, eventually arriving at your
+more recent version.</p>
+<p><img src="img/git_changes_1.png" /></p>
+<p>Once you think of changes as separate from the document itself, you can
+then think about “playing back” different sets of changes on the base
+document, ultimately resulting in different versions of that document.
+For example, two users can make independent sets of changes on the same
+document.</p>
+<p><img src="img/git_changes_2.png" /></p>
+<p>Unless multiple users make changes to the same section of the document -
+a <a href="working-with-github.html#solving-merge-conflicts">conflict</a> - you can incorporate two sets of changes into the same base
+document.</p>
+<p><img src="img/git_changes_3.png" /></p>
+<p>A version control system is a tool that keeps track of these changes for
+us, effectively creating different versions of our files. It allows us
+to decide which changes will be made to the next version (each record of
+these changes is called a commit), and keeps useful metadata about them.
+The complete history of commits for a particular project and their
+metadata make up a repository. Repositories can be kept in sync across
+different computers, facilitating collaboration among different people.</p>
+<p>GitHub uses the version-control system Git
+(<a href="https://en.wikipedia.org/wiki/Git">https://en.wikipedia.org/wiki/Git</a>).
+Git is called a “distributed” version-control system because the change
+history of a repository is maintained not only on a central server, but
+also in each copy of the repository (we will see later that these changes
+are located in a folder called <code>.git</code> at the root of the repository).</p>
+</div>
+<div id="installing-git" class="section level2">
+<h2><span class="header-section-number">16.2</span> Installing Git</h2>
+<div id="on-windows-2" class="section level3">
+<h3><span class="header-section-number">16.2.1</span> On Windows</h3>
+<p>(instructions from
+<a href="https://www.pluralsight.com/guides/using-git-and-github-on-windows">https://www.pluralsight.com/guides/using-git-and-github-on-windows</a>)</p>
+<p>Download Git for windows here:
+<a href="https://gitforwindows.org/">https://gitforwindows.org/</a></p>
+<p>Execute the downloaded file. A few notes on the options you will be given during the installation process:</p>
+<ul>
+<li><p>In the page Select Components you can leave
+the options at their defaults.</p></li>
+<li><p>The Windows Explorer integration &gt; Context menu entries option allows
+opening the Git command prompt (Git Bash) from any folder by clicking
+with the right mouse button on the folder and selecting Git Bash Here.
+The last option is also interesting in that it installs a better font
+for all console windows.</p></li>
+<li><p>On the next screen (Adjusting your path environment), choose the most
+conservative option: Use Git Bash only. This will make git commands
+available only in Git Bash and will not alter your PATH variable. Click
+Next.</p></li>
+<li><p>Another important setting: line endings. As you may know, Windows and
+Unix systems (Linux, Mac) have different formats of line breaks on text
+files. If you write a file with Windows line breaks, another person may
+have problems opening that file in Linux and vice-versa. The line
+endings setting allows you to normalize this. Choosing the second option
+(Checkout as-is, commit Unix-style line endings), that won't change the
+line breaks when the file arrives but will convert them to Unix-style
+when you commit. That way, you don't risk committing Windows-style line
+breaks and everything is kept in Unix-style. Don't worry, even though
+you are in Windows, most of the text editors can read Unix line breaks
+just fine.</p></li>
+<li><p>After that one more Next, Finish, and Git is installed!</p></li>
+</ul>
+</div>
+<div id="on-mac-2" class="section level3">
+<h3><span class="header-section-number">16.2.2</span> On Mac</h3>
+<p>(instructions from
+<a href="https://www.atlassian.com/git/tutorials/install-git">https://www.atlassian.com/git/tutorials/install-git</a>)</p>
+<p>Download Git for Mac here:
+<a href="https://sourceforge.net/projects/git-osx-installer/files/">https://sourceforge.net/projects/git-osx-installer/files/</a></p>
+<p>Follow the prompts to install Git.</p>
+</div>
+<div id="on-linux" class="section level3">
+<h3><span class="header-section-number">16.2.3</span> On Linux</h3>
+<p>(instructions from
+<a href="https://www.atlassian.com/git/tutorials/install-git#linux">https://www.atlassian.com/git/tutorials/install-git#linux</a>)</p>
+<p>From your shell, install Git using apt-get:</p>
+<pre><code>$ sudo apt-get update
+$ sudo apt-get install git</code></pre>
+</div>
+</div>
+<div id="introducing-your-main-git-tool-git-bash" class="section level2">
+<h2><span class="header-section-number">16.3</span> Introducing your main git tool: Git Bash</h2>
+<div id="on-windows-3" class="section level3">
+<h3><span class="header-section-number">16.3.1</span> On Windows</h3>
+<p>We interact with Git through a program called Git Bash, which was
+installed together with Git in the step above. Git Bash is a command
+line program, which means you interact with it not by clicking buttons
+with your mouse but by writing commands. Only the thought of this may
+repulse many humanities scholars, but fear not: it is easy to learn, and
+we need only very few commands.</p>
+<p>To open Git Bash, right-click on a folder in Windows Explorer, and
+choose “Git Bash here”</p>
+<p><img src="img/git_bash_context_menu.png" /></p>
+<p>This will open the program:</p>
+<p><img src="img/git_bash.png" /></p>
+</div>
+<div id="on-mac-3" class="section level3">
+<h3><span class="header-section-number">16.3.2</span> On Mac</h3>
+<p>If you are a Mac user, you are probably familiar with the standard Mac
+command line tool, Terminal. You can use Terminal to interact with Git,
+or install a dedicated command line tool for Git, called Git Bash:</p>
+<ul>
+<li><p>To open Terminal, do one of the following:</p>
+<ul>
+<li><p>Click the Launchpad icon
+<img src="img/mac_launchpad_icon.png" /> in the Dock, type “Terminal” in the
+search field, then click “Terminal”.</p></li>
+<li><p>In the Finder <img src="img/mac_finder_icon.png" />, open the <code>/Applications/Utilities</code>
+folder, then double-click “Terminal”.</p></li>
+</ul></li>
+<li><p>To install Git Bash: download it from here:
+<a href="https://downloads.digitaltrends.com/git/mac">https://downloads.digitaltrends.com/git/mac</a></p></li>
+</ul>
+</div>
+<div id="on-linux-1" class="section level3">
+<h3><span class="header-section-number">16.3.3</span> On Linux</h3>
+<p>If you’re using Linux, you don’t have to download the Git Bash program;
+you can use the normal terminal to interact with Git.</p>
+<p>To launch the shell, use the keyboard shortcut <code>Ctrl-Alt-T</code>.</p>
+<p>You can use all
+normal Linux commands (<code>cd</code>, <code>ls</code>, …), in addition to a number of
+additional git commands that will be explained below.</p>
+</div>
+</div>
+<div id="absolute-minimum-knowledge-of-command-line-commands" class="section level2">
+<h2><span class="header-section-number">16.4</span> Absolute minimum knowledge of command line commands</h2>
+<p><strong>NB: to learn anything from a tutorial, you have to do all the steps yourself, not just read it!
+Also, type the commands yourself, do not simply copy them, you will learn much faster this way.</strong></p>
+<p>There are basically two main ways to interact with a computer. The one you are
+probably most familiar with, is through a graphical user interface (GUI), in
+which different programs are represented by graphical icons, on which you can
+click with your mouse to open them - that is, the way we usually interact
+with a computer. The other way is through a command-line interface (CLI),
+which uses only text to interact with a computer: instead of clicking on
+different icons on the screen with a mouse to tell the computer what to do,
+you use the keyboard to write the commands to the computer directly.</p>
+<p>Even though most modern computers mainly use a graphical user interface (GUI),
+each also has a program that allows you to interact with the computer through
+text commands. Such a program is known by many names: “terminal”, “command line”,
+“command prompt”, “shell”.</p>
+<p>To interact with GitHub, we will use such a command-line interface: on Windows,
+you can use Git Bash; on Mac, you can use Terminal (or Git Bash); and on Linux
+the standard Linux terminal. For instructions on how to install/open these, see the
+<a href="working-with-github.html#introducing-your-main-git-tool-git-bash">previous</a> section.</p>
+<p>In this tutorial, we will be using Git Bash. If you use a different program,
+it might look slightly different, but it should still be recognizable,
+and the commands you have to enter are the same.</p>
+<ol style="list-style-type: decimal">
+<li>Open the command line shell of your choice. this is what it should look like:
+basically, a black (or white) window, with some text at the top.</li>
+</ol>
+<div class="figure">
+<img src="img/git_bash.png" alt="" />
+<p class="caption">GitBash on Windows</p>
+</div>
+<div class="figure">
+<img src="img/terminal_MacOSbigsur.png" alt="" />
+<p class="caption">MacOS BigSur Terminal</p>
+</div>
+<div class="figure">
+<img src="img/terminal_LinuxUbuntu.png" alt="" />
+<p class="caption">Linux Ubuntu terminal</p>
+</div>
+<p>The displayed text on your machine will be different than in the image here: it contains:</p>
+<ul>
+<li>basic information on your computer and the user who is logged in: <code>&lt;user&gt;@&lt;system&gt;</code>
+(in the images above: <code>peter@Desktop-sRKSSV6</code>, <code>bigsur@Andrews-MacBook-Pro</code>, <code>mark@linux-desktop</code>)</li>
+<li>information on your location in your computer system
+(in the images above: <code>/d/London/trainings/GitHub</code>, <code>~</code> and <code>~</code> ; <code>~</code> refers to
+the home directory on Mac and Linux computers)</li>
+<li>the <strong>prompt</strong>: a symbol that shows that the shell is ready to accept your commands
+(in the images above: <code>$</code>, <code>%</code> and <code>$</code>; the exact symbol differs depending on
+the program and/or the user account type (normal user, administrator)
+that is logged in)</li>
+<li>the <strong>cursor</strong>: a blinking bar or rectangle that shows the position where a
+character will appear when you hit a key on your keyboard.</li>
+</ul>
+<p>NB: this whole line (in the Windows example, two lines) is usually called the
+command prompt, or simply prompt.</p>
+<p><mark><strong>IMPORTANT</strong> In this tutorial, we will include the dollar sign before every
+line that should be executed in Git Bash; you don’t have to write it in
+Git Bash when copying commands from this tutorial.</mark></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Write your first command: type <code>pwd</code>, which means “<strong>p</strong>rint <strong>w</strong>orking <strong>d</strong>irectory”:</li>
+</ol>
+<p><code>$ pwd</code></p>
+<p>(remember not to type the prompt symbol <code>$</code>!)</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Press the “Enter” key to execute the command. A line that contains the path
+to your current folder will appear, and beneath it, a new command prompt:</li>
+</ol>
+<p><img src="img/GitBash_pwd.png" /></p>
+<p>NB: to know what this path means, please go on to read the next section.</p>
+<p>In general, you will always have to hit enter to execute a command,
+and any output from the command will be printed to the line(s) below the
+line on which you wrote your command. When the computer is ready executing your
+command, a new prompt will appear, signalling that it is ready to execute
+a new command.</p>
+<div id="the-filesystem-an-introduction" class="section level3">
+<h3><span class="header-section-number">16.4.1</span> The filesystem: an introduction</h3>
+<p>Each computer has a system to organize all the files in it; this is called its
+filesystem. Files are usually kept in logical groups, which are called “directories”
+or “folders” - think of the cardboard folders in which you store paper files.</p>
+<p>A physical library is organized in a way that facilitates retrieving a book:
+this makes it easy for a user to go and fetch a book if she
+knows it is stored in room 2.03 on the second floor of the building, in book
+case number 8, on the third shelf. The filesystem in a computer is organized in
+a similar hierarchical way. Each file is contained in a directory, which is itself
+contained in another directory (called its <code>parent</code>), and so on until it reaches
+the <code>root</code> directory, which contains all other directories. The image is that of
+a tree, where each directory is a branch, and each file a leaf. There is a unique
+<code>path</code> that describes the way from the <code>root</code> directory to any directory or file
+in the filesystem.</p>
+<p>The shell knows in which directory it is currently located; this is called its
+“working directory”. Any command you write in the shell will be executed in
+the shell’s current directory; for example, if you write a command to create
+a new file (the command to do create a file called “my_file.txt” <code>touch my_file.txt</code>),
+this file will be created in the current working directory.</p>
+<p>The <code>pwd</code> command shows the <code>path</code> to that directory from the <code>root</code> directory.
+In the example above, the <code>root</code> directory is symbolized by the first forward
+slash <code>/</code>; the following slashes in the <code>path</code> delineate directory names.
+The <code>GitHub</code> folder is located within a directory called <code>trainings</code>,
+which in turn is located in a folder called <code>London</code>, which in turn is located in
+the <code>d</code> directory in the <code>root</code> folder of my computer.
+The path <code>/d/London/trainings/GitHub</code> tells the computer it can find the <code>GitHub</code>
+folder by opening the <code>d</code> directory in the <code>root</code> folder, then the <code>London</code> folder
+in the <code>d</code> directory, then <code>trainings</code> folder inside that <code>London</code> folder.</p>
+</div>
+<div id="moving-from-one-directory-to-another-the-cd-command" class="section level3">
+<h3><span class="header-section-number">16.4.2</span> Moving from one directory to another: the <code>cd</code> command</h3>
+<p>We can use the command <code>cd</code> (for “<strong>c</strong>hange <strong>d</strong>irectory”) to move to another folder.
+For this first exercise, we are going to move from our current working directory
+to the root folder, and then move our way back up to the original working directory.</p>
+<ol style="list-style-type: decimal">
+<li>First use the command <code>pwd</code> to print your current working directory,
+so that we know the full path to our current working directory and can get back
+to it later:</li>
+</ol>
+<pre><code>$ pwd
+/d/London/trainings/GitHub</code></pre>
+<p>(again, don’t include the <code>$</code> symbol in your command - it symbolizes the prompt!)</p>
+<p>NB: the output on your computer will of course be different, as it depends on
+the file structure on your computer and your current location within it!</p>
+<ol start="2" style="list-style-type: decimal">
+<li>To move to the root folder, you can use this command:</li>
+</ol>
+<pre><code>$ cd /</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>if you enter the <code>pwd</code> command again, it will now show only the forward slash
+that symbolises the root directory:</li>
+</ol>
+<pre><code>$ pwd
+/</code></pre>
+<p>The working directory is also reflected in the prompt itself:</p>
+<p><img src="img/GitBash_cd_home.png" /></p>
+<p>(the exact way how this is represented in the prompt will differ from system to system)</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Let’s start moving back in the direction of our original working folder
+(in my case, <code>/d/London/trainings/GitHub</code>; in your case, the path that was
+printed in step 1). Let’s go step by step: first write <code>cd</code>, followed by a space,
+followed by the first directory in the path (in my case, <code>d</code>) - you may choose
+to include the slash after the directory name or not; press the Enter key.
+Repeat for the next directory: <code>cd</code> + the next directory in the path (in my
+case, <code>London</code>), and Enter:</li>
+</ol>
+<p><img src="img/GitBash_cd_d_London.png" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>You can also take larger steps, by stringing directories together with forward
+slashes, as in the path we printed with the <code>pwd</code> command. Since we are currently
+in the <code>London</code> folder, we can write the following command to reach the <code>GitHub</code>
+folder:</li>
+</ol>
+<p><img src="img/GitBash_cd_trainings_GitHub.png" /></p>
+<ol start="6" style="list-style-type: decimal">
+<li>To move to the <code>parent</code> folder (that is, the folder that contains the current
+working directory, the folder immediately before the working directory in the
+path): use the command <code>cd ..</code>:</li>
+</ol>
+<p><img src="img/cd_dot_dot.png" /></p>
+</div>
+<div id="more-navigation-in-the-command-line-the-ls-command" class="section level3">
+<h3><span class="header-section-number">16.4.3</span> More navigation in the command line: the <code>ls</code> command</h3>
+<ol style="list-style-type: decimal">
+<li>To list all files and folders in the current working directory, use the command
+<code>ls</code> (for “list”).</li>
+</ol>
+<p><img src="img/GitBash_ls.png" /></p>
+<p>This will display all files and folders in the current working directory.
+You can use this information to move into one of these folders.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>You can also list the contents of another directory than the working directory,
+by adding the path to that directory after <code>ls</code>. For example, if we want to list
+the contents of the <code>GitHub</code> folder while we are in the <code>trainings</code> folder, we can
+write:
+<img src="img/GitBash_ls_GitHub.png" /></li>
+</ol>
+<p>NB: note that Git Bash displays folders in blue (followed by a forward slash),
+and files in white. Note also the quotation marks around the file name; they
+are there because the file name contains a space. If any folder or file name in
+a path contains a space, you will have to use quotation marks around it.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Similarly, we can list the contents of the <code>root</code> folder from anywhere in the
+filesystem tree (in this example, again from the <code>trainings</code> folder):</li>
+</ol>
+<p><img src="img/GitBash_ls_home.png" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>… Or use the full path to any folder:</li>
+</ol>
+<p><img src="img/GitBash_ls_full_path.png" /></p>
+</div>
+<div id="using-autocomplete" class="section level3">
+<h3><span class="header-section-number">16.4.4</span> Using autocomplete</h3>
+<p>Most (all?) command line programs provide an <strong>autocomplete</strong> functionality.
+You can write part of a folder or file name and press the <code>Tab</code> key on your
+keyboard, and the program will try to complete the folder/file name.</p>
+<p>For an example, I will cd into the <code>root</code> directory (<code>cd /</code>). If we want to return
+to the <code>GitHub</code> folder, we can type <code>cd d/Lon</code>, and hit <code>Tab</code>; the program will
+autocomplete to <code>cd d/London/</code>, because there is no other file or folder in
+the directory <code>d</code> that starts with <code>Lon</code>. We can then continue typing <code>trai</code>,
+and hit <code>Tab</code> again to autocomplete to <code>cd d/London/trainings</code>. I can then type <code>Gi</code>
+followed by <code>Tab</code> to autocomplete to <code>cd d/London/trainings/GitHub</code>.</p>
+<p><img src="img/GitBash_autocomplete.gif" /></p>
+</div>
+</div>
+<div id="essential-github-commands" class="section level2">
+<h2><span class="header-section-number">16.5</span> Essential GitHub commands</h2>
+<p>We will be covering the following commands during this tutorial:</p>
+<pre><code>git clone
+git status
+git add
+git commit
+git push
+git pull
+git remote add</code></pre>
+<p>These few commands will be enough to do most of your work on GitHub.
+That’s not too bad, is it?</p>
+</div>
+<div id="creating-your-first-github-repository" class="section level2">
+<h2><span class="header-section-number">16.6</span> Creating your first GitHub repository</h2>
+<p>A repository is a folder that contains a git project. You will create a repository
+for each project you are starting.</p>
+<p>Go to GitHub.com.</p>
+<p><strong>If you don’t have a GitHub account yet, create one now by
+clicking the <code>sign up</code> button and go through the sign up process.
+To finalize the process, you have to click a link sent to the email address
+you used to set up the GitHub account</strong></p>
+<p>Log in to your account by clicking the <code>Sign in</code> button in the top right of the window.</p>
+<p>Once you’re signed in, you’ll see an automatically created personal avatar in
+the top right of the window;if you click on it,
+you’ll see your user name and a couple of links:</p>
+<p><img src="img/GitHub_signed_in.png" /></p>
+<p>Create a repository by clicking the plus sign next to your avatar, and selecting
+“New repository” from the dropdown list:</p>
+<p><img src="img/GitHub_new_repo.png" /></p>
+<p>Give your repository a new name. It is a tradition in computer programming to
+call your first project “Hello World”. GitHub does not allow spaces in repository
+names, so let’s call ours “HelloWorld”. Also add a short description.</p>
+<p><img src="img/GitHub_HelloWorld.png" /></p>
+<p>GitHub gives you a couple of additional options: the repository can be either
+public (meaning, anyone on the internet can see it, but you can decide who
+can make changes to it) or private (meaning it is invisible, but you can
+invite specific people to view your repo and participate in it).</p>
+<p>GitHub also offers you to create your repository with some files included from
+the start: a README file explaining what this project is about, a .gitignore file
+(which describes which files should never be copied when downloading and uploading
+to GitHub - more on this later), and a license (which describes how people can
+use your project - copyright-wise).</p>
+<p>Let’s create the repository without any of these files, and click the green
+“Create Repository” button.</p>
+<p>When the repository is created, you arrive at a landing page, which explains
+very shortly what the next steps could be:</p>
+<ul>
+<li>manually create a new file in the repository</li>
+<li>upload an existing file to the repository</li>
+<li>connect your new repository to a folder on your local computer</li>
+<li>use the command line to add data from an existing folder on your local machine
+to this git repository</li>
+<li>import code from another repository</li>
+</ul>
+<p>We’ll use the first option and create a README file: click the “creating a new file”
+link in the “Quick setup” section of the landing page:</p>
+<p><img src="img/GitHub_new_file.png" /></p>
+<p>Give a name to the file: we’ll call it <code>README.md</code>:</p>
+<p><img src="img/GitHub_name_file.png" /></p>
+<p>NB: <code>.md</code> is the extension for markdown files.
+Markdown is a lightweight markup language that allows you to format a text with
+title headings, bold, italics, etc. using a small amount of special characters.
+See a cheatsheet with an overview of the syntax elements here:
+<a href="https://www.markdownguide.org/cheat-sheet/">https://www.markdownguide.org/cheat-sheet/</a>.</p>
+<p>It is a very useful format for writing things for the internet - this tutorial
+was also written in markdown.</p>
+<p>Let’s write some markdown text in the README.md file:</p>
+<p><img src="img/GitHub_readme.png" /></p>
+<p>If you click the Preview button, you can see the effect of the special characters
+<code>#</code> (first-level header), <code>**...**</code> (bold) and <code>*</code> (unordered list) is:</p>
+<p><img src="img/GitHub_readme_preview.png" /></p>
+<p>At the bottom of the page (you may have to scroll down) you will find a message
+box titled “Commit new file”. <code>Commit</code> is an important git command: every change
+you make in a git repository will be saved with a short descriptive title (“commit message”)
+for later reference, so that other users (or yourself) can go through the history
+of changes and roll back changes if necessary.</p>
+<p>The commit message is usually a very short message (about 50 characters),
+in the imperative form. You can write it in the smallest of the two input fields.
+You will see that GitHub has already provided you with a proposal for your first
+commit message: “Create README.md”
+You can also add a more extensive description in the larger input field; this
+is optional.</p>
+<p><img src="img/GitHub_commit_message.png" /></p>
+<p>In order to save our changes, we have to click the green “Commit new file” button.</p>
+<p>That’s it, you have created your first GitHub repository with your first README file,
+and you made your first commit!</p>
+<p>If you want to edit the <code>README.MD</code> file, you can click the pencil icon:</p>
+<p><img src="img/GitHub_edit_readme.png" /></p>
+<p>Don’t forget to write a new commit message and click the <code>Commit new file</code> button
+if you have edited the text of the README file!</p>
+<p>You can see the history of our commits by clicking the <code>History</code> button under
+the green “Code” button:</p>
+<p><img src="img/GitHub_history.png" /></p>
+<p>This will show you all changes (commits) in the repository, from newest to oldest:</p>
+<p><img src="img/GitHub_commit_history.png" /></p>
+</div>
+<div id="cloning-downloading-a-github-repository" class="section level2">
+<h2><span class="header-section-number">16.7</span> Cloning: downloading a GitHub repository</h2>
+<p>Now that we have created our first GitHub repository, let’s download it to our
+personal computer, and make some more changes there. The process of downloading
+a repository from GitHub on your local computer is called “cloning”. Remember,
+every local copy of a git repository contains the entire history of the repository,
+and is thus effectively a clone of the repository.</p>
+<p>Go to the page of the repository you want to clone on GitHub, and click the
+green <code>Code</code> button. This will open a dropdown, which contains - among other
+things - a download link (usually, it will be the address of the GitHub page,
+with a “.git” extension appended to it). Click the clipboard icon next to that
+link to copy the link to your clipboard.</p>
+<p><img src="img/GitHub_clone.png" /></p>
+<p>Open the command line program you use for git (Git Bash, Terminal, Linux shell
+- see <a href="working-with-github.html#introducing-your-main-git-tool-git-bash">above</a> for instructions)
+and navigate to the folder where you want to save a copy of our HelloWorld repo.
+I will save it in my <code>d/London/trainings/GitHub</code> folder; you will have to use the
+<code>cd</code> command with the path to a folder in your file system instead
+(see above for more info on the <a href="working-with-github.html#the-filesystem-an-introduction">file system and paths</a> and on the
+<a href="working-with-github.html#moving-from-one-directory-to-another-the-cd-command">cd command</a>)</p>
+<p><img src="img/GitBash_path_to_folder.png" /></p>
+<p>Write the following command: <code>git clone</code> and paste the link from the clipboard,
+and hit enter. In the case of the repo we created in the previous section, this
+would be</p>
+<pre><code>$ git clone https://github.com/OpenITI-Training/HelloWorld.git</code></pre>
+<p>NB: in Git Bash on Windows, you cannot use the normal shortcut for pasting
+(<code>ctrl+v</code>); use <code>shift+insert</code> (or right-click, and choose <code>Paste</code>) instead.</p>
+<p>The program will print a number of lines to the screen, detailing its progress:</p>
+<p><img src="img/GitBash_clone.png" /></p>
+<p>Congratulations, you cloned your first repository!</p>
+<p>Let’s navigate into the folder, and let’s see what is in there. Use the command
+<code>cd HelloWorld</code> to move into the <code>HelloWorld</code> folder, and then write the command
+<code>ls -la</code> to list all files in that folder (you already know the
+<a href="working-with-github.html#more-navigation-in-the-command-line-the-ls-command"><code>ls</code> command</a>;
+the characters <code>-la</code> at the end are so-called “flags” that change the behaviour
+of the command: <code>-l</code> tells the program to list some details about each element
+in the folder, and <code>-a</code> to include all files, including those that start with <code>.</code>).</p>
+<p><img src="img/GitBash_ls_la.png" /></p>
+<p>The last item is probably the only one you expected: the README.md file we
+created on the GitHub page. The first two items in the list refer to the
+current folder (<code>.</code>), and its parent folder, that is, the folder that contains
+the current folder (<code>..</code>, remember the <code>cd ..</code> command).</p>
+<p>The most important item in the list is the <code>.git</code> folder; this folder contains
+the entire history of the repository.</p>
+</div>
+<div id="save-your-changes-add-and-commit" class="section level2">
+<h2><span class="header-section-number">16.8</span> Save your changes: add and commit</h2>
+<p>Now that we have cloned our GitHub repository, we can work with it: add new
+files and folders, make changes to existing files or delete them altogether.</p>
+<p>Whenever you have made a change to your local repo, you have
+to notify Git that you did so. It is the Git equivalent of using “save
+as”. Git stores changes you made under the form of files known as “commits”; each
+commit has a unique id number, and a label (“commit message”) that
+describes in about 50 characters what changed to the repository when
+this commit was made. This allows a user to go back in the history of
+the repository, for example to return to earlier versions of a file.</p>
+<ol style="list-style-type: decimal">
+<li><p>Make a change in the README.md file, using Kate editor. Make sure to save
+and close the file after you finished changing it.</p>
+<p>NB: You can open Windows Explorer in the current directory from Git Bash
+using the following command:</p>
+<pre><code>$ explorer .</code></pre>
+<p>On Mac, use <code>open .</code> instead to open Finder in the current directory.</p></li>
+<li><p>In Git Bash on your computer, use the <code>cd</code> command to move into your
+local repository:</p>
+<pre><code>$ cd d/London/trainings/HelloWorld</code></pre>
+<p>NB: use the path to the folder where you stored your HelloWorld repo,
+which will be different from the one shown here!</p></li>
+<li><p>You can use the command <code>git status</code> to make Git check which files
+in your local repository have undergone changes:</p>
+<pre><code>$ git status</code></pre>
+<p>If no changes occurred, you will get the following message:</p>
+<pre><code>On branch master
+Your branch is up to date with \&#39;origin/master\&#39;.
+nothing to commit, working tree clean</code></pre>
+<p>If you have made changes, Git will return a list of the files that have
+been changed (or added/deleted):</p>
+<p><img src="img/GitBash_git_status.png" /></p>
+<p>For this example, we have changed the README.md file. Git displays it in
+red to show that the changes to this file have not yet been stored in Git.</p></li>
+<li><p>We will now commit our changes to git, which will save them in the <code>.git</code>
+folder on our computer.
+A commit is like a box in which changes are saved. First you have to
+add the changes to the box using the <code>git add</code> command, followed
+by the path to the file you changed - in our case, simply:</p>
+<pre><code>$ git add README.md</code></pre></li>
+<li><p>If you use the “git status” command again, you will see that the
+file we changed is now displayed in green: the changes are in the
+commit box, ready to be committed to the storage system.</p>
+<p><img src="img/GitBash_add_status.png" /></p></li>
+<li><p>Using the command <code>git commit</code>, we will commit our changes to the
+storage system. For later reference, we have to add a “commit
+message”: a label to the commit box, so to say, that should help other
+users to understand the changes you made to the file without
+having to compare both files.
+The commit message should be introduced with the flag <code>-m</code> (for “message”),
+and be placed between (single or double) quotation marks:</p>
+<p><img src="img/GitBash_commit.png" /></p>
+<p>This is equivalent to hitting the green <code>Commit</code> button on the GitHub website</p>
+<p>NB: a good commit message should be around 50 characters long, be
+descriptive, and in the imperative mood: the idea is that when you
+go through the history of changes made to a repo from the start,
+you can read the commit message as “when you execute this commit,
+Git will…”</p></li>
+<li><p>Your changes have now been included in the change history. You can
+view the change history with the command <code>git log</code>:</p>
+<p><img src="img/GitBash_log.png" /></p>
+<p>This gives you a list of all changes (commits) made to the repository,
+from the most recent to the oldest.
+As you can see, every commit has a unique 40-character ID that can be used
+to go back to the state of the repository when this commit was made. The
+log also lists the author and date of every commit, plus its commit message.</p>
+<p>NB: if the number of commits exceeds the Git Bash window, the log will open
+in an editor within Git Bash.
+You can use the <code>UP</code> and <code>DOWN</code> arrows on your keyboard to
+navigate through this history.
+To quit the log, type “q” after the colon at the bottom of the
+window.</p></li>
+</ol>
+</div>
+<div id="publish-your-changes-push-changes" class="section level2">
+<h2><span class="header-section-number">16.9</span> Publish your changes: push changes</h2>
+<p>Now you have committed your changes in your local Git repo, but if you
+go to your personal GitHub page, you will see that the changes you made
+in your local repository are not present there.</p>
+<p><img src="img/GitHub_commit_history.png" /></p>
+<p>The online repository on your GitHub page (your “remote” repository in Git-speak)
+is not automatically updated when you add and commit to your “local” repo.</p>
+<p>In order to update the remote repository, we will have to “push” our
+changes to GitHub.</p>
+<ol style="list-style-type: decimal">
+<li><p>In Git Bash on your computer, use the <code>cd</code> command to move into your
+local repository if you were not in it already:</p>
+<pre><code>$ cd D:/London/trainings/GitHub/HelloWorld</code></pre></li>
+<li><p>Use the command <code>git push origin main</code> to push your changes to
+your fork on your personal GitHub page:</p>
+<pre><code>$ git push origin main</code></pre>
+<p>NB: <code>origin</code> is the default name for any remote repository you clone on your computer;
+<code>main</code> is the default name of main branch within that repository.
+So, this command means “push the changes on the active branch of this repo
+on my local computer to the <code>main</code> branch of the remote repository
+it was cloned from (<code>remote</code>)”. You can see the name of the active branch
+in your repository in Git Bash:</p>
+<p><img src="img/GitBash_main_branch.png" /></p>
+<p>Branches are an important concept in Git (see
+<a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-branches">here</a>
+if you want to learn more), but are outside the scope of this tutorial.</p>
+<p>NB: <code>main</code> has become the default name for the main branch of a repository
+on GitHub only recently; in repositories created before October 2020,
+the default name was <code>master</code>. This change is the result of a
+<a href="https://www.allaboutcircuits.com/news/how-master-slave-terminology-reexamined-in-electrical-engineering/">backlash</a>
+against the use of words with slavery connotations in computer science and
+engineering.</p></li>
+<li><p>If we go to our personal GitHub page now, we will see that our
+changes are now also visible in our remote repository. Our commit
+message is displayed at the top.</p></li>
+</ol>
+</div>
+<div id="workflows-for-collaboration-with-git" class="section level2">
+<h2><span class="header-section-number">16.10</span> Workflows for collaboration with Git</h2>
+<p>There are different ways how you can incorporate Git in team projects. We will
+describe two here that are relevant for us:
+* the <strong>centralized workflow</strong>, where there is one central repository to which all
+contributors <strong>push</strong> their changes;
+* and the <strong>forking workflow</strong>, where contributors cannot push changes directly
+to the central repository; each contributor to the project creates a copy
+(“fork”) of the central repository, and requests the maintainer of the central
+repository to pull their changes (“pull request”).</p>
+<p>Each of these has its advantages.</p>
+<div id="the-centralized-workflow" class="section level3">
+<h3><span class="header-section-number">16.10.1</span> The centralized workflow</h3>
+<div id="adding-collaborators-to-your-personal-repository" class="section level4">
+<h4><span class="header-section-number">16.10.1.1</span> Adding collaborators to your personal repository</h4>
+<p>The Git workflow described above (cloning a repo to your local machine and pushing
+back changes to GitHub) is useful when you use GitHub as a storage for your
+own personal projects. It can also be used for small team projects, such as
+the projects in this course, if the tasks are split clearly and chances are
+low that two persons will work on the same file at the same time.</p>
+<p>As mentioned above, you can give others write access to a repository you own -
+whether it is public or private. To do this, go to the “Settings” tab on the top
+of your repository (make sure you are logged in to your GitHub account):</p>
+<p><img src="img/GitHub_settings.png" />
+Click <code>Manage access</code> in the side bar:</p>
+<p><img src="img/GitHub_manage_access.png" /></p>
+<p>You may be prompted for your password; provide it if asked for it.</p>
+<p>Click the green “Invite a collaborator” button:</p>
+<p><img src="img/GitHub_invite_collaborator_button.png" /></p>
+<p>Ask your collaborators’ GitHub usernames, and search for them in the search box;
+once you found them, click their user name.</p>
+<p><img src="img/GitHub_invite_collaborator.png" /></p>
+<p>Finally, click the green button to add the collaborator to your repo:</p>
+<p><img src="img/GitHub_add_collaborator.png" /></p>
+<p>This person will now have the same rights as you have to push changes directly
+to the repository, just like you do.</p>
+</div>
+<div id="keeping-up-to-date-with-the-remote-branch-git-pull" class="section level4">
+<h4><span class="header-section-number">16.10.1.2</span> Keeping up to date with the remote branch: <code>git pull</code></h4>
+<p>If more than one person is collaborating on a repository, it becomes very
+important that all versions of the repository are up to date.</p>
+<p>Every time before you start work on your local repository, make sure to synchronize
+it with the remote repository.
+In Git Bash, use the command <code>git pull</code> within your local repository to do this:</p>
+<pre><code>$ git pull origin main</code></pre>
+<p>This will fetch all the changes other contributors pushed to the repository
+and make sure your local repository is identical with the remote repository
+(<code>origin</code>).</p>
+<p>Similarly, every contributor will have to make sure that they push their changes
+to the remote repository regularly, to avoid that different clones of the repo
+drift apart.</p>
+<pre><code>$ git push origin main</code></pre>
+<p>NB: The <code>git pull</code> command is obviously the counterpart of the <code>git push</code> command;
+the imagery is of a box with changes being pulled from or pushed to another
+repository.</p>
+<div class="figure">
+<img src="img/GitHub_push_pull.png" alt="" />
+<p class="caption">pushing and pulling… image adapted from <a href="https://img.17qq.com/images/phqfghghnky.jpeg" class="uri">https://img.17qq.com/images/phqfghghnky.jpeg</a></p>
+</div>
+</div>
+<div id="overview-of-the-git-clone---pull---push-workflow" class="section level4">
+<h4><span class="header-section-number">16.10.1.3</span> Overview of the git clone - pull - push workflow</h4>
+<div class="figure">
+<img src="img/GitHub_procedures_clone.png" alt="" />
+<p class="caption">Cloning a repo from your personal GitHub page</p>
+</div>
+<div class="figure">
+<img src="img/GitHub_procedures_push_pull.png" alt="" />
+<p class="caption">Keeping local and remote repo in synch: push and pull changes</p>
+</div>
+<div class="figure">
+<img src="img/GitHub_procedures_push_pull_multiple.png" alt="" />
+<p class="caption">Collaborating on a personal repo: invite collaborators</p>
+</div>
+</div>
+</div>
+<div id="an-alternative-workflow-forking-and-pull-requests" class="section level3">
+<h3><span class="header-section-number">16.10.2</span> An alternative workflow: forking and pull requests</h3>
+<div id="introduction" class="section level4">
+<h4><span class="header-section-number">16.10.2.1</span> introduction</h4>
+<p>The GitHub workflow described above works well for personal projects and for
+small projects where all collaborators know each other and have clearly distinct
+tasks on which they work.</p>
+<p>However, in many projects, outside collaborators will not be given the right
+to directly push their changes to a repository: this would open the door to
+undesired or low-quality changes and even digital vandalism.</p>
+<p>An alternative workflow exists that is much safer and involves peer review of
+any change made by external collaborators. In this workflow, external
+collaborators create a copy (“fork”) of the repository on their own personal
+GitHub page, clone this fork to their local machine. When they have made
+their changes (and added and committed them to Git), they push their local
+changes to the remote fork on their own GitHub page, and request the owner of
+the original repo to review and accept their changes.
+In line with the <code>push</code> and <code>pull</code> imagery,
+this request is called a <code>pull request</code>: instead of pushing your changes to
+the original repo, you request that the owner of the repo pulls them in.</p>
+<div class="figure">
+<img src="img/GitHub_push_pull_pullrequest.png" alt="" />
+<p class="caption">pull, push, and pull request… image adapted from <a href="https://img.17qq.com/images/phqfghghnky.jpeg" class="uri">https://img.17qq.com/images/phqfghghnky.jpeg</a></p>
+</div>
+<p>NB: the term “fork” does not refer to the eating utensil but to the image of a
+fork in a river, the place where a large branch splits off from the main branch
+of the river:</p>
+<div class="figure">
+<img src="img/Nile_fork.png" alt="" />
+<p class="caption">Fork of the Nile near Cairo</p>
+</div>
+<p>If a repository is popular, it will not look like the Nile but like the Upper
+Columbia river, with many forks taking off and rejoining at a later point:</p>
+<div class="figure">
+<img src="img/Columbia_fork.jpg" alt="" />
+<p class="caption">Forks in the Upper Columbia river</p>
+</div>
+</div>
+<div id="the-forking-and-pull-requests-workflow" class="section level4">
+<h4><span class="header-section-number">16.10.2.2</span> The forking and pull requests workflow</h4>
+<p>You can create a personal copy of any (public) repository on GitHub if you have
+a personal GitHub account. In this tutorial, we will create a fork of this repo:
+<a href="https://github.com/OpenITI-Training/ForkingExample" class="uri">https://github.com/OpenITI-Training/ForkingExample</a></p>
+<ol style="list-style-type: decimal">
+<li>Go to the repo’s page on GitHub and click the “Fork” button in the top right
+corner to create a copy of this repository on your personal GitHub account.</li>
+</ol>
+<p><img src="img/GitHub_forking_example.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>If you look at the adress bar in your browser, and the title of the repository,
+you will see that you have now moved into a copy of the repository on your own
+GitHub page</li>
+</ol>
+<p><img src="img/GitHub_forked.png" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Make some changes to your fork of the repo; for this tutorial, we will add a
+text file to the fork. We are going to use the <code>Add file &gt; Upload files</code> function
+on GitHub itself:</li>
+</ol>
+<p><img src="img/GitHub_upload_files.png" /></p>
+<p>GitHub will offer you the possibility to drag and drop a file, or choose them
+from a file selection box.After adding the files, provide a commit message
+and hit the green <code>Commit changes</code> button.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Create a pull request to send your file to the original (“upstream”) repository:
+click the <code>Pull requests</code> button under the name of the fork repository on your
+personal GitHub page:</li>
+</ol>
+<p><img src="img/GitHub_pull_requests_button.png" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>This will bring you to a new page, where you can compare changes between
+different forks of the original repository. To create a pull request, make sure
+your fork is in the <code>head repository</code> field, and the original repository from
+which you forked in the <code>base repository</code> - the arrow shows the way the data
+will flow. Then click the green <code>Create pull request</code> button.</li>
+</ol>
+<p><img src="img/GitHub_compare_changes_pull_request.png" /></p>
+<ol start="6" style="list-style-type: decimal">
+<li>Provide a title and description for your pull request and click the green
+<code>Create pull request</code> button.</li>
+</ol>
+<p><img src="img/GitHub_pull_request_message.png" /></p>
+<ol start="7" style="list-style-type: decimal">
+<li>The owner of the repo you cloned will be informed by email that you have
+made a pull request. They will review the changes you made; if they are happy
+to integrate them, they will merge you changes into the repository. They may
+also choose to comment on your changes and ask you to amend them before they
+will accept them. The <code>Pull request</code> is not only a security measure, but also
+an important communication channel on GitHub.</li>
+</ol>
+</div>
+<div id="the-forking-and-pull-requests-workflow-in-more-detail" class="section level4">
+<h4><span class="header-section-number">16.10.2.3</span> The forking and pull requests workflow in more detail</h4>
+<p>In the previous section we took a shortcut in order to provide a quick introduction
+to the concepts of forking and pull requests: we uploaded a file to the fork on
+our GitHub page.</p>
+<p>In most cases, however, you will want to make changes on your local machine. In
+order to do this, we will have to clone the fork to our local machine, as we did
+in the centralized workflow (for details, see above). But to keep up to date
+with the original repository, we will have to create an additional direct link to
+that repository, so we can pull changes directly from that repo.</p>
+<ol style="list-style-type: decimal">
+<li>Fork the repository to your own GitHub account: click the <code>Fork</code> button.</li>
+<li>Clone your personal fork to your local machine: copy the link displayed when
+you click the green <code>Code</code> button, and in Git Bash on your
+computer, enter the command <code>git clone</code> + the link.</li>
+<li>Move into the repository you cloned by using the <code>cd</code> command:</li>
+</ol>
+<p><img src="img/GitHub_cd_ForkingExample.png" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Let’s see the remote repositories connected to our local repo; will there
+already be a connection with the original repo?</li>
+</ol>
+<p><img src="img/GitBash_remote_v1.png" /></p>
+<p>No: there is only a connection to the fork on our personal GitHub page.
+As you can see, this remote repository is called “origin”; this is the default
+name, created by Git when you use the command <code>git clone</code>.
+It is mentioned twice, because we are allowed to push to and pull (fetch)
+from our own remote repository.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Create a connection with the original repo: go to the GitHub page of that repo,
+get the link to that repo by clicking the green <code>Code</code> button. Now go back
+to Git Bash and enter the command <code>git remote add upstream</code>, followed by
+the link to the original repository:</li>
+</ol>
+<p><img src="img/GitBash_remote_add_upstream.png" /></p>
+<p>NB: <code>upstream</code> is the name we give to the original repository; you can give it
+any other name if you like, but it is common to call it <code>upstream</code>, so better
+to stick with the traditions. <code>upstream</code> uses the same river imagery as <code>fork</code>.</p>
+<ol start="6" style="list-style-type: decimal">
+<li>If we use the command <code>git remote -v</code> again, we will see that a new remote
+connection has been added to our local repository:</li>
+</ol>
+<p><img src="img/GitBash_remote_v2.png" /></p>
+<p>NB: note that <code>upstream</code> is mentioned twice in the list, once for <code>fetch</code> and
+once for <code>push</code>. However, if you would try to push to the <code>upstream</code> repo,
+you would get an error message. This is because Git does not restrict you
+from pushing to that repository, it is GitHub that restricts push access.</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Before making any changes, it is a good idea to pull any new changes other
+users of the original repo (<code>upstream</code>) may have made in the meantime.</li>
+</ol>
+<p>If nothing had changed, you will receive the message <code>Already up to date</code>:</p>
+<p><img src="img/GitBash_pull_upstream_nothing_new.png" />
+If, however, changes have been made to the <code>upstream</code> repo since you forked it,
+or since you last synched your local repo with the <code>upstream</code> repo, Git Bash
+will download and list the changes that have been made in the <code>upstream</code> repo:</p>
+<p><img src="img/GitBash_pull_upstream.png" />
+It will then display a notification that the <code>main</code> branch of the repository will be merged
+into the <code>main</code> branch of your local repository. This message will be shown
+in an editor inside Git Bash; you can adapt the message if you wish, but it is
+usually fine to keep the default message and simply close the editor with
+the key combination <code>Ctrl</code> and <code>X</code>. The editor will ask whether it has to
+save your changes; write <code>Y</code> and hit the <code>Enter</code> key. Hit <code>Enter</code> again to
+confirm Git may store this file at the proposed location.</p>
+<p>NB: the merging of the two branches is stored in a commit; the message in the
+editor will function as its commit message.</p>
+<p><img src="img/GitBash_merge_message.png" />
+NB: if you have made changes to a file on your own computer,
+and someone else has meanwhile made changes in the upstream repo to the same
+line in that same file, this leads to a “merge conflict”: Git cannot decide
+which change to keep. You will have to resolve this merge conflict by <a href="working-with-github.html#solving-merge-conflicts">manually
+selecting which changes to keep</a>: the one you pulled from the OpenITI GitHub
+page, or the one you made locally. This can be a huge pain. In order to avoid
+this, always make sure to pull the changes from the upstream repository
+before you make any change to your local files!</p>
+<ol start="8" style="list-style-type: decimal">
+<li>Now let’s make some changes to our local repository. We will create a new (empty)
+file in this example that has our initials as its filename.
+You can do that by using the command <code>touch</code>, followed by the filename:</li>
+</ol>
+<p><img src="img/GitBash_touch.png" />
+If you type the command <code>ls</code> to list the content of the working directory,
+you will see that it now contains a file with that filename.</p>
+<ol start="9" style="list-style-type: decimal">
+<li>Let’s now commit our changes to Git using the commands <code>git add</code> and
+<code>git commit -m</code>:</li>
+</ol>
+<p><img src="img/GitBash_commit_dummy_file.png" /></p>
+<ol start="10" style="list-style-type: decimal">
+<li>After committing your changes, and before pushing them to GitHub, it is
+good practice to pull changes from the <code>upstream</code> repo again (see above):</li>
+</ol>
+<p><img src="img/GitBash_pull_upstream_nothing_new.png" /></p>
+<ol start="11" style="list-style-type: decimal">
+<li>Let’s try to push our changes directly to the <code>upstream</code> repo - we already
+know this is not going to work, but let’s try anyway to see the error message:</li>
+</ol>
+<p><img src="img/GitBash_push_upstream_error.png" />
+Git tried to push our commit to the server, but GitHub denied us access.</p>
+<ol start="12" style="list-style-type: decimal">
+<li>We have to take the detour of the pull request to publish our changes to
+the original repository. First, we push our changes to the remote repository
+(<code>origin</code>) on our personal GitHub page:</li>
+</ol>
+<p><img src="img/GitBash_push_origin.png" /></p>
+<ol start="13" style="list-style-type: decimal">
+<li>Now we can create the pull request as we have done before: push the <code>Pull  requests</code> button under the name of your fork on GitHub:</li>
+</ol>
+<p><img src="img/GitHub_pull_requests_button.png" /></p>
+<ol start="14" style="list-style-type: decimal">
+<li>This will bring you to a new page, where you can compare changes between
+different forks of the original repository. To create a pull request, make sure
+your fork is in the <code>head repository</code> field, and the original repository from
+which you forked in the <code>base repository</code> - the arrow shows the way the data
+will flow. Then click the green <code>Create pull request</code> button.</li>
+</ol>
+<p><img src="img/GitHub_compare_changes_pull_request.png" /></p>
+<ol start="15" style="list-style-type: decimal">
+<li>Provide a title and description for your pull request and click the green
+<code>Create pull request</code> button.</li>
+</ol>
+<p><img src="img/GitHub_pull_request_message2.png" /></p>
+<ol start="16" style="list-style-type: decimal">
+<li>The owner of the repo you cloned will be informed by email that you have
+made a pull request. They will review the changes you made; if they are happy
+to integrate them, they will merge you changes into the repository. They may
+also choose to comment on your changes and ask you to amend them before they
+will accept them. The <code>Pull request</code> is not only a security measure, but also
+an important communication channel on GitHub.</li>
+</ol>
+</div>
+<div id="overview-of-the-forking-workflow" class="section level4">
+<h4><span class="header-section-number">16.10.2.4</span> Overview of the Forking workflow:</h4>
+<p>The following images are a graphical representation of the Forking workflow,
+illustrated by an example drawn from the OpenITI corpus.</p>
+<div class="figure">
+<img src="img/GitHub_procedures_add_upstream.png" alt="" />
+<p class="caption">Setting up your repositories for the Fork workflow</p>
+</div>
+<div class="figure">
+<img src="img/GitHub_procedures_forking_full.png" alt="" />
+<p class="caption">The full workflow in one image</p>
+</div>
+</div>
+</div>
+<div id="comparison-of-both-workflows" class="section level3">
+<h3><span class="header-section-number">16.10.3</span> Comparison of both workflows</h3>
+<table>
+<colgroup>
+<col width="53%" />
+<col width="46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>push access</strong></th>
+<th><strong>forking - pull requests</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>changes immediately reflected in remote repo</td>
+<td>changes only accepted after review</td>
+</tr>
+<tr class="even">
+<td>no quality control</td>
+<td>quality control through review process</td>
+</tr>
+<tr class="odd">
+<td>less overhead: give permission only once</td>
+<td>every change must be reviewed</td>
+</tr>
+</tbody>
+</table>
+<p>Both workflows can be combined. For example, in the OpenITI project, the core
+technical team has such push access to most of the project’s repositories, but
+external contributors have to fork a repo and make pull requests when they want
+to contribute texts or metadata to a repo. Thus, the positive aspects of both
+workflows can be used.</p>
+</div>
+</div>
+<div id="solving-merge-conflicts" class="section level2">
+<h2><span class="header-section-number">16.11</span> Solving merge conflicts</h2>
+<p>As we have seen before, Git tries to merge changes you make in your local repo
+to the current state of the remote repo you push your changes to, and vice versa.</p>
+<p>It is quite smart at doing this; it takes into account at which time each change
+was made.</p>
+<p>However, there are cases in which Git cannot know how to merge two versions of
+the same file: usually, this happens when two users made different changes to the
+same line of text in the same file.</p>
+<p>This is called a “merge conflict”: Git does not know which of the changes is better,
+and it will let you decide which change to keep, and which one to discard.</p>
+<p>To simulate this, let’s use our HelloWorld repo, and make changes to the same
+line in our local repo and in the remote repo (<code>origin</code>).</p>
+<ol style="list-style-type: decimal">
+<li><p>In the repository on GitHub, click the pencil icon at the top of the
+README.md document:</p>
+<p><img src="img/GitHub_edit_readme.png" /></p></li>
+<li><p>Make a small change to the first line of the description. E.g., replace
+“our training” with “the OpenITI training”.</p></li>
+<li><p>Write a commit message in the <code>Commit changes</code> box at the bottom of the
+screen and hit the “Commit changes” button.</p>
+<p><img src="img/GitHub_update_first_line.png" /></p></li>
+<li><p>Now, let’s make another change in the README.md file of the clone of this
+repository we made on our local machine. Open the document in your favourite
+editor, and make another small change to the same line: e.g., replace
+“our training” with “the KITAB training”.</p></li>
+<li><p>Add and commit the file in your local repo:</p>
+<p><img src="img/GitBash_update_first_line.png" /></p></li>
+<li><p>Now pull the changes from the remote repo (<code>origin</code>) to your local repo:</p>
+<p><img src="img/GitBash_merge_conflict.png" /></p>
+<p>There you have it, a merge conflict… The error message tells you - kind of -
+what is going on and what you have to do: “Automatic merge failed; fix conflicts
+and then commit the result.”</p>
+<p>NB: notice that the branch indication at the end of the prompt line has changed
+from <code>main</code> to <code>main|MERGING</code>: this is a temporary branch.</p></li>
+<li><p>To fix a merge conflict, open the file for which Git found a merge conflict -
+in our case, <code>README.md</code> in any text editor (e.g., EditPad Pro, Kate).
+You will notice something strange is going on in the file:</p>
+<p><img src="img/Kate_merge_conflict.png" /></p>
+<p>Git has inserted a number of weird characters into our text file.
+In fact, these characters show us where the merge conflict is located in the
+text file, and the variants in the two conflicting commits:</p>
+<ul>
+<li><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> indicates the beginning of the merge conflict, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> its
+end. Both are followed by a commit ID (commit IDs are usually 40-digit
+hexadecimal numbers; <code>HEAD</code> is an abbreviation for the commit ID that is
+currently “checked out”, that is, the ID of the current state of the files
+in your working directory)</li>
+<li><code>=======</code> separates both versions of the conflicting line(s)</li>
+</ul>
+<p>In order to fix the merge conflict, we can either delete one of the variants,
+create a combination of both, or replace them by an entirely different string.
+For this example, we will keep one version, the one from our GitHub repo.
+Remove the other version and all merge conflict markers and then save the file:</p>
+<p><img src="img/Kate_fix_merge_conflict.gif" />
+NB: make sure to remove all the traces of the merge conflict markers!
+It is a good idea to use the search function of your editor to search for
+repetitions of “&gt;”, “&lt;” and “=” to check if you have not overlooked any.</p></li>
+<li><p>After fixing all merge conflicts in all files Git had trouble merging,
+we have to create a commit that records that we have solved all merge conflicts.
+If we first enter the command <code>git status</code>, we can see that Git is not yet
+informed that we have solved the merge conflict.</p>
+<p>Let’s <code>add</code> and <code>commit</code> the <code>README.md</code> file:</p>
+<p><img src="img/GitBash_merge_conflict_fixed.png" /></p>
+<p>Running the <code>git status</code> command again after adding and committing the <code>README.md</code>
+file, we can see the merge conflict is now resolved: gone is the message
+<code>both modified:     README.md</code>, and the branch indication in the prompt line
+went back to <code>(main)</code> from <code>(main|MERGING)</code>.</p></li>
+<li><p>To finalize, we should push our changes back to our remote repository (<code>origin</code>):</p>
+<p><img src="img/GitBash_push_after_merge_conflict.png" />
+The message printed after our command <code>git push origin main</code> may be cryptic,
+but it shows no sign of a merge conflict.</p></li>
+</ol>
+</div>
+<div id="further-reading" class="section level2">
+<h2><span class="header-section-number">16.12</span> Further reading</h2>
+<p>This was only a very basic introduction to Git. There are many good resources
+around.</p>
+<ul>
+<li>Very first introduction to using Github: <a href="https://guides.github.com/activities/hello-world/">https://guides.github.com/activities/hello-world/</a></li>
+<li>Introduction to using Github from command line: <a href="https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6">https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6</a></li>
+<li>A more technical insight into the guts of Git: <a href="http://ftp.newartisans.com/pub/git.from.bottom.up.pdf">http://ftp.newartisans.com/pub/git.from.bottom.up.pdf</a></li>
+<li>on different workflows using Git: see <a href="https://www.atlassian.com/git/tutorials/comparing-workflows">https://www.atlassian.com/git/tutorials/comparing-workflows</a></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week-14-research-collaboratory-iii-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["2021IslamicateWorldCourse.pdf", "2021IslamicateWorldCourse.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
