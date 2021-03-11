@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11 week 10: R Bootcamp II | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis</title>
+  <title>17 Kate Tutorial | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis</title>
   <meta name="description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11 week 10: R Bootcamp II | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
+  <meta property="og:title" content="17 Kate Tutorial | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11 week 10: R Bootcamp II | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
+  <meta name="twitter:title" content="17 Kate Tutorial | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
   
   <meta name="twitter:description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="week-9-r-bootcamp-i-1.html"/>
-<link rel="next" href="week-11-r-bootcamp-iii-1.html"/>
+<link rel="prev" href="working-with-github.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -224,31 +224,260 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="week-10-r-bootcamp-ii-1" class="section level1">
-<h1><span class="header-section-number">11</span> week 10: R Bootcamp II</h1>
-<p><strong><em>4/8/2021 Thursday</em></strong></p>
-<p>Prepare for Class:</p>
+<div id="kate-tutorial" class="section level1">
+<h1><span class="header-section-number">17</span> Kate Tutorial</h1>
+<p>Kate is a free text editor that can be used on Windows, Mac and Linux alike.</p>
+<p>It has good support for right-to-left scripts, handles large files reasonably
+well, and allows the creation of custom highlighting and folding schemes
+(for instructions for installing the OpenITImARkdown scheme, see
+<a href="#installing-the-openiti-markdown-highlighting-scheme-for-Kate">below</a>).</p>
+<p>This tutorial showcases only the most relevant functions of Kate for our purposes;
+for more information, please refer to the <a href="https://docs.kde.org/stable5/en/applications/kate/index.html">Kate Handbook</a>, which
+can also be accessed through the <code>Help</code> menu in the program itself.</p>
+<div id="installing-kate-editor" class="section level2">
+<h2><span class="header-section-number">17.1</span> Installing Kate editor</h2>
+<div id="on-windows-2" class="section level3">
+<h3><span class="header-section-number">17.1.1</span> On Windows</h3>
 <ul>
-<li>Chapter 3 in Arnold and Tilton.</li>
+<li><p>Download the most recent installation file here:<br />
+<a href="https://binary-factory.kde.org/view/Windows%2064-bit/job/Kate_Release_win64/">https://binary-factory.kde.org/view/Windows%2064-bit/job/Kate_Release_win64/</a> ;
+go to the <strong>Pipeline Kate_Release_win64</strong> section on that page and download the file that ends with <code>_64-cl.exe</code>.</p></li>
+<li><p>Once the file was downloaded, double-click the installation file and follow the instructions (you can keep all the default settings the installer proposes)</p></li>
+<li><p>Kate should now be installed on your computer. Proceed to install the OpenITImARkdown highlighting scheme (see <a href="#installing-the-openiti-markdown-highlighting-scheme-for-Kate">below</a>)</p></li>
 </ul>
-<p>Submit Before Class:</p>
+</div>
+<div id="on-mac-2" class="section level3">
+<h3><span class="header-section-number">17.1.2</span> on Mac</h3>
 <ul>
-<li>Practice exercises for chapter 3 in Arnold &amp; Tilton, pages 186-188.</li>
-</ul>
-<p>In class:</p>
+<li><p>Download the <code>.dmg</code> file here:
+<a href="https://binary-factory.kde.org/view/MacOS/job/Kate_Release_macos/">https://binary-factory.kde.org/view/MacOS/job/Kate_Release_macos/</a>
+(choose the file that ends with <code>.dmg</code>, the other file is a
+<a href="https://www.howtogeek.com/363735/what-is-a-checksum-and-why-should-you-care/">checksum</a>)</p></li>
+<li><p>Once downloaded click on the .dmg file, double click on the “kate” icon or drag it to the Applications folder</p>
+<p>NB: You will most likely get a message like</p>
+<pre><code>“kate” can’t be opened because Apple cannot check it for malicious software. 
+This software needs to be updated. Contact the developer for more information.</code></pre>
+<p>This is because recent Mac instances do not allow you to install apps from non-verified developers. There is however a way to override this security measure:</p>
 <ul>
-<li>Weekly Reading Report: Topic Modeling in R (Matthew Thomas Miller).</li>
-<li>First brainstorming session on final project topics.</li>
+<li>Go to “system preferences” =&gt; “security &amp; privacy” =&gt; under “general” you will see a note saying `“Kate” was blocked from use because it is not from an identified developer”</li>
+<li>click “open anyway”</li>
+<li>a new pop up will appear where you will have to consent again, and then the app should launch</li>
 </ul>
+<p>The process is generally explained here (+ a shortcut if you’re feeling adventurous):</p>
+<p><a href="https://mac-how-to.gadgethacks.com/how-to/open-third-party-apps-from-unidentified-developers-macos-0158095/" class="uri">https://mac-how-to.gadgethacks.com/how-to/open-third-party-apps-from-unidentified-developers-macos-0158095/</a></p></li>
+<li><p>Kate should now be installed on your computer. Proceed to install the OpenITImARkdown highlighting scheme (see <a href="#installing-the-openiti-markdown-highlighting-scheme-for-Kate">below</a>).</p></li>
+</ul>
+</div>
+</div>
+<div id="installing-the-openiti-markdown-highlighting-scheme-for-kate" class="section level2">
+<h2><span class="header-section-number">17.2</span> Installing the OpenITI mARkdown highlighting scheme for Kate</h2>
+<div id="on-windows-3" class="section level3">
+<h3><span class="header-section-number">17.2.1</span> On Windows:</h3>
+<ul>
+<li><p>Download the highlighting scheme <code>OpenITImARkdown.xml</code> file by right-clicking on this <a href="./2021IslamicateWorldCourse_files/OpenITImARkdown.xml">link</a> and choosing “Save link as”.</p></li>
+<li><p>In Windows Explorer, go to <code>C:/Users</code> and double-click the folder with your user name</p></li>
+<li><p>In your user folder, find the folder <code>AppData</code>. This folder is sometimes hidden; to make it visible, you may have to go to the “View” tab in Windows Explorer, and check the box next to “Hidden items”:</p></li>
+</ul>
+<div class="figure">
+<img src="img/make_hidden_files_visible.png" alt="" />
+<p class="caption">make hidden files visible</p>
+</div>
+<ul>
+<li><p>Enter the <code>AppData</code> folder, double-click the <code>Local</code> folder, and make a new directory in it: <code>org.kde.syntax-highlighting</code></p></li>
+<li><p>Within the new <code>org.kde.syntax-highlighting</code> folder, create another new folder: <code>syntax</code>. The full path to this folder should now be <code>C:\Users\&lt;user_name&gt;\AppData\Local\org.kde.syntax-highlighting\syntax</code></p></li>
+<li><p>Copy the <code>OpenITImARkdown.xml</code> file into the newly created <code>syntac</code> folder.</p></li>
+<li><p>Close the Kate editor if it was open, and open it again.</p></li>
+<li><p>You should now be able to find the OpenITImARkdown highlighting scheme in the list in the Tools &gt; Highlighting &gt; Markup menu:</p></li>
+</ul>
+<div class="figure">
+<img src="img/screenshot_kate_tools_highlighting.png" alt="" />
+<p class="caption">OpenITImARkdown in Tools menu</p>
+</div>
+<p>And also in the dropdown menu in the bottom right of your Kate screen:</p>
+<div class="figure">
+<img src="img/screenshot_kate_highlighting_dropdown.png" alt="" />
+<p class="caption">OpenITImARkdown in dropdown menu</p>
+</div>
+</div>
+<div id="on-mac-3" class="section level3">
+<h3><span class="header-section-number">17.2.2</span> On Mac:</h3>
+<p>(Thanks to John for figuring this out!)</p>
+<ol style="list-style-type: decimal">
+<li>Download the highlighting scheme <code>OpenITImARkdown.xml</code> file by right-clicking on this <a href="./2021IslamicateWorldCourse_files/OpenITImARkdown.xml">link</a> and choosing “Save link as”.</li>
+<li>Open Terminal (see <a href="https://www.idownloadblog.com/2019/04/19/ways-open-terminal-mac/">https://www.idownloadblog.com/2019/04/19/ways-open-terminal-mac/</a>)</li>
+<li>Create new subdirectories in the <code>~/Library/Application Support</code> folder by
+executing this command:</li>
+</ol>
+<pre><code>mkdir -p &quot;$HOME/Library/Application Support/org.kde.syntax-highlighting/syntax&quot;</code></pre>
+<p>NB: the quotation marks are essential because there is a space in the path!</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Assuming the <code>OpenITImARkdown.xml</code> file is in the <code>Downloads</code> folder:
+execute the following command to copy it to the newly created folder:</li>
+</ol>
+<pre><code>cp ~/Downloads/OpenITImARkdown.xml &quot;$HOME/Library/Application Support/org.kde.syntax-highlighting/syntax&quot;</code></pre>
+<p>Alternatively:</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Open Finder</li>
+<li>in the Finder menu, choose <code>Go &gt; Go to folder...</code>, write <code>~/Library/Application Support/</code>, then click <code>Go</code></li>
+<li>create a new folder using the combination command+shift+n, and call it <code>org.kde.syntax-highlighting</code></li>
+<li>Move into that folder, and create another subfolder using command+shift+n, called <code>syntax</code></li>
+<li>Copy the <code>OpenITImARkdown.xml</code> file into that folder</li>
+</ol>
+<p>Close the Kate editor if it was open, and open it again.</p>
+<p>You should now be able to find the OpenITImARkdown highlighting scheme in the list in the Tools &gt; Highlighting &gt; Markup menu:</p>
+<div class="figure">
+<img src="img/screenshot_kate_tools_highlighting.png" alt="" />
+<p class="caption">OpenITImARkdown in Tools menu</p>
+</div>
+<p>And also in the dropdown menu in the bottom right of your Kate screen:</p>
+<div class="figure">
+<img src="img/screenshot_kate_highlighting_dropdown.png" alt="" />
+<p class="caption">OpenITImARkdown in dropdown menu</p>
+</div>
+</div>
+</div>
+<div id="working-with-kate" class="section level2">
+<h2><span class="header-section-number">17.3</span> Working with Kate</h2>
+<div id="activating-the-openiti-markdown-highlighting-scheme" class="section level3">
+<h3><span class="header-section-number">17.3.1</span> Activating the OpenITI mARkdown highlighting scheme</h3>
+<p>If you have correctly <a href="kate-tutorial.html#installing-the-openiti-markdown-highlighting-scheme-for-kate">installed</a>
+the highlighting scheme, texts that have the extensions <code>.mARkdown</code>, <code>.completed</code>
+or <code>.inProgress</code> should automatically activate the highlighting scheme.</p>
+<p>You can see the active highlighting scheme in the dropdown box at the bottom right
+of the screen:</p>
+<div class="figure">
+<img src="img/screenshot_kate_highlighting_dropdown.png" alt="" />
+<p class="caption">OpenITImARkdown in dropdown menu</p>
+</div>
+<p>If this does not say <code>OpenITImARkdown</code>, click the button, write <code>OpenITI</code> and
+select the <code>OpenITImARkdown</code>.</p>
+<p><strong>NB: there is also a <code>markdown</code> highlighting scheme in the list; this is designed
+for the <code>markdown</code> language on which OpenITI mARkdown is loosely based,
+but will not highlight OpenITI mARkdown text correctly.</strong></p>
+<p>Alternatively, you can select the <code>OpenITImARkdown</code> highlighting scheme in the
+list in the Tools &gt; Highlighting &gt; Markup menu:</p>
+<div class="figure">
+<img src="img/screenshot_kate_tools_highlighting.png" alt="" />
+<p class="caption">OpenITImARkdown in Tools menu</p>
+</div>
+</div>
+<div id="folding-sections" class="section level3">
+<h3><span class="header-section-number">17.3.2</span> Folding sections</h3>
+<p>One of the most useful features of Kate and OpenITI mARkdown is that it allows
+you to fold all sections, displaying only their headers.</p>
+<p>In the menu, go to <code>View &gt; Code Folding &gt; Fold Toplevel Nodes</code> to collapse all
+sections, and <code>View &gt; Code Folding &gt; Unfold Toplevel Nodes</code> to make them visible
+in their entirety again.</p>
+<p><img src="img/Kate_fold.png" /></p>
+<p>You can also use the following key combinations:</p>
+<ul>
+<li><code>Ctrl</code> <code>Shift</code> <code>-</code> for folding</li>
+<li><code>Ctrl</code> <code>Shift</code> <code>+</code> for unfolding</li>
+</ul>
+<p>NB: In a large text, it may take a second or two for the folding to take effect.</p>
+<p>You can also use the triangles next to the line numbers in the text to fold/unfold
+a single section:</p>
+<p><img src="img/Kate_folding.gif" /></p>
+</div>
+<div id="search-and-replace" class="section level3">
+<h3><span class="header-section-number">17.3.3</span> Search and replace</h3>
+<p>Kate contains three options for searching and replacing:</p>
+<ul>
+<li>the <code>Search</code> bar: simple search in the current document</li>
+<li>the <code>Power Search and Replace</code> bar: regex search and replace in the current
+document</li>
+<li>the <code>Search in Files</code> bar: regex search and replace in multiple documents at
+the same time</li>
+</ul>
+<p>The latter option is the most powerful, and displays all matched lines.</p>
+<div id="search-bar" class="section level4">
+<h4><span class="header-section-number">17.3.3.1</span> Search bar</h4>
+<p>To make the <code>Search and replace</code> bar visible, go to <code>Edit &gt; Find</code>:</p>
+<p><img src="img/Kate_edit_replace_menu.png" /></p>
+<p>You can also use the <code>Ctrl+F</code> key shortcut.</p>
+<p>This opens up a basic search bar, in which you cannot use regular expressions:</p>
+<p><img src="img/Kate_search_bar.png" />
+* The <code>Aa</code> button toggles case sensitivity on and off.</p>
+<ul>
+<li>You can close the search bar by clicking the button with <code>x</code>
+in a red circle at the left-hand side of the search bar.</li>
+</ul>
+<p>To use regular expressions, open the <a href="#power-search-and-replace-bar"><code>Power Search and Replace Bar</code></a>
+by clicking the button with the sliders on the right of the search bar: <img src="img/Kate_sliders_button.png" /></p>
+</div>
+<div id="the-power-search-and-replace-bar" class="section level4">
+<h4><span class="header-section-number">17.3.3.2</span> The Power Search and Replace bar</h4>
+<p>To make the <code>Search and replace</code> bar visible, go to <code>Edit &gt; Replace</code>:</p>
+<p><img src="img/Kate_edit_replace_menu.png" /></p>
+<p>You can also use the <code>Ctrl+R</code> key shortcut.</p>
+<p>This opens the <code>Pwer search and replace</code> bar at the bottom of the screen:</p>
+<p><img src="img/Kate_search_replace_bar.png" /></p>
+<p>Selected controls:</p>
+<ul>
+<li><p>With the <code>Mode</code> dropdown, you can select whether you want to use Regular
+Expressions or plain text search.</p></li>
+<li><p>The <code>Aa</code> button toggles case sensitivity on and off.</p></li>
+<li><p>You can close the <code>Power Search and Replace</code> bar by clicking the button with <code>x</code>
+in a red circle at the left-hand side of the search bar.</p></li>
+<li><p>Use the <code>Replace</code> button to replace only the current match; use <code>Replace All</code>
+to replace all matches in the document.</p></li>
+<li><p>If you hit the <code>Find all</code> button, the number of matches found in the document
+will be displayed.</p></li>
+</ul>
+</div>
+<div id="the-search-in-files-bar" class="section level4">
+<h4><span class="header-section-number">17.3.3.3</span> The Search in Files bar</h4>
+<p>This is Kate’s most powerful search and replace option.</p>
+<p>Open the <code>Search in Files</code> bar in one of three ways:
+* in the menu, choose <code>Edit &gt; Search Files</code>
+* use the shortcut key combination <code>Ctrl+Alt+F</code>
+* click the <code>Search and Replace</code> button in the bottom left of the screen:</p>
+<p><img src="img/Kate_search_replace_button.png" /></p>
+<p>The <code>Search in Files</code> bar contains much more options than the other search bars:</p>
+<p><img src="img/Kate_search_in_files_bar.png" />
+1. <code>{}</code> button: toggle regular expressions on/off
+2. <code>Aa</code> button: toggle case sensitivity on/off (default: case insensitive,
+“abc” will match “abc”, “ABC”, “aBc”, etc.)
+3. You can define whether the search and replace operation is executed only in
+the current file, in all open files, in a folder, in a project, or in all open
+projects.
+4. you can run multiple searches at the same time: open a new search tab with
+this button
+5. use this button to show all search options.
+6. When you conduct a search, the results will be displayed in the results pane:
+<img src="img/Kate_search_in_multiple_expanded.png" />
+7. You can expand and collapse the search results in each file using this button:</p>
+<p><img src="img/Kate_expand_search_results.gif" /></p>
+<p>You can check and uncheck results in the results pane; use the button <code>Replace  Checked</code> to replace all checked results in the results pane.</p>
+<p>NB: for regex capture groups, Kate uses the <code>\1</code>, <code>\2</code>, etc. syntax (as in Python),
+not the <code>$1</code>, <code>$2</code>, etc. syntax (as in Perl and JavaScript):</p>
+<div class="figure">
+<img src="img/Kate_capturing_group.gif" alt="" />
+<p class="caption">Replace a <code>#</code> tag on a new line followed by a number by a <code>### |</code> tag</p>
+</div>
+</div>
+</div>
+<div id="displaying-the-toolbar" class="section level3">
+<h3><span class="header-section-number">17.3.4</span> || Displaying the toolbar</h3>
+<p>A tool bar can be displayed below Kate’s menu bar.
+Go to <code>Settings &gt; Show Toolbar</code> to display it.</p>
+<p>You can add buttons to the toolbar in the <code>Settings &gt; Configure Toolbars</code>.</p>
+</div>
+<div id="change-font-and-other-settings" class="section level3">
+<h3><span class="header-section-number">17.3.5</span> || Change font and other settings</h3>
+<p>Go to <code>Settings &gt; Configure Kate</code> to change the font, font size and other settings:</p>
+<p><img src="img/Kate_settings.png" /></p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="week-9-r-bootcamp-i-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="week-11-r-bootcamp-iii-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="working-with-github.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
