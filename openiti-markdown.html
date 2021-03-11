@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11 week 10: R Bootcamp II | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis</title>
+  <title>18 OpenITI mARkdown | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis</title>
   <meta name="description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11 week 10: R Bootcamp II | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
+  <meta property="og:title" content="18 OpenITI mARkdown | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11 week 10: R Bootcamp II | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
+  <meta name="twitter:title" content="18 OpenITI mARkdown | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
   
   <meta name="twitter:description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="week-9-r-bootcamp-i-1.html"/>
-<link rel="next" href="week-11-r-bootcamp-iii-1.html"/>
+<link rel="prev" href="kate-tutorial.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -240,31 +240,212 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="week-10-r-bootcamp-ii-1" class="section level1">
-<h1><span class="header-section-number">11</span> week 10: R Bootcamp II</h1>
-<p><strong><em>4/8/2021 Thursday</em></strong></p>
-<p>Prepare for Class:</p>
+<div id="openiti-markdown" class="section level1">
+<h1><span class="header-section-number">18</span> OpenITI mARkdown</h1>
+<p>OpenITI mARkdown is a lightweight markup language designed to add basic tagging
+in a quick and efficient way to text in right-to-left languages.</p>
+<p>Advantages:</p>
 <ul>
-<li>Chapter 3 in Arnold and Tilton.</li>
+<li>no conflicts between LTR tags and RTL text</li>
+<li>no pairs of closing and opening tags as in TEI XML: only single tags</li>
+<li>OpenITI mARkdown tags can be converted to TEI XML</li>
+<li>highlighting and folding schemes available for EditPad Pro and Kate editors.</li>
+<li>limited but expandable tag set</li>
 </ul>
-<p>Submit Before Class:</p>
+<p>Full documentation: <a href="https://alraqmiyyat.github.io/mARkdown/">alraqmiyyat.github.io/mARkdown/</a></p>
+<div id="openiti-markdown-header" class="section level2">
+<h2><span class="header-section-number">18.1</span> OpenITI mARkdown header</h2>
+<p>Each OpenITI mARkdown file has a header that contains three elements:</p>
+<ol style="list-style-type: decimal">
+<li>the so-called <strong>“magic value”</strong> <code>######OpenITI#</code>, which activates the OpenITI
+mARkdown highlighting scheme in EditPad Pro. It should be on the first line of
+the file, followed by a line break</li>
+<li>Zero or more <strong>metadata fields</strong>, each on one line, and each introduced by the tag
+<code>#META#</code>. This header is meant for metadata salvaged from digital text files,
+and is not necessarily machine-readable. Machine-readable metadata to each text
+file is provided in a separate file, in the <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>
+format; this file has the same filename as the file it describes, and the file
+extension <code>.yml</code>.</li>
+<li><strong>Header splitter</strong> <code>#META#Header#End#</code>: this tag, preceded and followed by an
+empty line, splits the metadata header off from the main body of the text.</li>
+</ol>
+</div>
+<div id="structural-text-units" class="section level2">
+<h2><span class="header-section-number">18.2</span> Structural text units</h2>
+<div id="paragraphs" class="section level3">
+<h3><span class="header-section-number">18.2.1</span> Paragraphs</h3>
 <ul>
-<li>Practice exercises for chapter 3 in Arnold &amp; Tilton, pages 186-188.</li>
+<li><code>#</code>: The start of a paragraph in OpenITI texts is tagged with a single hashtag,
+followed by a space.</li>
+<li><code>~~</code>: because many text editors have trouble displaying very long lines of text,
+paragraphs in OpenITI texts are split into short lines (max. 72 characters), each
+preceded by two tildes.</li>
 </ul>
-<p>In class:</p>
+<div class="figure">
+<img src="img/Kate_paragraphs_pages.png" alt="" />
+<p class="caption">Paragraphs and page numbers, highlighted in Kate editor</p>
+</div>
+<p>NB: in the near future, OpenITI mARkdown will abandon these tags and will mark
+paragraphs as done in standard <code>markdown</code>: double line breaks as paragraph dividers.</p>
+</div>
+<div id="page-numbers-pagevp" class="section level3">
+<h3><span class="header-section-number">18.2.2</span> Page numbers: <code>PageV##P###</code></h3>
+<p>Page numbers in OpenITI mARkdown are formatted in the <code>PageV##P###</code> format;
+<code>V##</code> refers to the volume number, <code>P###</code> to the page number. Both are padded
+with zeroes (e.g., <code>PageV01P001</code>).</p>
+<p>manuscript transcriptions, add <code>A</code> to the page number for recto, and <code>B</code> for verso
+(e.g., <code>PageV01P002B</code>).</p>
+</div>
+<div id="section-headers-etc." class="section level3">
+<h3><span class="header-section-number">18.2.3</span> Section headers: <code>### |</code>, <code>### ||</code>, etc.</h3>
+<p>Section header tags must always start on a new line and consist of two elements:</p>
+<ol style="list-style-type: decimal">
+<li>three hashtags, followed by a space</li>
+<li>one or more “pipe” symbols (<code>|</code>), followed by a space. The number of pipes
+defines the level of a header: one pipe is level 1, two pipes is level 2, etc.
+The highlighting scheme will give each level a different colour.</li>
+</ol>
+<p>If the section has a title, put it on the same line immediately after the final
+space of the tag. If the title does not have a section, the rest of the line
+after the space may be left blank.</p>
+<div class="figure">
+<img src="img/Kate_folded_headers.png" alt="" />
+<p class="caption">Folded OpenITI mARkdown section headers in Kate editor</p>
+</div>
+</div>
+<div id="dictionary-units" class="section level3">
+<h3><span class="header-section-number">18.2.4</span> Dictionary units: <code>### $</code></h3>
+<p>Lemmata in texts that have a dictionary format (lexicographical dictionaries,
+biographical dictionaries, <em>ṭabaqāt</em> works, bibliographical works, etc.)
+can be tagged using the <code>### $</code> tag:</p>
 <ul>
-<li>Weekly Reading Report: Topic Modeling in R (Matthew Thomas Miller).</li>
-<li>First brainstorming session on final project topics.</li>
+<li><code>### $</code>: simplified lemma tag: can be used if there is only one type of entry
+in a dictionary-type work, or as a temporary tag</li>
+<li>descriptive unit tags: the type of lemma can be expressed by putting it between
+two dollar signs: e.g.,
+<ul>
+<li>dictionary entries:
+<ul>
+<li><code>### $DIC_NIS$</code> [a descriptive name entry]</li>
+<li><code>### $DIC_TOP$</code> [a toponym entry]</li>
+<li><code>### $DIC_LEX$</code> [a lexical entry]</li>
+<li><code>### $DIC_BIB$</code> [a book title]</li>
+</ul></li>
+<li>biographical dictionary entities:
+<ul>
+<li><code>### $BIO_MAN$</code> [a biography of a man]</li>
+<li><code>### $BIO_WOM$</code> [a biography of a woman]</li>
+<li><code>### $BIO_REF$</code> [a cross-reference, for both men and women]</li>
+<li><code>### $BIO_NLI$</code> [a list of names]</li>
+</ul></li>
+</ul></li>
+<li>shorthand unit tags: if a book contains multiple types of lemmata (e.g.,
+biographies of men and women; book titles and genre categories), multiple dollar
+signs can be used to differentiate between each type. E.g.,
+<ul>
+<li><code>### $</code> [a biography of a man]</li>
+<li><code>### $$</code> [a biography of a woman]</li>
+<li><code>### $$$</code> [a cross-reference and/or repetition, for both men and women]</li>
+<li><code>### $$$$</code> [a list of names]</li>
+</ul></li>
 </ul>
+</div>
+<div id="paratext-sections-editor-paratext-appendix" class="section level3">
+<h3><span class="header-section-number">18.2.5</span> Paratext sections: <code>### |EDITOR|</code>, <code>### |PARATEXT|</code>, <code>### |APPENDIX|</code></h3>
+<p>These tags are used to mark sections that do not really form part of the text;
+for many kinds of computational analysis, it may be useful to disregard these
+sections:</p>
+<ul>
+<li><code>### |EDITOR|</code>: title pages and front matter of the printed editions,
+editorial introductions, indices, table of contents, etc.</li>
+<li><code>### |PARATEXT|</code>: scribal additions to the text, riwāyas at the start of a text,
+samāʿa statements, …</li>
+<li><code>### |APPENDIX|</code>: appendices to the text that are closely related to the text,
+e.g., known fragments from lost parts of a text, sections from alternative
+manuscript transmission chains, etc.</li>
+</ul>
+<p>All of these tags are put on their own on a new line of text at the beginning
+of the section. The section continues until the next <code>###</code> tag, or the end of
+the text</p>
+</div>
+<div id="verses-of-poetry-hemistich_1-hemistich_2" class="section level3">
+<h3><span class="header-section-number">18.2.6</span> Verses of poetry: <code># &lt;hemistich_1&gt; %~% &lt;hemistich_2</code></h3>
+<p>NB: make sure each verse starts on its own line.</p>
+<div class="figure">
+<img src="img/EditPadPro_poetry.png" alt="" />
+<p class="caption">Poetry verses tagged in OpenITI mARkdown, highlighted in EditPad Pro</p>
+</div>
+</div>
+</div>
+<div id="semantic-patterns" class="section level2">
+<h2><span class="header-section-number">18.3</span> Semantic patterns</h2>
+<div id="years-yy-yb-yd-ya" class="section level3">
+<h3><span class="header-section-number">18.3.1</span> Years: <code>YY####</code>, <code>YB####</code>, <code>YD####</code>, <code>YA####</code></h3>
+<p>Years mentioned in a text can be tagged by placing one of the following tags
+in front of them (separate them from the text with a space):</p>
+<ul>
+<li><code>YB####</code>: year of birth</li>
+<li><code>YD####</code>: year of death</li>
+<li><code>YA####</code>: age in years</li>
+<li><code>YY####</code>: any other type of year reference</li>
+</ul>
+<p>NB: these tags must be preceded and followed by a space.</p>
+<div class="figure">
+<img src="img/EditPadPro_years.png" alt="" />
+<p class="caption">Years tagged in OpenITI mARkdown, as displayed by EditPad Pro</p>
+</div>
+</div>
+<div id="named-entities-toponyms-personal-names-xxx" class="section level3">
+<h3><span class="header-section-number">18.3.2</span> Named entities (toponyms, personal names, …): <code>@XXX##</code></h3>
+<p>This category of tags has a special structure: all tags consist of:</p>
+<ol style="list-style-type: decimal">
+<li>an ampersand <code>@</code></li>
+<li>a three-letter code:</li>
+</ol>
+<ul>
+<li><code>TOP</code> for toponyms</li>
+<li><code>SOC</code> for biographical characteristics</li>
+<li><code>PER</code> for persons</li>
+<li><code>SRC</code> for sources (book titles, citation statements like <em>qāla fulān</em>, …)</li>
+<li><code>QUR</code> for Qur'ān verses</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>a digit that refers to the length of an attached prefix: e.g.,</li>
+</ol>
+<ul>
+<li><code>@TOP01 بغداد</code></li>
+<li><code>@TOP11 ببغداد</code></li>
+<li><code>@TOP21 وببغداد</code></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>one or more digits that refer to the number of tokens of the entity
+(The highlighting scheme will highlight this number of tokens after the tag): e.g.,</li>
+</ol>
+<ul>
+<li><code>@TOP12 بمدينة السلام</code></li>
+<li><code>@SRC010 قال محمد بن عبد الملك بن علي بن أحمد السندي</code></li>
+</ul>
+<p>NB: in order to speed up your tagging, you may use variants of these same tags
+with a single-letter code: <code>@T##</code>, <code>@S##</code>, <code>@P##</code>, <code>@Q##</code></p>
+<div class="figure">
+<img src="img/EditPadPro_named_entities.png" alt="" />
+<p class="caption">Named entities highlighting in EditPad Pro</p>
+</div>
+</div>
+</div>
+<div id="further-reading-1" class="section level2">
+<h2><span class="header-section-number">18.4</span> Further reading</h2>
+<p>Full documentation: <a href="https://alraqmiyyat.github.io/mARkdown/">alraqmiyyat.github.io/mARkdown/</a></p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="week-9-r-bootcamp-i-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="week-11-r-bootcamp-iii-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="kate-tutorial.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
