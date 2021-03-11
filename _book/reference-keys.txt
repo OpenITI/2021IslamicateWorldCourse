@@ -153,3 +153,16 @@ the-power-search-and-replace-bar
 the-search-in-files-bar
 displaying-the-toolbar
 change-font-and-other-settings
+openiti-markdown
+openiti-markdown-header
+structural-text-units
+paragraphs
+page-numbers-pagevp
+section-headers-etc.
+dictionary-units
+paratext-sections-editor-paratext-appendix
+verses-of-poetry-hemistich_1-hemistich_2
+semantic-patterns
+years-yy-yb-yd-ya
+named-entities-toponyms-personal-names-xxx
+further-reading-1

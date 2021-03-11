@@ -231,7 +231,9 @@ Git Bash when copying commands from this tutorial.</mark>
 
 2. Write your first command: type `pwd`, which means "**p**rint **w**orking **d**irectory": 
 
-```$ pwd```
+```
+$ pwd
+```
 
 (remember not to type the prompt symbol `$`!)
 
@@ -954,7 +956,7 @@ that repository, so we can pull changes directly from that repo.
 1. Fork the repository to your own GitHub account: click the `Fork` button.
 2. Clone your personal fork to your local machine: copy the link displayed when
    you click the green `Code` button, and in Git Bash on your
-   computer, enter the command `git clone` + the link. 
+   computer, enter the command `git clone ` + the link. 
 3. Move into the repository you cloned by using the `cd` command:
    
 ![](img/GitHub_cd_ForkingExample.png)
