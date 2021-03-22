@@ -142,7 +142,7 @@ NB: these tags must be preceded and followed by a space.
 
 This category of tags has a special structure: all tags consist of:
 
-1. an ampersand `@`
+1. an "at sign" `@`
 2. a three-letter code: 
   - `TOP` for toponyms
   - `SOC` for biographical characteristics
