@@ -288,10 +288,25 @@ have a specific format:
 * the texts should be **all** in plain text format (or all in html or xml)
 * the text files should be **all** in the same encoding (preferably UTF-8 if you 
 have text in Arabic script (Arabic, Persian, Urdu, ...))
-* Metadata about the texts should be encoded in the filenames. For example, if you
-want to be able to display the titles and author names of the books in the corpus,
-all file name should have the following format: `author_title.txt` (without spaces), 
-e.g., "Cervantes_DonQuixote.txt", "Tabari_Tarikh.txt", ...
+* file names: 
+  - keep file names short, because they will be used in visualizations
+  - use very consistent filename format
+  - Metadata about the texts can be encoded in the filenames; divide metadata 
+    categories by underscore. 
+    For example, if you want to be able to display the titles and author names 
+    of the books in the corpus, file names could have the following format: 
+    `author_title.txt` (without spaces), 
+    e.g., "Cervantes_DonQuixote.txt", "Tabari_Tarikh.txt", ...
+  - `stylo` will classify the texts in its output using the first part of the 
+    file name (the part before the first underscore). 
+    * If you are interested in authorship attribution, put the author's name in 
+      the first part of the file name (e.g., "Cervantes_DonQuixote.txt", 
+      "Tabari_Tarikh.txt"); 
+    * if you're interested in genre, put the genre in the first place: e.g., 
+      `trag_Shakespeare_Hamlet.txt`, `com_Shakespeare_Taming.txt`
+    * if you're trying to see differences between texts written by men and women, 
+      put a gender marker in the first part (e.g., "f_JaneAusten_Sense.txt", 
+      "m_WalterScott_Ivanhoe.txt")
 
 Add at least two text files to the folder to perform your first stylo analysis.
 
