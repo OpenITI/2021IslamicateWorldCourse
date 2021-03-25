@@ -42,6 +42,12 @@ Installing `R` is quite straightforward. We will install it from CRAN
 (The Comprehensive R Archive Network).
 
 ### On Mac
+0. Before installing R, install XQuartz and [XCode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html)
+to avoid trouble down the line: 
+* go to [xquartz.org/](https://www.xquartz.org/), 
+click on the `XQuartz-2.8.0.dmg` link to download XQuartz (the version number may be 
+different; the website will always bring you to the link for the latest version)
+* Open Terminal, and run the following command: `xcode-select --install`
 1. Download the latest R version: go to 
 [cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) 
 and click on the `R-4.0.4.pkg` link to download `R` (the version number may be 
@@ -406,3 +412,6 @@ file in the course's Google Drive.
 NB: for Arabic-script languages, set the `LANGUAGE` option in the `INPUT & LANGUAGE`
 tab to `Other`.
 
+### First stylo experiment
+
+For our first stylo experiment, we will 

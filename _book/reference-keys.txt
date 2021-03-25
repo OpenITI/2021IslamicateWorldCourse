@@ -109,6 +109,7 @@ installing-stylo-and-its-dependencies
 first-steps-with-the-stylo-package
 setting-up-a-stylo-project
 open-the-stylo-gui
+first-stylo-experiment
 week-9-r-bootcamp-i-1
 week-10-r-bootcamp-ii-1
 week-11-r-bootcamp-iii-1
