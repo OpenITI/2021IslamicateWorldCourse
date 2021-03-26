@@ -8,6 +8,8 @@ Prepare for Class:
 
 Submit Before Class:
 
+* Stylo exercise: see instructions [here](https://docs.google.com/document/d/1dZ-Sxf0fpwCvPB3EVrzeI8ZUncfLO1f-uDnWs_QOElU/edit?usp=sharing)
+
 * Practice exercises for chapter 2 in Arnold & Tilton, pages 183-186 (Please submit your code (i.e., the R script file) and also any resulting visualizations (e.g., graphs, tables) or answers (in the form of a screenshot)).
 
 In class:
