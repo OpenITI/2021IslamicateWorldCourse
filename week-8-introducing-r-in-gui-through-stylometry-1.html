@@ -598,6 +598,9 @@ created for this project (e.g., <code>Home/course_projects/stylo_intro</code>).
 <pre><code>&gt; setwd(&quot;~/course_projects/stylo_intro&quot;)</code></pre>
 <p>A few remarks:</p>
 <ul>
+<li>You can also use the RStudio menu to set the working directory: go to
+<code>Session &gt; Set Working Directory &gt; Choose Directory</code>. This will open a familiar-
+looking folder selection dialog from which you can select your working directory.</li>
 <li>In the example script, we use the tilda (<code>~</code>) as the symbol for the <code>Home</code>
 directory of your computer. This symbol works in <code>R</code> on Windows, Mac and Linux.
 On Windows, it refers to the <code>Documents</code> folder.</li>
@@ -651,6 +654,10 @@ contains <code>stylo</code>’s graphical user interface (GUI):</p>
 <img src="img/stylo_gui.png" alt="" />
 <p class="caption">stylo’s GUI</p>
 </div>
+<p>NB: some Mac users report receiving an error message “GUI could not be launched”.
+If this happens, make sure you have installed XQuartz prior to installing R (see <a href="week-8-introducing-r-in-gui-through-stylometry-1.html#installing-r">above</a>). If you hadn’t installed XQuartz, do it now, and re-
+install R, RStudio and stylo. Restart your computer before trying to start up stylo.
+If you are still experiencing trouble, see <a href="https://github.com/computationalstylistics/stylo#installation-issues">github.com/computationalstylistics/stylo#installation-issues</a> for more possible solutions.</p>
 <p>For an overview of all the options in the GUI, see the “STYLO R Script Mini HOW TO”
 file in the course’s Google Drive.</p>
 <p>NB: for Arabic-script languages, set the <code>LANGUAGE</code> option in the <code>INPUT &amp; LANGUAGE</code>
