@@ -2,18 +2,33 @@
 
 ***4/1/2021 Thursday***
 
-Prepare for Class:
+Prepare for Class (preferably in this order):
 
-* Chapter 1-2 in Arnold and Tilton and Chapter 1 in Jockers (there will be some overlap).
+* Work through  Chapters 1-2 in Jockers' *Text Analysis with R* 
+* Read Chapters 1-2 in Arnold and Tilton's *Humanities Data in R*. 
+Chapter 2 gives a very concise introduction to the main data structures in R. 
+Don't worry if you are not able to grasp all of it immediately, things will 
+become clear during the next weeks. 
+
+**IMPORTANT** 
+
+**In order to learn programming in R through a book, it is not enough to only
+read the text. "Working through" these chapters means you will have to execute 
+all the commands described in the book in RStudio. Even if you have a digital 
+copy of the book, don't copy the commands into RStudio, but type them; copying
+will not teach you much.**
+
 
 Submit Before Class:
 
 * Stylo exercise: see instructions [here](https://docs.google.com/document/d/1dZ-Sxf0fpwCvPB3EVrzeI8ZUncfLO1f-uDnWs_QOElU/edit?usp=sharing)
 
-* Practice exercises for chapter 2 in Arnold & Tilton, pages 183-186 (Please submit your code (i.e., the R script file) and also any resulting visualizations (e.g., graphs, tables) or answers (in the form of a screenshot)).
-
 In class:
+  
+  * Weekly Reading Report: Meryem.
+  * First discussion about the final projects
+  * practising R, using Jockers as a guide.
 
-* Weekly Reading Report: Analyzing Text Reuse Data in R (Sarah Bowen Savant).
-* “Sheykh Google” activity (bring your computers!).
+
+
 

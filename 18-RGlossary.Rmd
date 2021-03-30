@@ -1,0 +1,242 @@
+# R Glossary
+
+
+
+## Arguments
+Inputs supplied to a function. Arguments can be either defined by their position 
+in the function declaration ("positional argument"; e.g., `function (x, y, z = 0)`: 
+the first value supplied to the function will be given the name `x`, and the 
+second one the name `y`) or by a tag / name (e.g., `z` in `function (x, y, z = 0)`: 
+in the function call, the value will have to be explicitly linked to `z`, and if 
+no value is linked to `z`, `z` will default to 0).
+
+## Block
+A sequence of statements, grouped between curly braces.
+
+##
+Console pane
+
+## CRAN
+Comprehensive R Archive Network. The official repository where the versions of R 
+and all published packages can be downloaded from. Use `install.packages("package_name")` 
+to download and install a new package from CRAN.
+
+
+## Environment Pane
+
+## Evaluate
+
+## Expression
+R code consists of expressions. 
+There are multiple types of expressions:
+- constant (that is, a character string or a number). E.g.,
+
+```
+> 123
+[1] 123
+```
+
+```
+> "abc"
+[1] abc
+```
+
+- operator expression (that is, every expression that contains one of R's operators):
+
+```
+> 2 + 3
+[1] 5
+```
+
+```
+> a <- "abc"
+[1]
+abc>
+```
+
+```
+2 > 3
+[1]
+FALSE
+```
+
+- index constructions (that is, extracting elements from a vector or list using 
+numerical or name indices):
+
+```
+> c(1, 2, 3)[-1]
+[1] 2 3
+```
+
+```
+> fruit <- list(apple = 5, pear = 2)
+> fruit[["apple"]][1]
+5
+```
+
+```
+> fruit$pear[1]
+2
+```
+
+- flow control element: loops, conditional expressions,...
+
+```
+> if (x %% 2 == 1) print("odd") else print("even")
+```
+
+```
+> for (i in 1:10) print(i)
+```
+
+- compound expression ("block"): a series of expressions grouped between curly 
+braces and separated by semicolons or new lines:
+
+```
+> {x <- 1; x += 5}
+```
+
+```
+> {
+    x <- 1
+    x += 5
+  }
+```
+
+- function definition:
+
+```
+> function(x, y) x + y
+```
+
+```
+> function(x,y) {
+    x + y
+    }
+```
+
+- function call:
+
+```
+> print(5)
+[1]
+5
+```
+
+## File pane
+
+## Function:
+A function is a (sequence of) statements that is not evaluated immediately when 
+it is "declared" (that is, created/written), but only when it is "called" / "invoked" 
+(that is, when you tell R to evaluate it). Functions have their own environment 
+of variables; if you assign a value to a symbol that is already used in another 
+environment, the variable in that other environment will be left untouched. 
+
+When you call a function, you can pass values to that function through its list 
+of arguments, which is a comma-separated list between brackets following the 
+function's name.
+
+In order to "declare" (create) a function, the keyword `function` is needed, 
+followed by the list of arguments (between parentheses) and the body of the function
+(usually between curly braces). Functions are usually assigned to a variable name 
+(functions that are not linked to a name are called anonymous functions). 
+
+Functions in R are objects, which mean they can be passed to other functions as 
+arguments, placed in lists, etc.
+
+## Global variable:
+A variable defined outside the scope of a function.
+
+## Import:
+see Load.
+
+## Load:
+Bring data or packages from the computer's (passive) storage into its (active) 
+memory so they can be used in the current R session. Loading a package adds the 
+names of functions and other objects from that package to R's namespace.
+Use library("package_name") to import/load a package into R for the current 
+session (in a script, group all these imports at the top of a script).
+
+## Local variable
+A variable defined inside a function. Outside that function, the variable's name 
+will not be bound to the value it was bound to within the function's scope.
+
+## Package:
+A collection of functions and datasets developed by a user to extend R.
+Packages can be published on `CRAN`, or distributed on GitHub or other repositories.
+
+If you want to use a package, it must first be installed and then be loaded into
+your current R session. Installation must be done only once, loading every time
+you start a new R session. 
+
+* Use `install.packages("package_name")` to download and install a new package from 
+`CRAN`. 
+* Use `library("package_name")` to import/load an installed package into R for the 
+current session (in a script, group all imports at the top of a script).
+* Use `installed.packages()` to get a list of all packages installed for your R version.
+
+## R:
+A computer language developed for statistical analysis and graphics.
+
+## RStudio:
+An Integrated Development Environment (IDE) for writing, executing and debugging 
+R code. R comes with its own IDE but most users prefer RStudio for its user-friendliness.
+
+## Pane:
+The Rstudio window is divided into four quadrants called panes: the Source pane, 
+the Console pane, the Environment Pane and the File pane. The first two are for 
+writing code, the latter two contain a number of tabs with useful resources. 
+
+You can minimise and maximise the size of each pane by using the icons in the top
+right of every pane. 
+
+To switch the order of the panes, use RStudio's "Pane layout" dialog, which you 
+can find in the `Options` dialog (`Tools > Options`; `RStudio > Preferences` on Mac).
+
+## Prompt:
+
+## Run:
+Execute R code.
+
+## Scope:
+Symbols in R are bound to a specific value only within a specific environment or 
+"scope". E.g., the symbol of a variable defined within a function will be bound 
+to that variable's value only within that function (such a variable is called a 
+*local* variable); outside of the function, it will be considered *unbound* 
+(that is, not connected to a value):
+
+```
+> f <- function (x) {
+    doubled = x * 2
+    }
+> doubled
+Error: Object 'doubled' not found.
+```
+
+Variables declared outside a function are considered *global* variables.
+
+If during evaluation of a function a symbol is encountered that is not in the 
+local environment (that is, a symbol that was not in that function's list of 
+arguments and that was not defined inside the function), R will search for this 
+symbol in the environment from which the function was called, and so on until 
+the global environment is reached.
+
+## Session:
+
+## Source pane:
+
+
+## Symbol:
+The name component in a variable: a variable is a value assigned to a symbol.
+E.g., 
+
+```
+x <- 3
+```
+
+(x is the symbol/name of the variable, 3 its value).
+
+## Variable:
+A symbol (name) linked with a value that this symbol represents. 
+Linking a symbol with a value is called assigning; this is done using an 
+assignment operator (`<-`, `->`, `=`).

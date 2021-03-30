@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Week 1: Class Introduction and Introduction to Computational Textual Analysis in the Humanities | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis</title>
+  <title>19 R Glossary | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis</title>
   <meta name="description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Week 1: Class Introduction and Introduction to Computational Textual Analysis in the Humanities | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
+  <meta property="og:title" content="19 R Glossary | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Week 1: Class Introduction and Introduction to Computational Textual Analysis in the Humanities | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
+  <meta name="twitter:title" content="19 R Glossary | The Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis" />
   
   <meta name="twitter:description" content="This is the syllabus for this course. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html"/>
+<link rel="prev" href="openiti-markdown.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -299,25 +299,510 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="week-1-class-introduction-and-introduction-to-computational-textual-analysis-in-the-humanities" class="section level1">
-<h1><span class="header-section-number">2</span> Week 1: Class Introduction and Introduction to Computational Textual Analysis in the Humanities</h1>
-<p><strong><em>1/28/2021 Thursday</em></strong></p>
-<p>[NB: Keep in mind that dates below are given according to the American convention: Month/Day/Year]</p>
-<p>Prepare for Class:</p>
+<div id="r-glossary" class="section level1">
+<h1><span class="header-section-number">19</span> R Glossary</h1>
+<div id="arguments" class="section level2">
+<h2><span class="header-section-number">19.1</span> Arguments</h2>
+<p>Inputs supplied to a function. Arguments can be either defined by their position
+in the function declaration (“positional argument”; e.g., <code>function (x, y, z = 0)</code>:
+the first value supplied to the function will be given the name <code>x</code>, and the
+second one the name <code>y</code>) or by a tag / name (e.g., <code>z</code> in <code>function (x, y, z = 0)</code>:
+in the function call, the value will have to be explicitly linked to <code>z</code>, and if
+no value is linked to <code>z</code>, <code>z</code> will default to 0).</p>
+</div>
+<div id="block" class="section level2">
+<h2><span class="header-section-number">19.2</span> Block</h2>
+<p>A sequence of statements, grouped between curly braces.</p>
+</div>
+<div id="section" class="section level2">
+<h2><span class="header-section-number">19.3</span> </h2>
+<p>Console pane</p>
+</div>
+<div id="cran" class="section level2">
+<h2><span class="header-section-number">19.4</span> CRAN</h2>
+<p>Comprehensive R Archive Network. The official repository where the versions of R
+and all published packages can be downloaded from. Use <code>install.packages("package_name")</code>
+to download and install a new package from CRAN.</p>
+</div>
+<div id="environment-pane" class="section level2">
+<h2><span class="header-section-number">19.5</span> Environment Pane</h2>
+</div>
+<div id="evaluate" class="section level2">
+<h2><span class="header-section-number">19.6</span> Evaluate</h2>
+</div>
+<div id="expression" class="section level2">
+<h2><span class="header-section-number">19.7</span> Expression</h2>
+<p>R code consists of expressions.
+There are multiple types of expressions:
+- constant (that is, a character string or a number). E.g.,</p>
+<pre><code>&gt; 123
+[1] 123</code></pre>
+<pre><code>&gt; &quot;abc&quot;
+[1] abc</code></pre>
 <ul>
-<li>Underwood, Ted. “Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.” <em>Representations</em> 127, no. 1 (Summer 2014): 64–72. [Course Google Drive]</li>
-<li>Ramsay, Stephen. <em>Reading Machines: Toward an Algorithmic Criticism</em>. Champaign, IL: University of Illinois Press, 2011. 1-17. [Course Google Drive]</li>
-<li>Underwood, Ted. “A Genealogy of Distant Reading.” <em>DHQ</em> 11 (2017): <a href="http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html">http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html</a></li>
+<li>operator expression (that is, every expression that contains one of R’s operators):</li>
 </ul>
+<pre><code>&gt; 2 + 3
+[1] 5</code></pre>
+<pre><code>&gt; a &lt;- &quot;abc&quot;
+[1]
+abc&gt;</code></pre>
+<pre><code>2 &gt; 3
+[1]
+FALSE</code></pre>
+<ul>
+<li>index constructions (that is, extracting elements from a vector or list using
+numerical or name indices):</li>
+</ul>
+<pre><code>&gt; c(1, 2, 3)[-1]
+[1] 2 3</code></pre>
+<pre><code>&gt; fruit &lt;- list(apple = 5, pear = 2)
+&gt; fruit[[&quot;apple&quot;]][1]
+5</code></pre>
+<pre><code>&gt; fruit$pear[1]
+2</code></pre>
+<ul>
+<li>flow control element: loops, conditional expressions,…</li>
+</ul>
+<pre><code>&gt; if (x %% 2 == 1) print(&quot;odd&quot;) else print(&quot;even&quot;)</code></pre>
+<pre><code>&gt; for (i in 1:10) print(i)</code></pre>
+<ul>
+<li>compound expression (“block”): a series of expressions grouped between curly
+braces and separated by semicolons or new lines:</li>
+</ul>
+<pre><code>&gt; {x &lt;- 1; x += 5}</code></pre>
+<pre><code>&gt; {
+    x &lt;- 1
+    x += 5
+  }</code></pre>
+<ul>
+<li>function definition:</li>
+</ul>
+<pre><code>&gt; function(x, y) x + y</code></pre>
+<pre><code>&gt; function(x,y) {
+    x + y
+    }</code></pre>
+<ul>
+<li>function call:</li>
+</ul>
+<pre><code>&gt; print(5)
+[1]
+5</code></pre>
+</div>
+<div id="file-pane" class="section level2">
+<h2><span class="header-section-number">19.8</span> File pane</h2>
+</div>
+<div id="function" class="section level2">
+<h2><span class="header-section-number">19.9</span> Function:</h2>
+<p>A function is a (sequence of) statements that is not evaluated immediately when
+it is “declared” (that is, created/written), but only when it is “called” / “invoked”
+(that is, when you tell R to evaluate it). Functions have their own environment
+of variables; if you assign a value to a symbol that is already used in another
+environment, the variable in that other environment will be left untouched.</p>
+<p>When you call a function, you can pass values to that function through its list
+of arguments, which is a comma-separated list between brackets following the
+function’s name.</p>
+<p>In order to “declare” (create) a function, the keyword <code>function</code> is needed,
+followed by the list of arguments (between parentheses) and the body of the function
+(usually between curly braces). Functions are usually assigned to a variable name
+(functions that are not linked to a name are called anonymous functions).</p>
+<p>Functions in R are objects, which mean they can be passed to other functions as
+arguments, placed in lists, etc.</p>
+</div>
+<div id="global-variable" class="section level2">
+<h2><span class="header-section-number">19.10</span> Global variable:</h2>
+<p>A variable defined outside the scope of a function.</p>
+</div>
+<div id="import" class="section level2">
+<h2><span class="header-section-number">19.11</span> Import:</h2>
+<p>see Load.</p>
+</div>
+<div id="load" class="section level2">
+<h2><span class="header-section-number">19.12</span> Load:</h2>
+<p>Bring data or packages from the computer’s (passive) storage into its (active)
+memory so they can be used in the current R session. Loading a package adds the
+names of functions and other objects from that package to R’s namespace.
+Use library(“package_name”) to import/load a package into R for the current
+session (in a script, group all these imports at the top of a script).</p>
+</div>
+<div id="local-variable" class="section level2">
+<h2><span class="header-section-number">19.13</span> Local variable</h2>
+<p>A variable defined inside a function. Outside that function, the variable’s name
+will not be bound to the value it was bound to within the function’s scope.</p>
+</div>
+<div id="package" class="section level2">
+<h2><span class="header-section-number">19.14</span> Package:</h2>
+<p>A collection of functions and datasets developed by a user to extend R.
+Packages can be published on <code>CRAN</code>, or distributed on GitHub or other repositories.</p>
+<p>If you want to use a package, it must first be installed and then be loaded into
+your current R session. Installation must be done only once, loading every time
+you start a new R session.</p>
+<ul>
+<li>Use <code>install.packages("package_name")</code> to download and install a new package from
+<code>CRAN</code>.</li>
+<li>Use <code>library("package_name")</code> to import/load an installed package into R for the
+current session (in a script, group all imports at the top of a script).</li>
+<li>Use <code>installed.packages()</code> to get a list of all packages installed for your R version.</li>
+</ul>
+</div>
+<div id="r" class="section level2">
+<h2><span class="header-section-number">19.15</span> R:</h2>
+<p>A computer language developed for statistical analysis and graphics.</p>
+</div>
+<div id="rstudio" class="section level2">
+<h2><span class="header-section-number">19.16</span> RStudio:</h2>
+<p>An Integrated Development Environment (IDE) for writing, executing and debugging
+R code. R comes with its own IDE but most users prefer RStudio for its user-friendliness.</p>
+</div>
+<div id="pane" class="section level2">
+<h2><span class="header-section-number">19.17</span> Pane:</h2>
+<p>The Rstudio window is divided into four quadrants called panes: the Source pane,
+the Console pane, the Environment Pane and the File pane. The first two are for
+writing code, the latter two contain a number of tabs with useful resources.</p>
+<p>You can minimise and maximise the size of each pane by using the icons in the top
+right of every pane.</p>
+<p>To switch the order of the panes, use RStudio’s “Pane layout” dialog, which you
+can find in the <code>Options</code> dialog (<code>Tools &gt; Options</code>; <code>RStudio &gt; Preferences</code> on Mac).</p>
+</div>
+<div id="prompt" class="section level2">
+<h2><span class="header-section-number">19.18</span> Prompt:</h2>
+</div>
+<div id="run" class="section level2">
+<h2><span class="header-section-number">19.19</span> Run:</h2>
+<p>Execute R code.</p>
+</div>
+<div id="scope" class="section level2">
+<h2><span class="header-section-number">19.20</span> Scope:</h2>
+<p>Symbols in R are bound to a specific value only within a specific environment or
+“scope”. E.g., the symbol of a variable defined within a function will be bound
+to that variable’s value only within that function (such a variable is called a
+<em>local</em> variable); outside of the function, it will be considered <em>unbound</em>
+(that is, not connected to a value):</p>
+<pre><code>&gt; f &lt;- function (x) {
+    doubled = x * 2
+    }
+&gt; doubled
+Error: Object &#39;doubled&#39; not found.</code></pre>
+<p>Variables declared outside a function are considered <em>global</em> variables.</p>
+<p>If during evaluation of a function a symbol is encountered that is not in the
+local environment (that is, a symbol that was not in that function’s list of
+arguments and that was not defined inside the function), R will search for this
+symbol in the environment from which the function was called, and so on until
+the global environment is reached.</p>
+</div>
+<div id="session" class="section level2">
+<h2><span class="header-section-number">19.21</span> Session:</h2>
+</div>
+<div id="source-pane" class="section level2">
+<h2><span class="header-section-number">19.22</span> Source pane:</h2>
+</div>
+<div id="symbol" class="section level2">
+<h2><span class="header-section-number">19.23</span> Symbol:</h2>
+<p>The name component in a variable: a variable is a value assigned to a symbol.
+E.g.,</p>
+<pre><code>x &lt;- 3</code></pre>
+<p>(x is the symbol/name of the variable, 3 its value).</p>
+</div>
+<div id="variable" class="section level2">
+<h2><span class="header-section-number">19.24</span> Variable:</h2>
+<p>A symbol (name) linked with a value that this symbol represents.
+Linking a symbol with a value is called assigning; this is done using an
+assignment operator (<code>&lt;-</code>, <code>-&gt;</code>, <code>=</code>).</p>
 
+</div>
+<div id="relevant-r-functions" class="section level2">
+<h2><span class="header-section-number">19.25</span> relevant R functions</h2>
+<div id="class" class="section level3">
+<h3><span class="header-section-number">19.25.1</span> class()</h3>
+<p>The class function is used to display the class of an R object.</p>
+<p>The function has one argument: the object you want to know the class of.</p>
+<pre><code>&gt; a = 15
+&gt; class(a)
+[1] &quot;numeric&quot;
+&gt; b = &quot;15&quot;
+&gt; class(b)
+[1] &quot;character&quot;
+&gt; class(class)
+[1] &quot;function&quot;</code></pre>
+</div>
+<div id="ls" class="section level3">
+<h3><span class="header-section-number">19.25.2</span> ls()</h3>
+<p>The <code>ls</code> function (for “list”) lists all the objects we have created in the current
+R session. You will find the same information in the <code>Environment</code> tab in RStudio.</p>
+<p>The <code>ls()</code> function does not require any arguments</p>
+<pre><code>&gt; ls()
+[1] &quot;a&quot; &quot;b&quot;</code></pre>
+</div>
+<div id="c" class="section level3">
+<h3><span class="header-section-number">19.25.3</span> c()</h3>
+<p>The <code>c()</code> function (for “combine”) combines multiple values into a single vector
+object.</p>
+<pre><code>&gt; character_vector &lt;- c(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;)
+&gt; character_vector
+[1] &quot;a&quot; &quot;b&quot; &quot;c&quot;
+
+&gt; numeric_vector &lt;- c(1,2,3)
+&gt; numeric_vector 
+[1] 1 2 3
+
+&gt; logical_vector &lt;- numeric_vector &gt;= 2
+&gt; logical_vector
+[1] FALSE  TRUE  TRUE</code></pre>
+<p>Note that all objects inside a vector must be of the same type (character/numberic/logical).
+If they are of different types, R will “coerce” them into the same type.</p>
+<pre><code>&gt; mixed_vector &lt;- c(1, &quot;2&quot;, &quot;three&quot;, TRUE)
+&gt; mixed_vector
+[1] &quot;1&quot;     &quot;2&quot;     &quot;three&quot;    &quot;TRUE&quot;  # R has converted all elements into strings!</code></pre>
+</div>
+<div id="length" class="section level3">
+<h3><span class="header-section-number">19.25.4</span> length()</h3>
+<p>The <code>length()</code> function will display the number of elements in a vector.</p>
+<pre><code>&gt; my_vector &lt;- c(&quot;a&quot;, &quot;bb&quot;, &quot;ccc&quot;)
+&gt; length(my_vector)
+[1] 3
+&gt; length(&quot;A longer character string&quot;)
+[1] 1</code></pre>
+</div>
+<div id="paste" class="section level3">
+<h3><span class="header-section-number">19.25.5</span> paste()</h3>
+<p>The <code>paste()</code> function concatenates two or more character vectors.
+By default, it will add a space between two strings:</p>
+<pre><code>&gt; paste(&#39;a&#39;, &quot;b&quot;)
+[1] &quot;a b&quot;
+&gt; paste(&#39;a&#39;, &quot;b&quot;, &quot;c&quot;)
+[1] &quot;a b c&quot;</code></pre>
+<p>If you want another character to be used to separate the two strings, the function
+provides an additional argument called “sep”:</p>
+<pre><code>&gt; paste(&#39;a&#39;, &quot;b&quot;, sep=&quot;,&quot;)
+[1] &quot;a,b&quot;
+&gt; paste(c(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;), &quot;d&quot;, sep=&#39;/&#39;)
+[1] &quot;a/d&quot; &quot;b/d&quot; &quot;c/d&quot;</code></pre>
+</div>
+<div id="nchar" class="section level3">
+<h3><span class="header-section-number">19.25.6</span> nchar()</h3>
+<p>The <code>nchar()</code> function (for “number of characters”) returns the number of
+characters in each string in a character vector.</p>
+<pre><code>&gt; nchar(&quot;banana&quot;)
+[1] 6
+&gt; test_vector &lt;- c(&quot;apple&quot;, &quot;pear&quot;, &quot;banana&quot;)
+&gt; nchar(test_vector)
+[1] 5 4 6</code></pre>
+</div>
+<div id="substr" class="section level3">
+<h3><span class="header-section-number">19.25.7</span> substr()</h3>
+<p>The <code>substr</code> function returns substrings of character vectors using character
+offsets of each string in the vector. The function takes three arguments:
+* the character vector from which you want to extract a substring
+* <code>start</code>: the index of the substring inside each string inside the vector
+* <code>stop</code>: the last character of the substring inside each string inside the vector</p>
+<pre><code>&gt; substr(&quot;Banana&quot;, start=2, stop=5)
+[1] &quot;anan&quot;
+&gt; test_vector &lt;- c(&quot;apple&quot;, &quot;pear&quot;, &quot;banana&quot;)
+&gt; substr(test_vector, start=1, stop=3)
+[1] &quot;app&quot; &quot;pea&quot; &quot;ban&quot;</code></pre>
+<p>NB: note that in R (in contrast to many other programming languages) the first
+index of an object is 1, not 0; and that the stop index is inclusive (e.g., if
+<code>stop</code> is set to 5, the substring will end after the fifth value, not before it).</p>
+<p>If a string inside a character vector is shorter than the <code>stop</code> value, the
+<code>substr</code> function will return the string from the <code>start</code> value until its last
+character:</p>
+<pre><code>&gt; test_vector &lt;- c(&quot;apple&quot;, &quot;pear&quot;, &quot;banana&quot;)
+&gt; substr(test_vector, start=1, stop=5)
+[1] &quot;apple&quot; &quot;pear&quot;  &quot;banan&quot;</code></pre>
+<p>You can use the <code>nchar()</code> function to return all characters after an index
+position until the end of the string for each string in a vector, or only
+the last n characters in each string:</p>
+<pre><code>&gt; test_vector &lt;- c(&quot;apple&quot;, &quot;pear&quot;, &quot;banana&quot;)
+&gt; substr(test_vector, start=2, stop=nchar(test_vector))
+[1] &quot;pple&quot;  &quot;ear&quot;   &quot;anana&quot;
+&gt; substr(test_vector, start=nchar(test_vector)-2, stop=nchar(test_vector))
+[1] &quot;ple&quot; &quot;ear&quot; &quot;ana&quot;</code></pre>
+</div>
+<div id="grep" class="section level3">
+<h3><span class="header-section-number">19.25.8</span> grep()</h3>
+<p>The <code>grep()</code> function (short for “Global Regular Expressions Print”) returns
+the indices of all strings inside a character vector that match a given pattern.</p>
+<p><code>grep()</code> requires two arguments (in addition, there are a number of optional arguments):</p>
+<ul>
+<li><code>pattern</code>: the regex pattern a string must match</li>
+<li><code>x</code>: the character vector containing the string(s)</li>
+</ul>
+<pre><code>&gt; test_vector &lt;- c(&quot;apple&quot;, &quot;pear&quot;, &quot;banana&quot;)
+&gt; grep(&#39;a&#39;, test_vector)
+[1] 1 2 3
+&gt; grep(&#39;p&#39;, test_vector)
+[1] 1 2
+&gt; grep(&#39;(\\w)\\1&#39;, test_vector) # strings that have a duplicated character in them
+[1] 1</code></pre>
+<p>NB: to escape a character in regular expressions in R, you need to use double
+backslashes instead of single ones: e.g., use <code>\\n</code> for a new line character.
+To match a literal backslash, you will need four backslashes! <code>\\\\</code></p>
+</div>
+<div id="casting-functions-as.numeric-as.character" class="section level3">
+<h3><span class="header-section-number">19.25.9</span> Casting functions: as.numeric(), as.character()</h3>
+<p>Casting functions explicitly convert an R object of one type into an object of another
+type. You will probably most frequently use <code>as.numeric()</code> to turn character
+vectors into numeric characters, and <code>as.character()</code> to do the opposite.</p>
+<pre><code>&gt; a &lt;- &quot;123&quot;
+&gt; a
+[1] &quot;123&quot;
+&gt; a + 4
+Error in a + 4 : non-numeric argument to binary operator
+&gt; as.numeric(a) + 4
+[1] 127</code></pre>
+<pre><code>&gt; b &lt;- 123
+&gt; b
+[1] 123
+&gt; as.character(b)
+[1] &quot;123&quot;</code></pre>
+<p>There are many more casting functions (try writing “as.” in the RStudio console
+and a popup will appear with dozens of other casting functions).</p>
+</div>
+<div id="matrix" class="section level3">
+<h3><span class="header-section-number">19.25.10</span> matrix()</h3>
+<p>The <code>matrix()</code> function creates a matrix object. A matrix is a two-dimensional
+data structure, similar to a table with rows and columns. All elements in a
+matrix must be of the same type (string/numeric/…)</p>
+<p>The <code>matrix()</code> function requires three arguments:</p>
+<ul>
+<li><code>data</code>: a vector containing the data that should be put into the matrix</li>
+<li><code>nrow</code>: the number of rows the matrix should have</li>
+<li><code>ncol</code>: the number of columns the matrix should have</li>
+</ul>
+<pre><code># create a matrix with 3 rows and 4 columns containing the numbers from 1 to 12:
+&gt; m &lt;- matrix(data=1:12, nrow=3, ncol=4) 
+&gt; m
+[,1] [,2] [,3] [,4]
+[1,]    1    4    7   10
+[2,]    2    5    8   11
+[3,]    3    6    9   12</code></pre>
+<p>The optional argument <code>byrow</code> defines whether the data should be fed into the
+matrix by row (<code>byrow=TRUE</code>) or by column (<code>byrow=FALSE</code>); default is <code>FALSE</code>.</p>
+<pre><code>&gt; m &lt;- matrix(data=1:12, nrow=3, ncol=4, byrow=TRUE)
+&gt; m
+[,1] [,2] [,3] [,4]
+[1,]    1    2    3    4
+[2,]    5    6    7    8
+[3,]    9   10   11   12</code></pre>
+</div>
+<div id="data.frame" class="section level3">
+<h3><span class="header-section-number">19.25.11</span> data.frame()</h3>
+<p>The <code>data.frame()</code> function creates a dataframe object, which is similar to a
+spreadsheet or a table in a database.
+Contrary to a matrix, a dataframe can contain objects of different types (character,
+numeric, …)</p>
+<pre><code>&gt; df &lt;- data.frame(fruit=c(&quot;apple&quot;, &quot;banana&quot;, &quot;pear&quot;), stock=c(15, 20, 3))
+&gt; df
+fruit stock
+1  apple    15
+2 banana    20
+3   pear     3</code></pre>
+<p>Every dataframe has 3 attributes:</p>
+<ul>
+<li><code>dim</code>: its dimension (number of rows and columns)</li>
+<li><code>colnames</code>: the names of its columns</li>
+<li><code>rownames</code>: the names of its rows</li>
+</ul>
+<pre><code>&gt; dim(df)
+[1] 3 2
+&gt; colnames(df)
+[1] &quot;fruit&quot; &quot;stock&quot;
+&gt; rownames(df)
+[1] &quot;1&quot; &quot;2&quot; &quot;3&quot;</code></pre>
+<p>The name of a column can be used to get the data from that column:</p>
+<pre><code>&gt; df$fruit
+[1] &quot;apple&quot;  &quot;banana&quot; &quot;pear&quot;  </code></pre>
+</div>
+<div id="setwd-and-getwd" class="section level3">
+<h3><span class="header-section-number">19.25.12</span> setwd() and getwd()</h3>
+<p>R needs a specific location on your computer where it can write data, and from
+where it can read data. This location is called the “working directory”.</p>
+<p>The <code>setwd()</code> function (short for “set working directory”) sets the working directory
+to the path that is passed as an argument to the function.
+The <code>getwd()</code> function displays the current working directory.</p>
+<pre><code>&gt; setwd(&quot;~&quot;)
+&gt; getwd()
+[1] &quot;C:/Users/peter/Documents&quot;</code></pre>
+</div>
+<div id="dir" class="section level3">
+<h3><span class="header-section-number">19.25.13</span> dir()</h3>
+<p>The <code>dir()</code> function (short for “directory”) the contents (files and folders)
+of a directory (by default: the working directory).</p>
+</div>
+<div id="read.csv" class="section level3">
+<h3><span class="header-section-number">19.25.14</span> read.csv()</h3>
+<p>CSV (“Comma-Separated Values”) files are plain text files used to hold structured
+data. Data is written in tabular form, with commas delimiting columns and
+new lines delimiting rows.</p>
+<p>An example of the contents of a csv file:</p>
+<pre><code>word,frequency
+apple,15
+banana,20
+pear,5</code></pre>
+<p>The <code>read.csv()</code> function loads a csv file into an R dataframe object:</p>
+<pre><code>&gt; freq &lt;- read.csv(file=&quot;word_frequency.csv&quot;, as.is=TRUE)
+&gt; freq
+  word frequency
+1  apple        15
+2 banana        20
+3   pear        5
+&gt; class(freq)
+[1] &quot;data.frame</code></pre>
+<p>Sometimes, csv data uses other delimiters than comma to separate columns; the
+tab character (symbolized in R by <code>\t</code>) is often used (such files are often
+called TSV files, for “tab-separated values”).</p>
+<pre><code>word    frequency
+apple   15
+banana  20
+pear    5</code></pre>
+<p>The <code>read.csv</code> function’s optional argument <code>sep</code> (for “separator”; default: “,”)
+can be set to <code>\t</code> (that is, tab) to parse a tsv file:</p>
+<pre><code>&gt; freq2 &lt;- read.csv(file=&quot;word_frequency.csv&quot;, as.is=TRUE, sep=&quot;\t&quot;)
+&gt; freq2
+    word frequency
+1  apple        15
+2 banana        20
+3   pear         5
+&gt; class(freq2)
+[1] &quot;data.frame</code></pre>
+</div>
+<div id="order" class="section level3">
+<h3><span class="header-section-number">19.25.15</span> order()</h3>
+<p>The <code>order()</code> function can be used to sort a vector or another R data structure
+like a dataframe. Its output is a vector that contains indices for the sort
+order of the object you passed to the function.</p>
+<pre><code>&gt; test_vector &lt;- c(&quot;apple&quot;,&quot;pear&quot;, &quot;banana&quot;)
+&gt; index &lt;- order(test_vector)
+[1] 1 3 2</code></pre>
+<p>You can use the output of the <code>order()</code> function to sort the original object:</p>
+<pre><code>&gt; index &lt;- order(test_vector)
+&gt; test_vector[index]
+[1] &quot;apple&quot;  &quot;banana&quot; &quot;pear&quot; </code></pre>
+<pre><code>&gt; df &lt;- data.frame(word=c(&quot;apple&quot;, &quot;banana&quot;, &quot;pear&quot;), frequency=c(15, 20, 3))
+&gt; index &lt;- order(df$frequency)
+&gt; index
+[1] 3 1 2
+&gt; df[index,]
+    word frequency
+3   pear         5
+1  apple        15
+2 banana        20</code></pre>
+<p>In order to sort from high to low values, set the optional argument <code>decreasing</code>
+to <code>TRUE</code>:</p>
+<pre><code>&gt; test_vector &lt;- c(&quot;apple&quot;,&quot;pear&quot;, &quot;banana&quot;)
+&gt; sort(test_vector, decreasing=TRUE)
+[1] &quot;pear&quot;   &quot;banana&quot; &quot;apple&quot; </code></pre>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="week-2-corpus-construction-and-modeling-digital-humanities-data-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="openiti-markdown.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,0 +1,388 @@
+## relevant R functions
+
+### class()
+
+The class function is used to display the class of an R object. 
+
+The function has one argument: the object you want to know the class of. 
+
+```
+> a = 15
+> class(a)
+[1] "numeric"
+> b = "15"
+> class(b)
+[1] "character"
+> class(class)
+[1] "function"
+```
+
+### ls()
+
+The `ls` function (for "list") lists all the objects we have created in the current
+R session. You will find the same information in the `Environment` tab in RStudio.
+
+The `ls()` function does not require any arguments
+
+```
+> ls()
+[1] "a" "b"
+```
+
+### c()
+
+The `c()` function (for "combine") combines multiple values into a single vector 
+object.
+
+```
+> character_vector <- c('a', 'b', 'c')
+> character_vector
+[1] "a" "b" "c"
+
+> numeric_vector <- c(1,2,3)
+> numeric_vector 
+[1] 1 2 3
+
+> logical_vector <- numeric_vector >= 2
+> logical_vector
+[1] FALSE  TRUE  TRUE
+```
+
+Note that all objects inside a vector must be of the same type (character/numberic/logical). 
+If they are of different types, R will "coerce" them into the same type. 
+
+```
+> mixed_vector <- c(1, "2", "three", TRUE)
+> mixed_vector
+[1] "1"     "2"     "three"    "TRUE"  # R has converted all elements into strings!
+```
+
+### length()
+
+The `length()` function will display the number of elements in a vector. 
+
+```
+> my_vector <- c("a", "bb", "ccc")
+> length(my_vector)
+[1] 3
+> length("A longer character string")
+[1] 1
+```
+
+### paste()
+
+The `paste()` function concatenates two or more character vectors. 
+By default, it will add a space between two strings: 
+  
+  ```
+> paste('a', "b")
+[1] "a b"
+> paste('a', "b", "c")
+[1] "a b c"
+```
+
+If you want another character to be used to separate the two strings, the function
+provides an additional argument called "sep":
+  
+```
+> paste('a', "b", sep=",")
+[1] "a,b"
+> paste(c('a', 'b', 'c'), "d", sep='/')
+[1] "a/d" "b/d" "c/d"
+```
+
+### nchar() 
+
+The `nchar()` function (for "number of characters") returns the number of 
+characters in each string in a character vector. 
+
+```
+> nchar("banana")
+[1] 6
+> test_vector <- c("apple", "pear", "banana")
+> nchar(test_vector)
+[1] 5 4 6
+```
+
+### substr()
+
+The `substr` function returns substrings of character vectors using character
+offsets of each string in the vector. The function takes three arguments: 
+  * the character vector from which you want to extract a substring
+* `start`: the index of the substring inside each string inside the vector
+* `stop`: the last character of the substring inside each string inside the vector
+
+```
+> substr("Banana", start=2, stop=5)
+[1] "anan"
+> test_vector <- c("apple", "pear", "banana")
+> substr(test_vector, start=1, stop=3)
+[1] "app" "pea" "ban"
+```
+
+NB: note that in R (in contrast to many other programming languages) the first
+index of an object is 1, not 0; and that the stop index is inclusive (e.g., if 
+                      `stop` is set to 5, the substring will end after the fifth value, not before it).
+
+If a string inside a character vector is shorter than the `stop` value, the 
+`substr` function will return the string from the `start` value until its last 
+character: 
+  
+  ```
+> test_vector <- c("apple", "pear", "banana")
+> substr(test_vector, start=1, stop=5)
+[1] "apple" "pear"  "banan"
+```
+
+You can use the `nchar()` function to return all characters after an index 
+position until the end of the string for each string in a vector, or only
+the last n characters in each string: 
+  
+  ```
+> test_vector <- c("apple", "pear", "banana")
+> substr(test_vector, start=2, stop=nchar(test_vector))
+[1] "pple"  "ear"   "anana"
+> substr(test_vector, start=nchar(test_vector)-2, stop=nchar(test_vector))
+[1] "ple" "ear" "ana"
+```
+
+### grep()
+
+The `grep()` function (short for "Global Regular Expressions Print") returns 
+the indices of all strings inside a character vector that match a given pattern. 
+
+`grep()` requires two arguments (in addition, there are a number of optional arguments):
+  
+* `pattern`: the regex pattern a string must match
+* `x`: the character vector containing the string(s)
+
+```
+> test_vector <- c("apple", "pear", "banana")
+> grep('a', test_vector)
+[1] 1 2 3
+> grep('p', test_vector)
+[1] 1 2
+> grep('(\\w)\\1', test_vector) # strings that have a duplicated character in them
+[1] 1
+```
+
+NB: to escape a character in regular expressions in R, you need to use double 
+backslashes instead of single ones: e.g., use `\\n` for a new line character.
+To match a literal backslash, you will need four backslashes! `\\\\`
+
+
+### Casting functions: as.numeric(), as.character()
+
+Casting functions explicitly convert an R object of one type into an object of another
+type. You will probably most frequently use `as.numeric()` to turn character 
+vectors into numeric characters, and `as.character()` to do the opposite.
+
+```
+> a <- "123"
+> a
+[1] "123"
+> a + 4
+Error in a + 4 : non-numeric argument to binary operator
+> as.numeric(a) + 4
+[1] 127
+```
+
+```
+> b <- 123
+> b
+[1] 123
+> as.character(b)
+[1] "123"
+```
+
+There are many more casting functions (try writing "as." in the RStudio console
+and a popup will appear with dozens of other casting functions). 
+
+### matrix()
+
+The `matrix()` function creates a matrix object. A matrix is a two-dimensional
+data structure, similar to a table with rows and columns. All elements in a
+matrix must be of the same type (string/numeric/...)
+
+The `matrix()` function requires three arguments: 
+  
+  * `data`: a vector containing the data that should be put into the matrix
+* `nrow`: the number of rows the matrix should have
+* `ncol`: the number of columns the matrix should have
+
+```
+# create a matrix with 3 rows and 4 columns containing the numbers from 1 to 12:
+> m <- matrix(data=1:12, nrow=3, ncol=4) 
+> m
+[,1] [,2] [,3] [,4]
+[1,]    1    4    7   10
+[2,]    2    5    8   11
+[3,]    3    6    9   12
+```
+
+The optional argument `byrow` defines whether the data should be fed into the
+matrix by row (`byrow=TRUE`) or by column (`byrow=FALSE`); default is `FALSE`.
+
+```
+> m <- matrix(data=1:12, nrow=3, ncol=4, byrow=TRUE)
+> m
+[,1] [,2] [,3] [,4]
+[1,]    1    2    3    4
+[2,]    5    6    7    8
+[3,]    9   10   11   12
+```
+
+### data.frame()
+
+The `data.frame()` function creates a dataframe object, which is similar to a 
+spreadsheet or a table in a database. 
+Contrary to a matrix, a dataframe can contain objects of different types (character,
+                           numeric, ...)
+
+
+
+```
+> df <- data.frame(fruit=c("apple", "banana", "pear"), stock=c(15, 20, 3))
+> df
+fruit stock
+1  apple    15
+2 banana    20
+3   pear     3
+```
+
+Every dataframe has 3 attributes: 
+  
+  * `dim`: its dimension (number of rows and columns)
+* `colnames`: the names of its columns
+* `rownames`: the names of its rows
+
+```
+> dim(df)
+[1] 3 2
+> colnames(df)
+[1] "fruit" "stock"
+> rownames(df)
+[1] "1" "2" "3"
+```
+
+The name of a column can be used to get the data from that column: 
+  
+  ```
+> df$fruit
+[1] "apple"  "banana" "pear"  
+```
+
+### setwd() and getwd()
+
+R needs a specific location on your computer where it can write data, and from
+where it can read data. This location is called the "working directory". 
+
+The `setwd()` function (short for "set working directory") sets the working directory
+to the path that is passed as an argument to the function. 
+The `getwd()` function displays the current working directory.
+
+```
+> setwd("~")
+> getwd()
+[1] "C:/Users/peter/Documents"
+```
+
+### dir()
+
+The `dir()` function (short for "directory") the contents (files and folders) 
+of a directory (by default: the working directory). 
+
+### read.csv()
+
+CSV ("Comma-Separated Values") files are plain text files used to hold structured 
+data. Data is written in tabular form, with commas delimiting columns and 
+new lines delimiting rows. 
+
+An example of the contents of a csv file: 
+  
+```
+word,frequency
+apple,15
+banana,20
+pear,5
+```
+
+The `read.csv()` function loads a csv file into an R dataframe object: 
+  
+  ```
+> freq <- read.csv(file="word_frequency.csv", as.is=TRUE)
+> freq
+    word frequency
+1  apple        15
+2 banana        20
+3   pear        5
+> class(freq)
+[1] "data.frame
+```
+
+Sometimes, csv data uses other delimiters than comma to separate columns; the
+tab character (symbolized in R by `\t`) is often used (such files are often 
+called TSV files, for "tab-separated values"). 
+
+```
+word    frequency
+apple   15
+banana  20
+pear    5
+```
+
+The `read.csv` function's optional argument `sep` (for "separator"; default: ",") 
+can be set to `\t` (that is, tab) to parse a tsv file:
+
+```
+> freq2 <- read.csv(file="word_frequency.csv", as.is=TRUE, sep="\t")
+> freq2
+    word frequency
+1  apple        15
+2 banana        20
+3   pear         5
+> class(freq2)
+[1] "data.frame
+```
+
+### order()
+
+The `order()` function can be used to sort a vector or another R data structure 
+like a dataframe. Its output is a vector that contains indices for the sort 
+order of the object you passed to the function. 
+
+```
+> test_vector <- c("apple","pear", "banana")
+> index <- order(test_vector)
+[1] 1 3 2
+```
+
+You can use the output of the  `order()` function to sort the original object:
+  
+  ```
+> index <- order(test_vector)
+> test_vector[index]
+[1] "apple"  "banana" "pear" 
+```
+
+```
+> df <- data.frame(word=c("apple", "banana", "pear"), frequency=c(15, 20, 3))
+> index <- order(df$frequency)
+> index
+[1] 3 1 2
+> df[index,]
+    word frequency
+3   pear         5
+1  apple        15
+2 banana        20
+```
+
+
+In order to sort from high to low values, set the optional argument `decreasing` 
+to `TRUE`:
+  
+  ```
+> test_vector <- c("apple","pear", "banana")
+> sort(test_vector, decreasing=TRUE)
+[1] "pear"   "banana" "apple" 
+```
