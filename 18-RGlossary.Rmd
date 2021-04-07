@@ -240,3 +240,66 @@ x <- 3
 A symbol (name) linked with a value that this symbol represents. 
 Linking a symbol with a value is called assigning; this is done using an 
 assignment operator (`<-`, `->`, `=`).
+
+## Vector: 
+A vector is the main data structure in R: vectors are collections of data. 
+Usually, the term vector is used as shorthand for a specific type of vector in R, 
+so-called **atomic vectors**; they are called like that because every element
+in an atomic vector is of the same data type. 
+
+There are 5 "modes" of atomic vectors, based on the data type of its elements; 
+only the first three are directly relevant for us:
+
+* character vector: all elements are text strings (data type: `character`). 
+  
+  ```
+  > v <- c("a", "100", "ألف", "vector elements can be very long strings")
+  > typeof(v)
+  [1] "character"
+  > mode(v)
+  [1] "character"
+  ```
+  
+* numeric vector: all elements are of the `integer` type (whole numbers, both 
+  positive and negative: 1, 2, -137, ...), or of the `double` type 
+  ("double precision floating point numbers": 1.2345, -125.8, pi, ...) 
+  E.g., 
+  
+  ```
+  > v <- c(1, -300, 18.5, pi)
+  > v
+  [1]   1.000000 300.000000  18.500000   3.141593
+  > typeof(v)
+  [1] "double"
+  > mode(v)
+  [1] "numeric"
+  ```
+  
+* logical vector: all elements are one of the boolean values TRUE or FALSE: 
+
+  ```
+  > v <- c(TRUE, TRUE, FALSE, TRUE)
+  > typeof(v)
+  [1] "logical"
+  > mode(v)
+  [1] "logical"
+  ```
+  
+* complex vector: all elements are complex numbers (numbers that have a real and
+  an imaginary part)
+* raw vector: all elements are raw byte objects
+
+The `c()` function is often used to create vectors with multiple elements. But
+even if you assign a single string or number to a variable, the variable will be
+a vector: 
+
+```
+> a <- "This is a string"
+> class(a)
+[1] "character"  # a is a character vector!
+> a[1]
+[1] "This is a string"  # our string is the first (and only) element of that vector!
+```
+
+Vectors have no dimensions (vs. for example tables, which have 2 dimensions:
+rows and columns). 

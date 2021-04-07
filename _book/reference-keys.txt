@@ -203,6 +203,7 @@ session
 source-pane
 symbol
 variable
+vector
 relevant-r-functions
 class
 ls

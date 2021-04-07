@@ -4,15 +4,21 @@
 
 Prepare for Class:
 
-* Chapter 3 in Arnold and Tilton.
+* Work through chapter 3 in Jockers.
 
-Submit Before Class:
+Submit before class:
 
-* Practice exercises for chapter 3 in Arnold & Tilton, pages 186-188.
+* R script file in which you write and run all the code described in Jockers Ch. 3. 
+Create a new R script file, which you name 'chapter3_<your_name>.R' in the 
+`R_exercises/Jockers` folder of the repository we downloaded during class 
+(if you were not there: please fork the repository from
+https://github.com/OpenITI-Training/R_exercises, and clone it to your local 
+machine). In this script file, write the code Jockers describes in Chapter 3, 
+and run it yourself.  
 
 In class:
 
-* Weekly Reading Report: Topic Modeling in R (Matthew Thomas Miller).
+* R exercises
 * First brainstorming session on final project topics.
 
 
