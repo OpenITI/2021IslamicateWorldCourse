@@ -4,14 +4,19 @@
 
 Prepare for Class:
 
-* Chapter 4 in Arnold and Tilton.
+* Jockers Chapter 4: this chapter is about using regular expressions in R. However, the function (grep) used by Jockers for regular expressions does not deal well with Arabic-script texts. Peter has created an interactive version of Jockers' Chapter 4 that uses functions from the stringr package instead. Please work through this interactive tutorial (you can of course still read Jockers' chapter in parallel): https://pverkind.github.io/RTutorial/4_Regex.html
+  (you can look at Jockers in
+* work through chapter 5 in Jockers: this chapter introduces two important programming concepts, "for loops" and "if conditionals"; once you understand these, you will be able to manage working with R on large corpora instead of one text. NB: keep in mind that you may have to use the stringr functions instead of grep for regular expressions if grep does not return the results you expect!
 
-Submit Before Class:
+Turn in before class: 
 
-* Practice exercises for chapter 4 in Arnold & Tilton, pages 188-190.
+* the R script file for the exercise we started in class
+* an R script file ("chapter4_<yourname>.R") with the commands of the interactive tutorial exercises for Chapter 4
+* an R script file ("chapter5_<yourname>.R") with the commands of Jockers' chapter 5.
 
-In class:
+Please use the R_exercises repository on GitHub to submit your R scripts. 
 
-* Weekly Reading Report: Geolocation Analysis in R (Peter Verkinderen).
-* Second brainstorming session on final project topics (by end of this class, we will set the text analysis groups and their respective assigned chapters for week 10 based your initial ideas for the final project).
-* Research collaboratory groups finalized and first set of individualized assignments distributed in preparation for your research group’s first research collaboratory.
+In class: 
+
+* R exercises on Jockers' chapters 4 and 5
+* group work on preparation of the final project
