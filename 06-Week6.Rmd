@@ -40,3 +40,26 @@ In class:
 * Using GitHub for cooperative project work
 
 
+## Finding texts in the OpenITI corpus
+
+The easiest way to find a text in the OpenITI corpus is to use the metadata 
+application at [kitab-corpus-metadata.azurewebsites.net](https://kitab-corpus-metadata.azurewebsites.net/).
+
+The search function of the app allows you to filter the books by 
+the author's name or year of death, the work's title, 
+a specific OpenITI version id, and/or tags. 
+
+To download a single text file, right-click the Version Id
+of the book (in the right-most column) and choose "save as". 
+
+By clicking on a book's Version Id you can access the text on GitHub; 
+clicking on the Book Title link will bring you to the folder on GitHub
+where all text versions and metadata of the same book are stored, 
+while clicking on the Author link will open the GitHub folder where
+all works by that author are stored. 
+
+![Kitab metadata app](img/kitab_metadata_app.png)
+
+More info: 
+
+* [OpenITI FAQ - How can I find a text in OpenITI](https://openiti.github.io/documentation/#how-can-i-find-a-text-in-openiti)

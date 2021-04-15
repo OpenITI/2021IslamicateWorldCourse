@@ -96,6 +96,7 @@ useful-resources
 installing-editpad-pro
 installing-the-openiti-highlighting-schema
 week-6-interacting-with-the-openiti-corpus-using-github-and-kate
+finding-texts-in-the-openiti-corpus
 week-7-advanced-escriptorium-functionality
 week-8-introducing-r-in-gui-through-stylometry-1
 installing-r
